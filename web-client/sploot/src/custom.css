@@ -1,0 +1,35 @@
+.Navbar_custom {
+	background-color: #d8bfd8;
+	color: #4b0082;
+
+	
+}
+		.Topbar {
+	padding:2px; 
+	background-color: #9932cc;
+	color: #f5fffa;
+	text-align: right;
+	margin-bottom: 0px;
+	
+	
+}
+		.Topbar li {
+	margin-left: 20px;
+	display:inline;
+	
+}
+
+		.Searchbar {
+	padding: 60px; 
+	background-color: #9370db;
+	color: #f5fffa;
+	margin-bottom: 40px;
+	
+}
+		.Contentbar {
+	padding: 60px; 
+	background-color: #add8e6;
+	color: #000000;
+	text-align: center;
+
+}
