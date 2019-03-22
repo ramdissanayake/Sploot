@@ -1,5 +1,7 @@
 import React from 'react';
 import '../custom.css';
+import NavBar from './navbar';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import { 
     Container,
@@ -11,6 +13,8 @@ export default class Adoption extends React.Component {
     render(){
         return(
             <div>
+            <div>
+            <NavBar/>
                 <Row noGutters>
             <Col className="Searchbar">
             </Col>
@@ -23,6 +27,7 @@ export default class Adoption extends React.Component {
               <p>content</p>
             </Col>
         </Row>
+            </div>
             </div>
         );
     }

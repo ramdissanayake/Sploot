@@ -1,7 +1,9 @@
 import React from 'react';
 import './custom.css';
-import NavBar from './components/navbar';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import Adoption from './components/adoption';
+import DogProfile from './components/dogprofile';
 
 //import Searchbox from './Searchbox';
 
@@ -28,16 +30,20 @@ export default class App extends React.Component {
             }
   render() {
     return (
+      <Router>
       <div>
-      <Container  fluid style={{"padding":"0"}}>
+      {/* <Container  fluid style={{"padding":"0"}}> */}
+     
       
-        <NavBar />
-        <Adoption />
+      <Route path ='/' exact component={Adoption} />
+      <Route path ='/dogprof' component={DogProfile} />
 
-      </Container>
+      {/* </Container> */}
+      
+      
       </div>
       
-  
+      </Router>
      );
    }
  }
