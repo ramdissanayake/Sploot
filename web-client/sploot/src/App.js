@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Adoption from './components/adoption';
 import DogProfile from './components/dogprofile';
+import HomePage from './components/homepage';
 
 //import Searchbox from './Searchbox';
 
@@ -36,7 +37,8 @@ export default class App extends React.Component {
      
       
       <Route path ='/' exact component={Adoption} />
-      <Route path ='/dogprof' component={DogProfile} />
+      <Route path ='/d' component={DogProfile} />
+      <Route path ='/h' component={HomePage} />
 
       {/* </Container> */}
       
