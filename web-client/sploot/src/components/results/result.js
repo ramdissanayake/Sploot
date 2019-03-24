@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import { Button } from 'reactstrap';
 
 export default class Result extends Component{
     constructor(props){
@@ -7,16 +7,22 @@ export default class Result extends Component{
     }
     render(){
         return(
-<article class="br2 ba dark-gray b--black-10 cover mv4 w-100 w-50-m w-25-l mw5 center hide-child">
+<article class="br2 ba dark-gray b--black-10 grow cover mv4 w-100 w-50-m w-25-l mw5 center hide-child">
   <section class="pv4 ph5 center absolute">
-    <a class="f6 link dim ph3 pv2 mb2 dib white child bg-black" href="#">Adopt</a>
+     <Button className="f6 link dim ph3 pv2 mb2 dib white child " color="success">
+        ❤ Adopt 
+     </Button>
+     <Button className="f6 link dim ph3 pv2 mb2 dib white child " color="primary">
+        ❤ Watch 
+     </Button>         
+
   </section>
     <img src="http://placekitten.com/g/600/300" class="db  bg-white w-100 br2 br--top" alt="Photo of a kitten looking menacing."/>
   <div class="pa2 bg-white ph3-ns pb3-ns">
     
     <div class="dt w-100 mt1">
       <div class="dtc">
-        <h1 class="f5 f4-ns mv0">Cat</h1>
+        <h1 class="f5 f4-ns mv0">{this.props.id}</h1>
       </div>
       <div class="dtc tr">
         <h2 class="f5 mv0">$1,000</h2>
