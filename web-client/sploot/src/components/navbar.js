@@ -57,7 +57,7 @@ export default class NavBar extends React.Component {
            <NavLink  className="Navbar_custom" href="/components/">Home</NavLink>
          </NavItem>
          <NavItem>
-           <NavLink  className="Navbar_custom" href="/components/">Adoption</NavLink>
+           <NavLink  className="Navbar_custom" href="/">Adoption</NavLink>
          </NavItem>
          <NavItem>
            <NavLink  className="Navbar_custom" href="/components/">Success Stories</NavLink>
