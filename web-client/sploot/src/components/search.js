@@ -17,11 +17,11 @@ export default class Search extends Component{
     render(){
         return(
             
-            <section class="mw8 mw9-ns center bg-light-pink  pa3 ph5-ns">
+            <section class="mw8 mw9-ns center bg-light-gray pa3 ph5-ns">
 
             <Form class="center">
                 <FormGroup>
-                <Row  >
+                <Row  noGutters>
                     <Col sm>
                         <Input width="20%" type="text" name="searchText" id="searchText" placeholder="Look up for a furball!" />
                     </Col>

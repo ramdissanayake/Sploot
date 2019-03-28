@@ -4,6 +4,9 @@ import {Row,Col,Container} from 'reactstrap';
 
 
 export default class Results extends Component{
+    constructor(props){
+        super(props);
+    }
     populate(){
         let result=[1,2,3,4,5,6,74,5,6,7];
         return result.map(

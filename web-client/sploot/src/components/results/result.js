@@ -4,16 +4,17 @@ import { Button } from 'reactstrap';
 export default class Result extends Component{
     constructor(props){
         super(props);
+        this.props = {location:"CITY",shortDes:"Short Description"}
     }
     render(){
         return(
 <article class="br2 ba dark-gray b--black-10 grow cover mv4 w-100 w-50-m w-25-l mw5 center hide-child">
-  <section class="pv4 ph5 center absolute">
-     <Button className="f6 link dim ph3 pv2 mb2 dib white child " color="success">
-        ❤ Adopt 
+  <section class="pa2  absolute">
+     <Button size="sm" className=" f6 link dim  mb2 dit white child " color="success">
+        Adopt 
      </Button>
-     <Button className="f6 link dim ph3 pv2 mb2 dib white child " color="primary">
-        ❤ Watch 
+     <Button size="sm" className="f6 link dim ml1  mb2 dit white child " color="info">
+        Watch 
      </Button>         
 
   </section>
@@ -25,12 +26,11 @@ export default class Result extends Component{
         <h1 class="f5 f4-ns mv0">{this.props.id}</h1>
       </div>
       <div class="dtc tr">
-        <h2 class="f5 mv0">$1,000</h2>
+        <h2 class="f5 mv0">{this.props.city}</h2>
       </div>
     </div>
     <p class="f6 lh-copy measure mt2 mid-gray">
-      If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
-      and touch water with paw then recoil in horror.
+      {this.props.shortDes}
     </p>
   </div>
 </article>

@@ -12,7 +12,6 @@ export default class Adoption extends React.Component {
             <NavBar/>
             <Search/>
             <Results/>
-            
         </div>
 
         );
