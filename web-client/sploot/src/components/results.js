@@ -6,12 +6,19 @@ import {Row,Col,Container} from 'reactstrap';
 export default class Results extends Component{
     constructor(props){
         super(props);
+        this.state = {image:""};
+    }
+    componentDidMount(){
+        // console.log(this.props.location);
+ 
     }
     populate(){
         let result=[1,2,3,4,5,6,74,5,6,7];
         return result.map(
             (i)=>{
-                return  <div className="dit ma2"><Result id={i}/></div>
+
+                // console.log(this.state.image)
+                return  <div className="dit ma2"><Result id={i} /></div>
             }
         )
     }
