@@ -2,8 +2,9 @@
   "name": "sploot-server",
   "version": "1.0.0",
   "description": "Server and Middleware implementations of the Sploot Server.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start":"server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shehan Kulathilake",
@@ -15,6 +16,7 @@
     "mongoose": "^5.4.21"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "ws": "3.3.2"
   }
 }

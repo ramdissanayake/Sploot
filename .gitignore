@@ -1,3 +1,4 @@
 mobile-client/sploot/node_modules/*
 web-client/sploot/node_modules/*
 Resources/*
+sploot-server/node_modules/*
