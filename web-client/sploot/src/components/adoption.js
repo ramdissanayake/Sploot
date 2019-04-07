@@ -1,29 +1,19 @@
 import React from 'react';
 import '../custom.css';
-
-import { 
-    Container,
-    Row,
-    Col } from 'reactstrap';
-  
+import NavBar from './navbar';
+import Search from './search';
+import Results from './results';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class Adoption extends React.Component {
     render(){
         return(
-            <div>
-                <Row noGutters>
-            <Col className="Searchbar">
-            </Col>
-          </Row>
-          
+        <div>
+            <NavBar/>
+            <Search/>
+            <Results/>
+        </div>
 
-        <Row noGutters>
-            <Col className="Contentbar">
-              <h2>Adoption</h2>
-              <p>content</p>
-            </Col>
-        </Row>
-            </div>
         );
     }
 }
