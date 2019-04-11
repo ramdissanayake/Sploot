@@ -7,7 +7,17 @@ export default class NewRescue extends Component{
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.state ={}
+        this.state ={
+            title:"",
+            location:"",
+            track:true,
+            contact:"",
+            medical:false,
+            lost:false,
+            tresspassable:false,
+            aggression:false,
+            additional:""
+        }
     }
 
     handleChange(e){
@@ -21,15 +31,17 @@ export default class NewRescue extends Component{
 
     handleSubmit(e){
         e.preventDefault();
-        const payload = new FormData(e.target);
+        // const payload = new FormData();
+        var payload = {'form':JSON.stringify(this.state)}
         fetch("api/requests/new",{
             method:'POST',
             headers: {
+                // 'auth':,
                 'connection':'close',
-                'content-type': 'application/x-www-form-urlencoded',
+                'content-type': 'application/json ',
             },
             // convert to  a json object 
-            body:JSON.stringify(this.state),
+            body: JSON.stringify(this.state)
         });
     }
 
@@ -46,21 +58,39 @@ export default class NewRescue extends Component{
                    <img src="https://via.placeholder.com/350x150"/><br/>
            
                     <label>Describe Briefly</label>
-                    <input onChange={this.handleChange} name="title" type="text"/><br/>
+                    <input 
+                        onChange={this.handleChange} 
+                        name="title" 
+                        type="text"/><br/>
 
                     <label>Location</label>
-                    <input onChange={this.handleChange}name="location" type="text"/>
-                    <input onChange={this.handleChange} type="checkbox" name="track" />Send Tracking Request<br/>
+                    <input 
+                        onChange={this.handleChange} 
+                        value={this.state.location}
+                        name="location" 
+                        type="text"/>
+
+                    <input 
+                        checked={this.state.track}
+                        onChange={this.handleChange} 
+                        type="checkbox" 
+                        name="track" />Send Tracking Request<br/>
                    
                     <label>Contact Person</label>
                     {/* Load Contact information from session */}
                     <button>Sign In</button><br/>
                     <label>Contact Number</label>
                     <input onChange={this.handleChange} name="contact" type="text"/>
-                    <input onChange={this.handleChange} type="checkbox" name="showNumber" />Send my phone number<br/>
+                    {/* <input onChange={this.handleChange} type="checkbox" name="hideNumber" />Hide my phone number<br/> */}
 
                     <label><b>Additional Information</b></label><br/>
-                    <input onChange={this.handleChange} type="checkbox" name="medical" />The Animal Needs Medical Attention<br/>
+                    <input 
+                        onChange={this.handleChange} 
+                        type="checkbox" 
+                        name="medical" 
+                        checked ={this.state.medical}    
+                        />The Animal Needs Medical Attention<br/>
+
                     <input onChange={this.handleChange} type="checkbox" name="lost" />The Animal Appears to be Lost<br/>
                     <input onChange={this.handleChange} type="checkbox" name="tresspassable" />The Animal is on Private Property<br/>
                     <input onChange={this.handleChange} type="checkbox" name="aggression" />The Animal is Violent, Approach with Caution!<br/>

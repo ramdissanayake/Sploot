@@ -13,7 +13,7 @@ const port = 3000;
 const sploot = express();
 // Configures Sploot Application
 sploot.use(require('body-parser').urlencoded({extended:true}));
-sploot.use(require('body-parser').text());
+sploot.use(require('body-parser').json());
 
 // sploot.use(cors());
 

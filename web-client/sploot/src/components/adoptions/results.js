@@ -14,6 +14,7 @@ export default class Results extends Component{
     }
     populate(){
         let result=[1,2,3,4,5,6,74,5,6,7];
+        console.log(result);
         return result.map(
             (i)=>{
 
@@ -24,15 +25,10 @@ export default class Results extends Component{
     }
     render(){
           return(
-                
-
-
-
                         <section class="mw12 mw12-ns center bg-light-grey pa3 ph5-ns">
                           {this.populate()}
                         </section>
 
-                
           )
            
         

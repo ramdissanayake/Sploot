@@ -7,9 +7,17 @@ const rescueRequest = mongoose.model('rescueRequest',
     {
         id:Number,
         title:String,
-        volunteer: Number,
+        location:String,
+        track:Boolean,
+        volunteer:Number,
+        medical:Boolean,
+        lost:Boolean,
+        tresspassable:Boolean,
+        aggression:Boolean,
+        additional:String,
+        trackingid:Number,
+        // volunteer: Number,
         rescuers: Array,
-        description:String,
         
     });
 
