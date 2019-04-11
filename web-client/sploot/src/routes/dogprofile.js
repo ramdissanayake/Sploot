@@ -1,7 +1,7 @@
 import React from 'react';
 import '../custom.css';
-import NavBar from './navbar';
-import picture from './good.jpg';
+import NavBar from '../components/navbar';
+
 
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
   
@@ -28,7 +28,7 @@ export default class DogProfile extends React.Component {
     {/* <div className = "container"> */}
     <div className="row">
     <div className="col-md-4" align="center" >
-    <img src={picture} alt="good" width="200" height="200" border="green" color="red" background-color="green"/>
+    <img src="" alt="good" width="200" height="200" border="green" color="red" background-color="green"/>
     <p>profile picture</p>
     <p>other images</p>
     

@@ -1,6 +1,5 @@
 .Navbar_custom {
-	background-color: #d8bfd8;
-	color: #4b0082;
+	background-color: white;
 
 	
 }
@@ -54,7 +53,7 @@
 		color: #a53e3e;
 	  } */
 	  img {
-		border-radius: 50%;
+		border-radius: 00%;
 	  }
 	  /* div {
 		width: 160px;

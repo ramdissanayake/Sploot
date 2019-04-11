@@ -1,10 +1,11 @@
 {
-  "name": "test",
+  "name": "sploot",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "animals-api": "^1.0.5",
     "bootstrap": "^4.3.1",
+    "http-proxy-middleware": "^0.19.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",
@@ -26,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+    "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
 }

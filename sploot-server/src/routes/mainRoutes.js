@@ -13,7 +13,7 @@ fileSys.readdirSync( __dirname ).forEach( function( route ) {
     if ( route === 'mainRoutes' ) return ;
     console.log( 'Loading route ' + route + '...' ) ;
     const childRouter = require( './' + route  );
-    router.use( '/' + route, childRouter ) ;
+    router.use( '/api/' + route, childRouter ) ;
   } ) ;
 
 module.exports = router;

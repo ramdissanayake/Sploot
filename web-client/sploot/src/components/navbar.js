@@ -53,14 +53,19 @@ export default class NavBar extends React.Component {
      <NavbarToggler onClick={this.toggle} />
      <Collapse isOpen={this.state.isOpen} navbar>
        <Nav className="ml-auto" navbar>
+       <NavItem>
+        <NavLink>
+             <button>Report an Animal</button>
+         </NavLink>
+       </NavItem>
          <NavItem>
-           <NavLink  className="Navbar_custom" href="/components/">Home</NavLink>
+           <NavLink  className="Navbar_custom" href="/">Home</NavLink>
          </NavItem>
          <NavItem>
-           <NavLink  className="Navbar_custom" href="/">Adoption</NavLink>
+           <NavLink  className="Navbar_custom" href="/requests">Rescue</NavLink>
          </NavItem>
          <NavItem>
-           <NavLink  className="Navbar_custom" href="/components/">Success Stories</NavLink>
+           <NavLink  className="Navbar_custom" href="/adoptions">Adopt</NavLink>
          </NavItem>
          <NavItem>
            <NavLink  className="Navbar_custom" href="https://github.com/reactstrap/reactstrap">About</NavLink>

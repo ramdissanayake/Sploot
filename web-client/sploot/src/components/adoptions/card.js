@@ -8,7 +8,7 @@ export default class Result extends Component{
    
     }
     componentDidMount(){
-      fetch('https://dog.ceo/api/breed/Husky/images/random')
+      fetch('https://dog.ceo/api/breed/Dachshund/images/random')
       .then(response=>(response.json()))
       .then(myJson => {
         console.log(JSON.stringify(myJson.status));
@@ -32,7 +32,7 @@ export default class Result extends Component{
      </Button>         
 
   </section>
-    <img width="150px" height="150px" src={this.state.image} class="db  bg-white w-100 br2 br--top" alt="Photo of a kitten looking menacing."/>
+    <img width="200px" height="150px" src={this.state.image} class="db  bg-white w-250 br2 br--top" alt="Photo of a kitten looking menacing."/>
   <div class="pa2 bg-white ph3-ns pb3-ns">
     
     <div class="dt w-100 mt1">

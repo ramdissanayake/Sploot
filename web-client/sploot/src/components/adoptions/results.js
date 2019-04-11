@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Result from './results/result'
+import Result from './card'
 import {Row,Col,Container} from 'reactstrap';
 
 
