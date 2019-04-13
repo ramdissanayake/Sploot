@@ -11,11 +11,15 @@ export default class App extends React.Component {
   
   render() {
     return (
+      <div>
+
       <Router>
+
           <Route path ='/' exact component={HomePage} />
           <Route path ='/requests' component={Requests} />
           <Route path ='/adoptions'  component={Adoption} />
       </Router>
+      </div>
      );
    }
  }

@@ -35,7 +35,7 @@ export default class Results extends Component{
       populate(){
             return this.state.resultSet.map(
                  element=>{
-                       return <div className="dit ma2"><RequestCard id={element}/></div>
+                       return <div ><RequestCard id={element}/></div>
                  }       
             )
       }
@@ -43,10 +43,12 @@ export default class Results extends Component{
 
       render(){
           return(
-         
-            <section class="mw12 mw12-ns pl3 center bg-light-grey pa3 ph5-ns">
+      
+            <div class="container">
+            <div class="row " style={{disply:"flex",flexWrap:"wrap"}}>
                  {this.populate()}
-           </section>
+            </div>
+            </div>
      
   
           )

@@ -13,7 +13,7 @@ export default class Results extends Component{
  
     }
     populate(){
-        let result=[1,2,3,4,5,6,74,5,6,7];
+        let result=[1,2,3,4,5,6,74,5,6,7,12,43,34,35,35,35,35,5,35,35];
         console.log(result);
         return result.map(
             (i)=>{

@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "animals-api": "^1.0.5",
     "bootstrap": "^4.3.1",
+
+    "font-awesome": "^4.7.0",
     "http-proxy-middleware": "^0.19.1",
+
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "reactstrap": "^7.1.0",
@@ -28,7 +35,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-    "devDependencies": {
+  "devDependencies": {
     "concurrently": "^4.1.0"
   }
 }

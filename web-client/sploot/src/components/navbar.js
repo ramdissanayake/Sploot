@@ -1,83 +1,56 @@
 import React from 'react';
-import '../custom.css';
+import '../custom.css'
 
-import { 
-    Container,
-    Row,
-    Col } from 'reactstrap';
-  
-    import {
-      
-      Collapse,
-      Navbar,
-      NavbarToggler,
-      NavbarBrand,
-      Nav,
-      NavItem,
-      NavLink,
-      UncontrolledDropdown,
-      DropdownToggle,
-      DropdownMenu,
-      DropdownItem } from 'reactstrap';  
-
-   
 export default class NavBar extends React.Component {
-    constructor(props) {
-        super(props);
+   render(){
+     return(
+<nav class="navbar navbar-default white navbar-fixed dark no-background bootsnav">
+    <div class="container">      
+        {/* <!-- Start Header Navigation --> */}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="images/brand/sploot.png" width="150px" class="" alt=""/>
+            </a>
+        </div>
 
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-         isOpen: false
-        };
-      }
-      toggle() {
-        this.setState({
-          isOpen: !this.state.isOpen
-        });
-      }
-    render(){
-        return(
-            
-            <div>
-                <Row noGutters>
-                <Col >
-                    <ul className="Topbar">
-                        <li>Shop!</li>  
-                        <li>Login</li>
-                     </ul>  
-                </Col>
-            </Row>
-     
-     <Navbar className="Navbar_custom" expand="md" >
-     <NavbarBrand className="Navbar_custom" href="/">SPLOOT!</NavbarBrand>
-     <NavbarToggler onClick={this.toggle} />
-     <Collapse isOpen={this.state.isOpen} navbar>
-       <Nav className="ml-auto" navbar>
-       <NavItem>
-        <NavLink>
-             <button>Report an Animal</button>
-         </NavLink>
-       </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/">Home</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/requests">Rescue</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/adoptions">Adopt</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="https://github.com/reactstrap/reactstrap">About</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
-         </NavItem>
-       </Nav>
-     </Collapse>
-   </Navbar>
-            </div>
-      
-        );
-    }
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                <li>
+                  <a>
+                    <a class="btn btn-primary reportbtn">Report an Animal</a>
+                    
+                  </a>
+                </li>
+                <li><a href="/">Home</a></li>   
+                <li><a href="/requests">Rescue</a></li>                    
+                <li><a href="/adoptions">Adopt</a></li>  
+                {/* Sploot Dropdown Menu */}
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sploot!</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Forum</a></li>
+                </ul>
+                
+                </li>
+                
+                <li><a href="/adoptions">Contact</a></li>   
+            </ul>
+        </div>
+      </div>
+</nav>
+
+
+
+
+
+
+
+     )
+   }
+ 
 }
