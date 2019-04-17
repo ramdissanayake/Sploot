@@ -8,15 +8,18 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "animals-api": "^1.0.5",
     "bootstrap": "^4.3.1",
-
     "font-awesome": "^4.7.0",
     "http-proxy-middleware": "^0.19.1",
-
+    "leaflet": "^1.4.0",
+    "mdbreact": "^4.13.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "react-leaflet": "^2.2.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-stepzilla": "^6.0.0",
     "reactstrap": "^7.1.0",
     "tachyons": "^4.11.1"
   },

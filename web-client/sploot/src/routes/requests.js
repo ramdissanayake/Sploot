@@ -4,8 +4,7 @@ import '../custom.css';
 import NavBar from '../components/navbar';
 import Search from '../components/requests/search';
 import Results from '../components/requests/results';
-import NewRescue from '../components/requests/newRescue';
-
+import Header from '../components/header';
 
 export default class Requests extends React.Component{
     constructor(props){
@@ -16,10 +15,9 @@ export default class Requests extends React.Component{
         return(
             <div>
             <NavBar/>
+            <Header/>
             <Search/><br/>
-            <Results/>
-            <NewRescue/>
-       
+            <Results/>   
             </div>
         )
     }

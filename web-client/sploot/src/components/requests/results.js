@@ -45,6 +45,7 @@ export default class Results extends Component{
           return(
       
             <div class="container">
+            <h1>Animals in Need of Rescue</h1>
             <div class="row " style={{disply:"flex",flexWrap:"wrap"}}>
                  {this.populate()}
             </div>

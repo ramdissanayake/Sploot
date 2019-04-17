@@ -4,3 +4,22 @@
 	/* transition:  0.52s; */
 }
 
+.header{
+	background-image: url('/images/header.jpg');
+;	height:250px;
+margin-bottom: 10px;
+	background-size: 80%;
+
+}
+
+#map{
+	width:60%;
+	float: right;
+	height: 300px;
+	-webkit-box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
+	box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
+z-index: 2;
+}
+
+
