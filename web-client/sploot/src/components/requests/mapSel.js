@@ -16,18 +16,39 @@ export default class Themap extends Component {
             zoom:15,
         })
 
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hlaGFua3VsZSIsImEiOiJjanVsbXljYmIwbnl5NDVsOG93ZjN6a3MxIn0.M0lV10tb2YDwe5a6UK4pXA', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'your.mapbox.access.token'
-}).addTo(this.map);
-var circle = L.circle([6.8988,79.8608], {
-    color: 'red',
-    fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 250
-}).addTo(this.map);
+          L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hlaGFua3VsZSIsImEiOiJjanVsbXljYmIwbnl5NDVsOG93ZjN6a3MxIn0.M0lV10tb2YDwe5a6UK4pXA', {
+          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.streets',
+          // accessToken: 'your.mapbox.access.token'
+        }).addTo(this.map);
+        
+        this.map.on('click', (e)=>{
+          // alert(e.latlng);
+          this.circle(e.latlng);
+          this.map.off('click');
+        })      
+    }
+
+    // Generate Marker on Click event
+    circle = (latlng)=>{
+      this.marker = L.circle(latlng, {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 250
+    }).addTo(this.map);
+    
+    this.marker.on('click',function(){
+      // marker event
+    })
+  }
+
+    // OnClick for Marker
+    markerClick(){
+      this.marker.on('click',function(e){
+        alert('er');
+      })
     }
 
 
