@@ -1,5 +1,6 @@
 import React from 'react';
 import '../custom.css'
+
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 export default class NavBar extends React.Component {
    render(){
@@ -31,8 +32,8 @@ export default class NavBar extends React.Component {
                 <li><Link to="/requests">Rescue</Link></li>                    
                 <li><Link to="/adoptions">Adopt</Link></li>  
                 {/* Sploot Dropdown Menu */}
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sploot!</a>
+                <li class="dropdown" data-toggle="dropdown">
+                <a class="dropdown-toggle"  href="#">Sploot!</a>
                 <ul class="dropdown-menu">
                   <li><Link to="#">Blog</Link></li>
                   <li><Link to="#">Shop</Link></li>

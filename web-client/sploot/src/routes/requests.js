@@ -14,7 +14,7 @@ export default class Requests extends React.Component{
     render(){
         return(
             <div>
-            <NavBar/>
+            {/* <NavBar/> */}
             <Header/>
             <Search/><br/>
             <Results/>   

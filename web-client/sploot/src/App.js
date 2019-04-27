@@ -8,6 +8,7 @@ import HomePage from './routes/homepage';
 import Requests from './routes/requests';
 import newRequest from './routes/requestNew';
 import NavBar from './components/navbar';
+import Footer from './components/footer';
 
 
 export default class App extends React.Component {
@@ -15,15 +16,16 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-      <Router> 
+      <Router>
+        <NavBar/> 
         <Switch>
-
           <Route path ='/' exact component={HomePage} />
           <Route path ='/requests' exact component={Requests} />
           <Route path ='/requests/new' exact component={newRequest} />  {/*Use second level routing*/}
           <Route path ='/adoptions'  component={Adoption} />
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>
+        <Footer />
       </Router>
       </div>
      );

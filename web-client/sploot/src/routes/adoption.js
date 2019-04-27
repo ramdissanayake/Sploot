@@ -9,7 +9,7 @@ export default class Adoption extends React.Component {
     render(){
         return(
         <div>
-            <NavBar/>
+            {/* <NavBar/> */}
             <Search/>
             <Results/>
         </div>
