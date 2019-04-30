@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import $ from 'jquery';
+
 
 
 
@@ -12,7 +12,10 @@ export default class MapSel extends Component {
     super(props);
     this.state={
       marker:false,
-      dt_prompt:false
+      dt_prompt:false,
+      timeset:false,
+      timestamp:"[]"
+      
     }
   }
 
@@ -32,28 +35,44 @@ export default class MapSel extends Component {
 
     this.map.on('click', (e) => {
       // alert(e.latlng);
-      var timestamp= this.promptDateTime()
-      if(!this.state.marker){
-        this.marker(e.latlng);
-        this.props.addLocation({
-          coordinates:[e.latlng.lat, e.latlng.lng],
-          timestamp:timestamp
-        });
-        this.setState({marker:true});
-      }
-      else{
-        console.log('Past Locations');
-      }
+      this.state.latlng=e.latlng;
+      if(!this.state.marker){this.marker(e.latlng)};
+      window.$('#dtpicker').modal('show');
       // this.map.off('click');
     })
   }
+  //
+  setLatLng=()=>{
+    var latlng = this.state.latlng;
+    var timestamp = this.state.timestamp;
+    if(!this.state.marker){
+      
+      this.props.addLocation({
+        coordinates:[latlng.lat, latlng.lng],
+        timestamp:timestamp
+      });
+      this.setState({marker:true});
+      
+    }
+    else{
+      console.log('Past Locations');
+    }
+  }
 
-  // Shows the date time prompt 
-  promptDateTime(){
-    this.setState((state)=>({
-      dt_prompt:!state.dt_prompt
-    }))
-    window.$('#dtpicker').modal('show');
+
+  // sets the date time into a single string and updates state 
+  setDateTime = (e) => {
+    e.preventDefault();
+    let timestamp = [e.target[0].value, e.target[1].value]
+    this.setState({
+      timestamp: timestamp
+    },
+    function(){
+      this.setLatLng()
+    }
+    );
+
+    window.$('#dtpicker').modal('hide');
   }
 
   // Generate Marker on Click event
@@ -92,24 +111,40 @@ export default class MapSel extends Component {
   render() {
   return(
       <div class="col parent">
-      {(this.state.dt_prompt?
+      {(true?
       <div id="dtpicker" className=" modal fade ">
                 
       <div class="modal-dialog center" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">When did you see the Animal at this location?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        {/* <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
+        </button> */}
       </div>
-      <div class="modal-body">
-        <p>When did you see the Animal at this location?</p>
+                        <form onSubmit={this.setDateTime}>
+      <div class="modal-body ">
+                         <div class='input-group date half' id='datetimepicker1'>
+                        <span class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </span>
+                        {/* Change Date time picker and Styles */}
+                        <input type='date' class=" form-control" placeholder="Date and Time DD-MM-YY hh:mm"/>
+                        </div>
+
+                        <div class='input-group date half' id='datetimepicker1'>
+                        <span class="input-group-addon">
+                            <i class="fa fa-clock-o"></i>
+                        </span>
+                        {/* Change Date time picker and Styles */}
+                        <input type='time' class=" form-control" placeholder="Date and Time DD-MM-YY hh:mm"/>
+                        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save Details</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
+                        </form>
     </div>
   </div>
 

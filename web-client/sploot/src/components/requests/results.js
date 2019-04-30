@@ -14,7 +14,7 @@ export default class Results extends Component{
             fetch('api/requests/show/all')
             .then(response=>(response.json()))
             .then(myJSON=>{
-                  // console.log(myJSON);
+                  console.log(myJSON);
                   myJSON.forEach(element=>{
                         this.state.resultSet.push(element._id);
                         // console.log(element._id);

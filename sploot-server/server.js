@@ -5,6 +5,8 @@
 
 const express = require("express");
 const mongoose = require("mongoose");
+
+
 const db = require('./src/config/keys').uri;
 const port = 3000;
 // const cors = require('cors');
@@ -14,6 +16,7 @@ const sploot = express();
 // Configures Sploot Application
 sploot.use(require('body-parser').urlencoded({extended:true}));
 sploot.use(require('body-parser').json());
+sploot.use(require('body-parser').text());
 
 // sploot.use(cors());
 

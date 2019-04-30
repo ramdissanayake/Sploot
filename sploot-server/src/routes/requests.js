@@ -1,6 +1,8 @@
 const express = require('express');
 const requests = express.Router({ mergeParams: true });
 const parser = require('body-parser');
+const multer = require('multer');
+const upload = multer({ dest: './uploads/requests' });
 // Imports the relevant controller 
 const   Controller = require('../controllers/requestC');
 requests.use(parser.json())
@@ -26,10 +28,10 @@ requests.use(parser.json())
         });
 // -----------------------------------------------------------------------------------------------------------------
 // Handles the child routers for Inserting new requests ------------------------------------------------------------
-    requests.post('/new',
+    requests.post('/new', upload.array('picture'), 
         (req,res,next)=>{
-            // console.log(req.body);
-            Controller.newAnimal(req.body);
+            console.log(req.body);
+            
         });
 
 

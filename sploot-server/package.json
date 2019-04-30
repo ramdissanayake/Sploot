@@ -14,7 +14,8 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "mongodb": "^2.2.36",
-    "mongoose": "^5.4.21"
+    "mongoose": "^5.4.21",
+    "multer": "^1.4.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.10",

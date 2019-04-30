@@ -47,6 +47,6 @@ newAnimal = (form)=>{
 //todo: initiate animal tracker for this id
 
 
-module.exports.getRequest = getRequest;
+module.exports. getRequest = getRequest;
 module.exports.byLocation = byLocation;
 module.exports.newAnimal = newAnimal;
