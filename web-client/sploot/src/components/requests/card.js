@@ -23,7 +23,9 @@ class RequestCard extends React.Component {
           }
         )
         this.setState({
+          currRequest:currRequest,
           image:image,
+          id:[currRequest._id],
           stamp:[currRequest.stamp],
           title: [currRequest.title],
           location: [currRequest.location],
@@ -43,6 +45,7 @@ class RequestCard extends React.Component {
   }
 
   render() {
+    console.log(this.state.currRequest)
     return (
       // todo Use card templates to generate responsive cards
       <div class=" col-md-3 col-xs-6">
@@ -54,7 +57,7 @@ class RequestCard extends React.Component {
       } </h5> <p class = "card-text" > {
         this.state.description
       }</p> 
-      <Link to = {"requests/"+this.state.stamp}
+      <Link to = {"requests/"+this.state.id}
       class = "btn btn-success" > Rescue </Link> 
       </div></div>
     

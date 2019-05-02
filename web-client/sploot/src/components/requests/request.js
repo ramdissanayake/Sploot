@@ -8,7 +8,7 @@ export default class Request extends Component{
     }
 
     test(){
-        // alert(this.props.title);
+        // console.log(this.props.title);
     }
 
     // calls api endpoint to save request to the database
@@ -41,7 +41,7 @@ export default class Request extends Component{
     render(){
         return(
             <div>sdsdsdsdsd
-                {this.props.title}
+               
             </div>
         )
     }

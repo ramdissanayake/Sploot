@@ -17,7 +17,8 @@ export default class RequestR extends Component{
         fetch(`/api/requests/show/` + this.props.match.params.stamp)
           .then(response => (response.json()))
           .then(currRequest => {
-     
+            
+            
             
             // var image = this.request.getImage().then(
             //   response=>{
@@ -33,13 +34,13 @@ export default class RequestR extends Component{
         }
         
         render(){
-        this.request = new Request(this.state.currRequest);
-        this.request.test();
+            this.request = new Request(this.state.currRequest);
+            this.request.test();
+            console.log(this.state.currRequest)
         return(
             <div>
             <Header/>
             
-
             </div>
         )
     }
