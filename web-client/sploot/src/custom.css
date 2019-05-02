@@ -5,13 +5,16 @@
 }
 
 .header{
-	background-image: url('/images/header.jpg');
-;	height:250px;
+	/* background-image: url('/images/header.jpg'); */
+	min-height:200px;
+	height:auto;
 /* margin-bottom: 10px; */
-
+	background-repeat: no-repeat;
 	background-size: 80%;
 
 }
+
+
 
 .footer{
 	/* background-image: url('/images/header.jpg'); */
@@ -163,6 +166,13 @@ input[type="file"] {
 	position: relative;
 	text-align: center;
 	display:inline-block;
+}
+
+.card{
+	display: inline-flexbox;
+	-webkit-box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
+	box-shadow: 9px 14px 30px -21px rgba(0,0,0,0.75);
 }
 
 

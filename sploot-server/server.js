@@ -17,7 +17,7 @@ const sploot = express();
 sploot.use(require('body-parser').urlencoded({extended:true}));
 sploot.use(require('body-parser').json());
 sploot.use(require('body-parser').text());
-
+sploot.use(express.static('public'));
 // sploot.use(cors());
 
 //Mount Routers from Routes Folder 

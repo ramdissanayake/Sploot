@@ -2,7 +2,15 @@ const express = require('express');
 const requests = express.Router({ mergeParams: true });
 const parser = require('body-parser');
 const multer = require('multer');
-const upload = multer({ dest: './uploads/requests' });
+const storage = multer.diskStorage({
+    destination: function(req,file,cb){
+        cb(null,'./public/requests')
+    },
+    filename: function(req,file,cb){
+        cb(null,req.body.stamp+'-'+Date.now())
+    }
+})
+const upload = multer({storage:storage});
 // Imports the relevant controller 
 const   Controller = require('../controllers/requestC');
 requests.use(parser.json())
@@ -28,15 +36,22 @@ requests.use(parser.json())
         });
 // -----------------------------------------------------------------------------------------------------------------
 // Handles the child routers for Inserting new requests ------------------------------------------------------------
-    requests.post('/new', upload.array('picture'), 
+    requests.post('/new', upload.array('picture'),
         (req,res,next)=>{
             console.log(req.body);
-            
+            Controller.newAnimal(req.body);
         });
 
 
 //------------------------------------------------------------------------------------------------------------------
-
+//Hadnles the child routers for fetching static assets of requests--------------------------------------------------
+    requests.get('/static/:stamp?',
+    (req,res,next)=>{
+        console.log('Fetch Static for'+req.params.stamp);
+        Controller.serveStatic(req.params.stamp,res);
+    }
+    )
+//------------------------------------------------------------------------------------------------------------------
 
 
 

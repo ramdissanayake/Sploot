@@ -1,7 +1,5 @@
 import React from 'react';
 import '../custom.css';
-
-import NavBar from '../components/navbar';
 import Search from '../components/requests/search';
 import Results from '../components/requests/results';
 import Header from '../components/header';
@@ -14,9 +12,9 @@ export default class Requests extends React.Component{
     render(){
         return(
             <div>
-            {/* <NavBar/> */}
+         
             <Header/>
-            <Search/><br/>
+            <Search/>
             <Results/>   
             </div>
         )

@@ -12,6 +12,7 @@ import {
 
 import Uploader from '../../file/uploader';
 import Request from './request';
+import { array } from 'prop-types';
 
 export default class NewRescue extends Component {
     constructor(props) {
@@ -77,6 +78,7 @@ export default class NewRescue extends Component {
             loading: true,
             timestamp: latlng.timestamp[0] + " " + latlng.timestamp[1],
         })
+        
         // console.log(latlng);
         if (this.state.tracker.length <= 0) {
             reverseGC(latlng.coordinates).then(response => {
@@ -86,7 +88,7 @@ export default class NewRescue extends Component {
                     ({
                         location: response.display_name.split(',').slice(0, 2),
 
-                        tracker: state.tracker.concat([latlng]),
+                        tracker: state.tracker.concat(JSON.stringify([latlng.coordinates,latlng.timestamp])),
                         loading: !state.loading
                     })
                 )
@@ -146,7 +148,7 @@ export default class NewRescue extends Component {
         const payload = new FormData(e.target);
 
         payload.append('tracker',this.state.tracker);
-
+        payload.append('stamp',Date.now())
         this.state.pictures.map((pic,index) => (
             payload.append('picture',pic)
         ))
@@ -260,7 +262,16 @@ export default class NewRescue extends Component {
                 <input name="lost" type="checkbox" class="" id="defaultUnchecked"/>
                 <span>The Animal appears to be a lost Pet</span>
                 </label>
+
+                <label>
+                <input name="trespassable" type="checkbox" class="" id="defaultUnchecked"/>
+                <span>The Animal is on Private Property</span>
+                </label>
                 
+                <label>
+                <input name="agression" type="checkbox" class="" id="defaultUnchecked"/>
+                <span>The Animal appears to be a lost Pet</span>
+                </label>
                 
                     <div>
                     <a onClick={(e)=>this.handleStep(e,-1)} 
@@ -271,14 +282,7 @@ export default class NewRescue extends Component {
                     </div>
                 </div>
 
-
-
-              
                 </div>
-
-
-
-
 
             </div>
         </div>
@@ -330,19 +334,19 @@ export default class NewRescue extends Component {
         
         return (
             <div className="bodywrapper container-fluid ">
-            <div className="Row">
+            <div className="row">
                 <div className="col-md-8">
                 
 
             <div class="panel-body content" >
             <div class="row">
-                <div class="col-">
+                <div class="col">
 
              
 
                     <form id="requestForm" onSubmit={this.handleSubmit} onChange={this.handleChange}>
                  
-                    {/* {panes[1]} */}
+             
                 <div class="tab-content">
                     <div class=" tab-pane fade in active" id="pane0">
                         {panes[0]}
@@ -370,7 +374,7 @@ export default class NewRescue extends Component {
                 </div>
                 <div className="col-md-4" style={{display:'inline-flexbox'}}>
                 <ul class="nav" id="step" >
-                    <li><a class="step" data-toggle="tab" id="tab0" href="#pane0">
+                    <li><a class="completed step" data-toggle="tab" id="tab0" href="#pane0">
                     1</a>
                     <span >Step1: Location</span>
                     </li>

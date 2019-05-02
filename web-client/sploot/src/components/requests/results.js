@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import RequestCard from './card';
-import { Container, Row, Col } from 'reactstrap';
+
 
 
 export default class Results extends Component{
@@ -35,7 +35,7 @@ export default class Results extends Component{
       populate(){
             return this.state.resultSet.map(
                  element=>{
-                       return <div ><RequestCard id={element}/></div>
+                       return <RequestCard id={element}/>
                  }       
             )
       }
@@ -43,13 +43,34 @@ export default class Results extends Component{
 
       render(){
           return(
-      
-            <div class="container">
-            <h1>Animals in Need of Rescue</h1>
-            <div class="row " style={{disply:"flex",flexWrap:"wrap"}}>
-                 {this.populate()}
+
+            <div className="bodywrapper container-fluid ">
+             <div className="row">
+                  <div className="col-md-10">
+                  <div class="panel-body content" >
+                        <div class="row">
+                        <div class="panel  form-pane panel-default">
+                               <div class="panel-heading">
+                                    <h5 style={{display:'inline'}}>Can You Help Them?</h5> 
+                                    <small style={{float:'right'}}><a  href="#">Become a Registered Animal Rescuer</a></small>
+                               </div>
+                               <div class="panel-body">
+                                    {this.populate()}
+                               </div>
+                        </div>
+                        </div>
+                  </div>
+                  </div>
             </div>
             </div>
+
+
+
+
+              
+                        
+                     
+           
      
   
           )
