@@ -60,7 +60,7 @@ serveStatic =(stamp,res)=>{
     var dir = fileSys.readdir( './public/requests',(err,filenames)=>{
         filenames.forEach((file)=>{
             var prefix = file.split('-')[0];
-            var suffix = file.split('-')[1].split('.')[0];
+            var suffix = file.split('-')[1]
             
             if(prefix==stamp){files.push(suffix)}
         })
