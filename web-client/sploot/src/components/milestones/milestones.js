@@ -112,6 +112,11 @@ export default class Milestone extends React.Component{
         this.newMilestone(data,'0000');
     }
 
+    // Rescuer Assigned Milestone
+    Rescuer(data){
+
+    }
+
 
 
 }
