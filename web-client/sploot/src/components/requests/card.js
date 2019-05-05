@@ -5,7 +5,7 @@ class RequestCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: ""
+      image: "0000000"
     }
   }
 
@@ -24,7 +24,7 @@ class RequestCard extends React.Component {
         )
         this.setState({
           currRequest:currRequest,
-          image:image,
+          // image:image,
           id:[currRequest._id],
           stamp:[currRequest.stamp],
           title: [currRequest.title],
@@ -40,17 +40,25 @@ class RequestCard extends React.Component {
 
   cardImage(){
     // hard coded for convenienceproxy to a static serving end point
-    var filename = this.state.stamp + '-' + this.state.image+'.png';
-    return "http://localhost:3000/requests/"+filename
+    var filename = this.state.stamp + '-' + this.state.image;
+    return "http://192.168.8.100:3000/requests/"+filename
   }
 
   render() {
     console.log(this.state.currRequest)
     return (
       // todo Use card templates to generate responsive cards
-      <div class=" col-md-3 col-xs-6">
+      <div class="  grow col-md-3 col-sm-4 col-xs-12">
       <div class = "thumbnail h-200" >
-      <img src={this.cardImage()} alt="Sploot!"/>
+
+      {this.state.image=="0000000"?
+      <div class="card-image lds-ring"><small>Sploot is Working</small><div></div><div></div></div>
+      :
+      <img  src={this.cardImage()} alt="Sploot!"/>
+      }
+      
+
+
       <div class = "card-body" >
       <h5 class = "card-title" > {
         this.state.title

@@ -7,11 +7,22 @@ export default class Header extends React.Component{
     }
 
     render(){
-        return(
+        if(this.props.easeout){
+            return(
+    
+                <div class="slide-out-top header container-fluid">
+                  
+                 </div>
+                );
+        }
+        else{
+            return(
+    
+                <div class="fade-in-bck header container-fluid">
+                  
+                 </div>
+                );
+        }
 
-            <div class="header container-fluid">
-              
-             </div>
-            );
     }
 }

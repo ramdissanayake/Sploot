@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 export default class NavBar extends React.Component {
    render(){
      return(
-<nav class="navbar navbar-default black navbar-fixed white no-background bootsnav">
+<nav class="navbar navbar-default black navbar-fixed  no-background bootsnav">
     <div class="container">      
         {/* <!-- Start Header Navigation --> */}
         <div class="navbar-header">

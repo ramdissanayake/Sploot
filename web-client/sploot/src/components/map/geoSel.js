@@ -44,7 +44,7 @@ export default class MapSel extends Component {
   //
   setLatLng=()=>{
     var latlng = this.state.latlng;
-    var timestamp = this.state.timestamp;
+    var timestamp = this.state.timestamp; 
     if(!this.state.marker){
       
       this.props.addLocation({

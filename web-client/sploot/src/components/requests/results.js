@@ -36,6 +36,7 @@ export default class Results extends Component{
             return this.state.resultSet.map(
                  element=>{
                        return <RequestCard id={element}/>
+                     
                  }       
             )
       }
@@ -46,13 +47,19 @@ export default class Results extends Component{
 
             <div className="bodywrapper container-fluid ">
              <div className="row">
-                  <div className="col-md-10">
-                  <div class="panel-body content" >
+                  <div className="col-md-12">
+                  <div class="panel-body content " >
                         <div class="row">
                         <div class="panel  form-pane panel-default">
                                <div class="panel-heading">
-                                    <h5 style={{display:'inline'}}>Can You Help Them?</h5> 
-                                    <small style={{float:'right'}}><a  href="#">Become a Registered Animal Rescuer</a></small>
+                               <div class="row">
+                               <div class=" col-xs-12 col-md-9">
+                                        <h5 style={{display:'inline'}}>Can You Help Them?</h5> 
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-3">
+                                   <small><a  href="#">Become a Registered Animal Rescuer</a></small>
+                                    </div></div>
                                </div>
                                <div class="panel-body">
                                     {this.populate()}

@@ -113,7 +113,7 @@ export default class NewRescue extends Component {
         // alert(tabs[step])
         window.$(tabs[step]).tab('show');
         window.$(tabs[step-1]).parent().addClass('completed');
-
+        
         if (this.state.step >= 0 && dir === 1 && this.state.step < 2) {
             this.setState(
                 (state) => ({
@@ -144,7 +144,7 @@ export default class NewRescue extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log(e.target)
+        // console.log(e.target)
         const payload = new FormData(e.target);
 
         payload.append('tracker',this.state.tracker);
@@ -348,13 +348,13 @@ export default class NewRescue extends Component {
                  
              
                 <div class="tab-content">
-                    <div class=" tab-pane fade in active" id="pane0">
+                    <div class=" tab-pane  in active" id="pane0">
                         {panes[0]}
                     </div>
-                    <div class="tab-pane fade" id="pane1">
+                    <div class="tab-pane " id="pane1">
                         {panes[1]}
                     </div>
-                    <div class="tab-pane fade" id="pane2">
+                    <div class="tab-pane " id="pane2">
                         {panes[2]}
                     </div>
                      

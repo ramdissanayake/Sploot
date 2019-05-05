@@ -41,8 +41,12 @@ newAnimal = (form)=>{
             tracker:form.tracker,
             stamp:form.stamp,
             rescuers: [],
+            milestones:form.milestones
         });
-        requestNew.save().then(()=>console.log("Performed IO on Database")).catch((err)=>console.log(err));
+        requestNew.save().then(()=>{
+            // console.log(JSON.parse(form.milestones));
+            console.log("Performed IO on Database")
+        }).catch((err)=>console.log(err));
     }
   
 

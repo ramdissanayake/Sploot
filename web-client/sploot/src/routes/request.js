@@ -1,6 +1,6 @@
 // Routes to an individual Rescue Request
 import React, { Component } from 'react';
-import Request from '../components/requests/request';
+import RequestView from '../components/requests/requestView';
 import '../custom.css';
 import Header from '../components/header';
 
@@ -34,14 +34,27 @@ export default class RequestR extends Component{
         }
         
         render(){
-            this.request = new Request(this.state.currRequest);
-            this.request.test();
-            console.log(this.state.currRequest)
-        return(
-            <div>
-            <Header/>
-            
-            </div>
-        )
+            if (this.state.currRequest!=undefined){
+                // this.request = new Request(this.state.currRequest);
+                
+                return(
+                    <div>
+                    <Header easeout={true}/>
+                    <RequestView p={this.state.currRequest}/>
+                  
+
+                    </div>
+                )
+            }
+            else{
+                return(
+                    <div>
+
+                    <Header/>
+                    <div style={{height:'502px'}}></div>
+                    </div>
+                )
+            }
+
     }
 }

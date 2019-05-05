@@ -17,7 +17,8 @@ const rescueRequest = mongoose.model('rescueRequest',
         tracker:Array,
         // volunteer: Number,
         rescuers: Array,
-        stamp:String
+        stamp:String,
+        milestones:Object
         
     });
 
