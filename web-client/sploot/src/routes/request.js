@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import RequestView from '../components/requests/requestView';
 import '../custom.css';
-import Header from '../components/header';
+import Header from '../components/headerpg';
 
 export default class RequestR extends Component{
     constructor(props){

@@ -2,6 +2,7 @@ import React from 'react';
 import '../custom.css'
 
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+import Login from '../routes/login';
 export default class NavBar extends React.Component {
    render(){
      return(
@@ -12,8 +13,8 @@ export default class NavBar extends React.Component {
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i style={{color:'black'}}class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/">
-                <h2>Sploot!</h2>
+            <a class="navbar-brand whi" href="/">
+                <h2 >Sploot!</h2>
                 {/* <h5 style={{display:"inline"}}>Animal Rescue</h5> */}
                 {/* <img src="images/brand/sploot.png" width="150px" class="" alt=""/> */}
             </a>
@@ -46,6 +47,7 @@ export default class NavBar extends React.Component {
                 {/* </Router>  */}
             </ul>
         </div>
+                <Login/>
       </div>
 </nav>
 

@@ -41,11 +41,11 @@ class RequestCard extends React.Component {
   cardImage(){
     // hard coded for convenienceproxy to a static serving end point
     var filename = this.state.stamp + '-' + this.state.image;
-    return "http://192.168.8.100:3000/requests/"+filename
+    return "http://localhost:3000/requests/"+filename
   }
 
   render() {
-    console.log(this.state.currRequest)
+
     return (
       // todo Use card templates to generate responsive cards
       <div class="  grow col-md-3 col-sm-4 col-xs-12">

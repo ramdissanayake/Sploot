@@ -2,7 +2,7 @@ import React from 'react';
 import '../custom.css';
 import Search from '../components/requests/search';
 import Results from '../components/requests/results';
-import Header from '../components/header';
+import Header from '../components/headerpg';
 
 export default class Requests extends React.Component{
     constructor(props){

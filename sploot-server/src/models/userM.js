@@ -28,4 +28,16 @@ UserSchema.pre('save', function(next) {
   }
 });
 
-module.exports = mongoose.model('User', UserSchema);
+UserSchema.methods.isCorrectPassword = function(password, callback){
+  bcrypt.compare(password, this.password, function(err, same) {
+
+    if (err) {
+      callback(err);
+    } else {
+      callback(err, same);
+    }
+  });
+}
+
+const UserModel = mongoose.model('User', UserSchema);
+module.exports = UserModel;

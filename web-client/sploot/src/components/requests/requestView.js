@@ -43,7 +43,7 @@ export default class RequestView extends Component{
       thumbnails(){
           if(this.state.images!=undefined){
             return this.LoadImage().map(i=>{
-                return <img className="grow img-thumbnail" width="80px" src={"http://192.168.8.100:3000/requests/"+i}/>
+                return <img className="grow img-thumbnail" width="80px" src={"http://localhost:3000/requests/"+i}/>
             })
           }
       }
@@ -85,7 +85,7 @@ export default class RequestView extends Component{
 
                                             <div className="panel-body">
                                         {/* Main Picture */}
-                                        <img width="300px" className="" src={"http://192.168.8.100:3000/requests/"+
+                                        <img width="300px" className="" src={"http://localhost:3000/requests/"+
                                         (this.state.images!=undefined?this.LoadImage()[0]:'sd')}/>
 
 
