@@ -5,33 +5,51 @@ import {Tree} from './tree';
 export default class Milestone extends React.Component{
     constructor(props){
         super(props);
-        this.tree = new Tree('0000');
-        
+        this.tree = new Tree({id:"0000",payload:{title:'',avatar:''}});
+        this.state={}
+        this.x = document.getElementById('milestones')
+        this.request =null;
+       
     }
-    
+    componentDidMount(){
+        // console.log(this.x);    
+    }
+
+
     buildTree(nodes){
-        // console.log(nodes);
+        console.log(nodes)
         nodes.map(node=>{
-            
-            if(node.parent!=null){
-                // console.log("this node: " +node.data);
-                // console.log("this parent: " +node.parent);
-                this.tree.addNode(node.data,node.parent,this.tree.traverseBF);
+            console.log("Running ON ")
+            console.log(node);
+            if(node.id!="0000"){
+                console.log("Adding Node" + node.id);
+                this.tree.addNode(node,node.parent,this.tree.traverseBF);
+              
             }
             else{
+                console.log("Root FOund")
                 this.tree._root=node;
             }
         })
-        
          console.log(this.tree)
-        // console.log(JSON.stringify(this.tree._root.children[0].data.props.children[0]));
     }
 
 
 
 
-    newMilestone(data,toNode){
-        this.tree.addNode(data,toNode,this.tree.traverseBF)
+
+
+    newMilestone(data,toNode,callback=null){
+       let newnode = this.tree.addNode(data,toNode,this.tree.traverseBF)
+   
+      if(callback){
+          callback(newnode)
+      }  
+    //   console.log(newnode)
+      return newnode;
+
+
+
     }
 
     // Prepares the nodes of the tree to be JSON Stringified
@@ -40,73 +58,120 @@ export default class Milestone extends React.Component{
         this.tree.traverseBF(
             (node)=>{
                 nodes.push({
-                    parent: node.parent!=null?node.parent.data:null,
-                    data: node.data,
+                    id:node.id,
+                    parent: node.parent!=null?node.parent:null,
+                    payload: node.payload,
                     level:node.level,
                     children:[]
                 });
             }
             )
         return nodes;
-    }
-
-    visualize(){
-        var elements =[]
-        this.tree.traverseDF(
-            (node)=>{
-                if(node.data!='0000'){
-
-                    elements.push(
-                        node
-                        )  
-                }
-            }
-        )
-
-        return elements.map(node => {
-          
-            var style=['lvl1','lvl2','lvl3'];
-            return  <div className="horizontallLine">
-                       <div id="milestones" className={"alert alert-info ms "+style[node.level-1]}>
-
-                {/* Milestone Title */}
-            <h6>
-                {node.data.title}
-            </h6>
-            <span>
-                <small>
-                {node.data.date}
-                </small>
-            </span>
-            <p>
-                {node.data.desc}
-            </p>
-            </div>
-
-
-
-            </div>
-            
-         
-     
-        })
         
     }
 
-    level(node){
-        var level = node.level;
-
-        for(var i=0; i<level;i++){
-
+    stringifyNode(node){
+        var nodeS =null
+        nodeS = {
+            id:node.id,
+            parent: node.parent!=null?node.parent:null,
+            payload: node.payload,
+            level:node.level,
+            children:[]
         }
-
+        return nodeS
     }
 
+// Visualize the ====================================================================================================================================================
+    visualize(commentNode=null, container){
+        
+        if(!commentNode){
+            commentNode = this.tree._root;
+        }
+        console.log(commentNode.children)
+        
+        if(true){
+            // Comments Div
+            var comment = document.createElement("div");
+            // comment.style.marginLeft = 10*node.level + "%";
+            if(commentNode.id!="0000"){
+                comment.className = "alert alert-success fade-in-left";
+            }
+            container.appendChild(comment)
+            
+            // Comment Avatar
+            var avatar = document.createElement("img");
+            avatar.src=commentNode.payload.avatar;
+            comment.appendChild(avatar);
+            
+            
+            // Comment Body
+            var cmbody = document.createElement("p");
+            cmbody.innerHTML = commentNode.payload.title!=undefined?commentNode.payload.title:"";
+            comment.appendChild(cmbody);
+                
+                // var reply = document.createElement("form")
+                // container.appendChild(reply);
+
+                 // var replytxt = document.createElement("input")
+            // Reply Button
+            var btn =document.createElement("button");
+            btn.onclick = this.replyComment.bind(this,commentNode,comment)
+            btn.className="replybtn";
+            btn.innerHTML="Comment";
+            cmbody.appendChild(btn)
+
+            commentNode.children.map(child=>{
+            this.visualize(child,comment)
+        })
+            
+        }
+    
+
+        
+    }
+
+
+replyComment(node,comments){
+
+    //    this.addComment({data:{body:'test'+node.id}},node.id)
+        var commentnode = this.newMilestone({
+            id:node.id+1, //will not do
+            parent:node.id,
+            payload:{
+                title:"test",
+                avatar:"./placeholder/avatarfm.png"
+            }
+        },node.id)
+
+        fetch('/api/requests/rescue/'+this.request,{
+            'method':"POST",
+            body:JSON.stringify(commentnode)
+        })
+        .then((res)=>{
+            if(res.status==200){
+                // alert("This Rescue Has been Assigned to You ")
+                this.visualize(commentnode,comments)
+            }
+            else if(res.status==401){
+                alert("You Must be logged in to Comment")
+            }
+        }
+        )
+    }
+      
+
     // Special Milestones
-    Reported(dt){
+    Reported(dt=0){
+        console.log("Adding Reported Milestone")
         var data = {
-            title:"Animal Reported",
-            date:dt    
+            id:"0001",
+            parent:"0000",
+            payload:{
+                title:"Animal Reported",
+                date:dt,
+                avatar:'https://i.pravatar.cc/50'
+            }
         }
 
         this.newMilestone(data,'0000');
@@ -114,9 +179,48 @@ export default class Milestone extends React.Component{
 
     // Rescuer Assigned Milestone
     Rescuer(data){
+        console.log(this.tree);
+        var data = {
+            id:"0002",
+            payload:{
 
+                title:"Rescuer Assigned",
+                date:"sss",
+                avatar:'https://i.pravatar.cc/50'
+            }
+        }
+
+     let child = this.newMilestone(data,'0000');
+    //  this.visualize(child,this.x)
+     return this.stringifyNode(child);
     }
 
 
+    // Pushes the milestone to the mile stone object array
+    pushms(node){
+        alert(node.data.title);
+       let child = {
+            parent: node.parent!=null?node.parent.data:null,
+            data: node.data,
+            level:node.level,
+            children:[]
+
+        }
+
+        fetch('/api/milestone/new',{
+            'method':'POST',
+             body:JSON.stringify(child)
+        })
+    }
+ 
+    render(){
+        return(
+            <p>
+              
+
+            </p>
+        )
+    }
+   
 
 }

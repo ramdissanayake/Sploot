@@ -226,7 +226,10 @@ export default class NewRescue extends Component {
                     </span></span>
                     <input onChange={this.handleChange} name="contact" id="contact" type="text" class="form-control"/>
                 </div>
+                <small>
+
                   Sign Up With Sploot and Protect Your Privacy While Still Helping Animals (ADD SIGN UP BUTTON)
+                </small>
               
                 </div>
                 
@@ -248,7 +251,7 @@ export default class NewRescue extends Component {
 
                 <div className="col-md-6">
                     
-                <label>
+                {/* <label>
                 <input name="track" checked={this.state.track} type="checkbox" class="" id="defaultUnchecked"/>
                 <span>Request Others to Track this Animal</span>
                 </label>
@@ -272,7 +275,7 @@ export default class NewRescue extends Component {
                 <input name="agression" type="checkbox" class="" id="defaultUnchecked"/>
                 <span>The Animal appears to be a lost Pet</span>
                 </label>
-                
+                 */}
                     <div>
                     <a onClick={(e)=>this.handleStep(e,-1)} 
                     class="btn btn-primary">Prev</a>

@@ -52,7 +52,8 @@ export class Tree{
         var parent = null
         var level = null
         const callback = (node)=>{
-            if(node.data==toNode){
+            if(node.id==toNode){
+                // alert('found')
                 parent = node
             }
         }
@@ -62,10 +63,12 @@ export class Tree{
         if(parent){
             parent.children.push(child);
             child.level = parent.level+1
-            child.parent = parent;
+            child.parent = parent.id;
+            console.log(parent)
+            return child
         }
         else{
-            throw new Error('Parent Non Existent');
+            throw new Error('Parent Non Existent'+toNode);
             return false;
         }
 
@@ -74,7 +77,7 @@ export class Tree{
     removeNode(data,traversal){
         var parent = null;
         const callback = (node)=>{
-            if(node.data==data){
+            if(node.id==data){
                 parent=node.parent
             }
         }        
@@ -84,7 +87,7 @@ export class Tree{
         if(parent){
             let index =null;
             for (var i=0; i<parent.children.length;i++){
-                if(parent.children[i].data == data){
+                if(parent.children[i].data.id == data.id){
                     index =i;
                 }
             }
@@ -169,7 +172,8 @@ class Node{
     constructor(data){
         this.parent =null;
         this.children =[]
-        this.data =data
+        this.id =data.id
+        this.payload = data.payload
         this.level=null;
     }
 

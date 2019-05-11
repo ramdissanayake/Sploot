@@ -327,6 +327,12 @@ a{
 	float: right;
 }
 
+.commentbox{
+	height:auto;
+	margin-left:5%;
+	width:auto;
+	transition: height 0.8s;
+}
 
 
 

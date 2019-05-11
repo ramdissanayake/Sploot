@@ -8,23 +8,28 @@ export default class Request extends Component{
         resultSet:[],
         image:[]
         }
-        
-        this.milestones=null;
+        this.test=0
+        this.milestones=null
+    
+    
     }
     
 
 
     test(){
-        alert(this.props.title);
+        console.log(this.props)
+        alert(this.props.p.title);
     }
 
+    
     // calls api endpoint to save request to the database
     newRequest(payload){
-        let milestones = this.newMilstones();
-    
+        this.milestones = new Milestones
+        this.milestones.Reported();
+        let miles = JSON.stringify(this.milestones.stringify())
         
-        payload.append('milestones',JSON.stringify(milestones));
-
+        payload.append('milestones',miles);
+        
         fetch('../api/requests/new',{
             'method':'POST',
             'body':payload
@@ -32,6 +37,11 @@ export default class Request extends Component{
         // .then(r=>(r.json()))
         .then(r=>console.log(r))
     }
+
+
+
+
+
 
     // getters
     getTitle(){
@@ -73,6 +83,11 @@ export default class Request extends Component{
         }).catch(err=>(console.log(err)));
     }
 
+    getRescuers(){
+        return this.props.rescuers;
+    }
+
+  
 
     // Setters
 
@@ -81,31 +96,36 @@ export default class Request extends Component{
 
     // Milestones
     // Creates a new milestone upon saving new requests
-    newMilstones(){
-        console.log('here')
+     showMilestones(container){
         this.milestones = new Milestones
-        // Build the Reported Milestone
-        this.milestones.Reported(this.getTime());
-        return this.milestones.stringify();
-    }
-
-
-    
-    showMilestones(){
-        this.milestones = new Milestones
-        var nodes=JSON.parse(this.props.milestones);
+        var nodes=this.props.milestones;
+        this.milestones.request = this.props._id;
         this.milestones.buildTree(nodes);
-        return this.milestones.visualize();
-        
+        this.milestones.visualize(null,container)
+    }   
+
+
+    //Rescuer Assignments
+
+    assign(){
+        const x = document.getElementById('milestones')
+        let milestone= this.milestones.Rescuer()
+        fetch('/api/requests/rescue/'+this.props._id,{
+            'method':"POST",
+            body:JSON.stringify(milestone)
+        })
+        .then((res)=>{
+            if(res.status==200){
+                alert("This Rescue Has been Assigned to You ")
+                this.milestones.visualize(milestone,x)
+            }
+            else if(res.status==401){
+                alert("You Must be logged in to Rescue This Animal")
+            }
+        }
+        )
     }
 
 
-
-
-    render(){
-        
-        return(
-            null
-        )   
-    }
+   
 }

@@ -1,18 +1,33 @@
 import React,{Component} from 'react';
 import Request from './request';
 import { format } from 'url';
+import Milestone from '../milestones/milestones';
 
 export default class RequestView extends Component{
     constructor(props){
         super(props);
         this.request = new Request(this.props.p)
         this.state={
-            rescuable:true
+            rescuable:true,
+            container:null,
+    
         }
     }
-
-
+    
+    
     componentDidMount(){
+        //Set Rescuable--------------------------------------
+        if(this.request.getRescuers().length >0){
+            this.setState({
+                rescuable:true
+            })
+        }
+
+        // Initiate Milestone Viewer-------------------------
+        this.x = document.getElementById('milestones')
+        this.request.showMilestones(this.x);
+        // --------------------------------------------------
+
         this.request.getImage().then(
             response=>{
               this.setState({
@@ -49,10 +64,17 @@ export default class RequestView extends Component{
       }
     
 
+      rescuerTools(){
+        //   Check if the latest Rescuer is Yoi
+        // var last = this.request.getRescuers().length;
+        // Check if the last email matches my own
+
+        // Show Tracking History
+
+      }
 
 
-
-
+    
 
     render(){
         return(
@@ -136,7 +158,7 @@ export default class RequestView extends Component{
 
                                                 </div>
                                                 <div className="panel-body">
-                                                    <a className="btn btn-primary" disabled={!this.state.rescuable}>Rescue Me</a>
+                                                    <a className="btn btn-primary" onClick={this.request.assign.bind(this.request)} disabled={!this.state.rescuable}>Rescue Me</a>
                                                     <a className="btn btn-primary">Track Me</a>
                                                     <a className="btn btn-primary">Donate</a>
                                                     {/* <a className="btn btn-primary " >Adopt Me</a> */}
@@ -149,9 +171,9 @@ export default class RequestView extends Component{
                                                Rescue Milestones
                                             </div>
 
-                                            <div class="panel-body">
+                                            <div id = "milestones" class="panel-body">
                                             <div className='verticalLine'>
-                                                {this.request.showMilestones()}
+                                       
                                             </div>
                                             </div>
 

@@ -13,6 +13,7 @@ export default class RequestR extends Component{
         this.request=null;
     }
 
+    
     componentDidMount() {
         fetch(`/api/requests/show/` + this.props.match.params.stamp)
           .then(response => (response.json()))

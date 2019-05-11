@@ -1,6 +1,7 @@
 const mongoose = require('mongoose'),
 requestM = require('../models/requestM');
 const fileSys = require('fs');
+var ObjectID = require('mongodb').ObjectID;
 
 // Retrieves Requests from the rescueRequests Collection-----------------------------------------------------------
 getRequest = (req,res,next) => {
@@ -41,7 +42,7 @@ newAnimal = (form)=>{
             tracker:form.tracker,
             stamp:form.stamp,
             rescuers: [],
-            milestones:form.milestones
+            milestones:JSON.parse(form.milestones)
         });
         requestNew.save().then(()=>{
             // console.log(JSON.parse(form.milestones));
@@ -69,8 +70,27 @@ serveStatic =(stamp,res)=>{
     })
 }
 
+//Assign a Rescuer to a Request
+assignrescuer = (email,request,milestone,res)=>{
+
+ requestM.findOne({_id:request},function(err,d){
+     if(!err){
+         d.rescuers.push(email);
+         d.milestones.push(JSON.parse(milestone))
+         d.save();
+         res.status(200).send();
+     }
+     else{
+         res.status(500).send()
+     }
+ })
+
+
+}
+
 
 module.exports. getRequest = getRequest;
 module.exports.byLocation = byLocation;
 module.exports.newAnimal = newAnimal;
 module.exports.serveStatic = serveStatic;
+module.exports.assignrescuer = assignrescuer;

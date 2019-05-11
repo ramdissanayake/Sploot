@@ -12,13 +12,15 @@ const storage = multer.diskStorage({
     }
 })
 const upload = multer({storage:storage});
+// const jwt = require('jsonwebtoken');
+// const secret = 'mysecretsshhh';
 // Imports the relevant controller 
 const   Controller = require('../controllers/requestC');
 requests.use(parser.json())
 
 
 // Handles the child routers for the main router /requests by ID ----------------------------------------------------
-    requests.get('/show/:id?', withAuth,
+    requests.get('/show/:id?', 
         (req,res,next)=>{
             console.log(req.body)
             // Changes request path if no ID was specified as a Parameter
@@ -55,7 +57,16 @@ requests.post('/new', upload.array('picture'),
     }
     )
 //------------------------------------------------------------------------------------------------------------------
+//Assign Rescuer to Request----------------------------------------------------------------------------------------
+    requests.post('/rescue/:id',withAuth,
 
-
+    (req,res,next)=>{
+        var email = req.email; 
+        Controller.assignrescuer(email,req.params.id,req.body,res)
+    }
+    
+    )
+//------------------------------------------------------------------------------------------------------------------
+// Creates New Milestone
 
 module.exports = requests;

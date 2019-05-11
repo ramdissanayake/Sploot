@@ -37,12 +37,14 @@ export default class MapSel extends Component {
       // alert(e.latlng);
       this.state.latlng=e.latlng;
       if(!this.state.marker){this.marker(e.latlng)};
-      window.$('#dtpicker').modal('show');
+      this.setLatLng()
+      // window.$('#dtpicker').modal('show');
       // this.map.off('click');
     })
   }
   //
   setLatLng=()=>{
+    
     var latlng = this.state.latlng;
     var timestamp = this.state.timestamp; 
     if(!this.state.marker){
