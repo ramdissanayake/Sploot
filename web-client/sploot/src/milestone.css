@@ -1,0 +1,91 @@
+.milestone{
+    /* border-style: dashed; */
+    color:#FDDA00
+}
+
+.comment{
+    /* border-style: dashed; */
+    list-style-image: url("");
+    color:green !important;
+}
+
+
+.root{
+    list-style: none;
+   
+}
+
+.milestone-div{
+margin-top:2px;
+  background-color:rgba(40, 83, 140, 0.281);
+  padding:10px
+}
+
+.milestone-div textarea{
+
+    display: block;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.25);
+  border: none;
+  border-radius: 2px;
+  transition:background-color 0.5s ease;
+}
+
+.milestone-div textarea:focus{
+    background-color: rgba(0,0,0,0.45);
+}
+
+
+.milestone-div .replybtn{
+    background-color: rgba(0,0,0,0.25);
+    font-size: 10px;
+    color:white;
+    transition: background 0.20s ease;
+}
+
+.milestone-div .replybtn:hover{
+    background-color: rgba(0,0,0,0.45);
+    font-size: 10px;
+}
+
+.milestone-div h3{
+    margin-top:0;
+}
+
+.milestone-div .btn-link{
+    margin-left:100%;
+    color:white;
+    font-size:10px;
+    -ms-transform: translate(-100%,00%);
+	transform: translate(-100%,00%);
+}
+
+
+.milestone-comment{
+    /* display: none; */
+}
+
+.milestone-div input{
+    margin-top:1px;
+	/* margin-right:20px; */
+	display: block;
+	color: white;
+	height:20px;
+	width:100%;
+  padding: 5px;
+  font-size: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.25);
+  border: none;
+  border-radius: 2px;
+  transition:background-color 0.5s ease;
+  margin-bottom: -20px;
+}
+
+.milestone-div input:hover{
+	background-color: rgba(0,0,0,0.45);
+
+}
