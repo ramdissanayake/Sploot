@@ -87,7 +87,7 @@ export default class NewRescue extends Component {
                 this.setState((state) =>
                     //    Catch error display_name undefined
                     ({
-                        location: response.display_name.split(',').slice(0, 2),
+                        location: response.display_name,
 
                         tracker: state.tracker.concat(JSON.stringify([latlng.coordinates,latlng.timestamp])),
                         loading: !state.loading

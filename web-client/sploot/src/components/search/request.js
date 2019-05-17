@@ -6,14 +6,25 @@ export default class Search extends Component {
         this.state = {}
     }
     componentDidMount(){
-      this.preProcessQuery()
+      this.submitQuery()
     }
 
-    preProcessQuery(e){
-      if(e!=undefined){e.preventDefault()}
+    submitQuery(e){
+    var query=null
+
+    if(e!=undefined){
+      e.preventDefault()
+      console.log(e.target[1])
+      query =e.target[1].value
+      console.log(query)
+    }
      
      var results=[]
-     fetch('api/requests/show/all')
+    // console.log(query)
+     fetch('api/requests/search/',{
+       'method':'POST',
+       "body": query?query:"*"
+     })
      .then(response=>(response.json()))
      .then(myJSON=>{
      
@@ -23,6 +34,9 @@ export default class Search extends Component {
               })
               this.props.getResults(results);
           })
+        .catch(err=>function(){
+          alert(err)
+        })
 
 
 
@@ -44,8 +58,8 @@ export default class Search extends Component {
             <div class="panel-heading">
                 Search on Sploot
             </div>
-            <div class="panel-body search-body">
-            <form onSubmit={this.preProcessQuery.bind(this)} className="search form-horizontal">
+            <div class="panel-body search-body ">
+            <form onSubmit={this.submitQuery.bind(this)} className=" search form-horizontal">
   <fieldset>
   
     {/* Prepended text*/}
@@ -55,7 +69,7 @@ export default class Search extends Component {
         htmlFor="prependedtext"
       />
       <div className="col-md-12">
-        <div className="input-group">
+        <div className="input-group " style={{width:"100%"}}>
           {/* <span className="input-group-addon">Search</span> */}
           <input
             id="prependedtext"
@@ -68,7 +82,7 @@ export default class Search extends Component {
       </div>
     </div>
     {/* Button (Double) */}
-    <div className="form-group">
+    <div className="form-group" >
       <label className="col-md-12 control-label" htmlFor="search" />
       <div className="col-md-12 col-sm-12 col-xs-12">
             

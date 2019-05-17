@@ -1,5 +1,6 @@
 import React from 'react';
 import Request from './request';
+import {server} from "../../config"
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 class RequestCard extends React.Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class RequestCard extends React.Component {
     // hard coded for convenienceproxy to a static serving end point
     if(this.state.image!=undefined){
       var filename = this.state.stamp + '-' + this.state.image;
-      return "http://localhost:3000/requests/"+filename
+      return server+"/requests/"+filename
     }
     else{
       return "/images/errors/noimage.png"
@@ -61,7 +62,7 @@ class RequestCard extends React.Component {
       <div class="card-image lds-ring"><small>Sploot is Working</small><div></div><div></div></div>
       :
       <div className="img-hover-zoom--quick-zoom cardimg">
-        <img  src={this.cardImage()} alt="Sploot!"/>
+        <img width="100%" src={this.cardImage()} alt="Sploot!"/>
       </div>
       }
       

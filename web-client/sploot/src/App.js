@@ -44,7 +44,7 @@ export default class App extends React.Component {
             <Route path ='/adoptions/new' component={newAdoption}/>
             <Route component={NotFound} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
         </div>
        );
