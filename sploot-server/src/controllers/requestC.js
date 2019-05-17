@@ -7,17 +7,45 @@ var ObjectID = require('mongodb').ObjectID;
 getRequest = (req,res,next) => {
     console.log('Showing Requests on  ' + req.path);
     // Test for Show all
-    req.params.id == 0?
-    
-    (requestM.find({}, function(err,result){
-        res.json(result);
-        console.log('Fetched all documents');
-    }).skip(req.page).limit())
-    :(requestM.findOne({_id:req.params.id}, function(err,result){
-        res.json(result)
-        console.log('Fetched Request by ID'+ req.params.id);
-    
-    }));
+    if(req.params.id == 0){
+        // console.log(req.body)
+        if(req.body=="*"){
+
+            requestM.find({}, function(err,result){
+                res.json(result);
+                console.log('Fetched all documents')})
+            }
+            else{
+                console.log("here")
+            requestM.find({$or: [ 
+            { 
+              $text: {
+                $search: req.body
+              }
+            }
+            // ,
+            // {
+            //   'title': {
+            //     $regex: 'uper',
+            //     $options: 'i'
+            // }
+          ]}, 
+        function(err,result){
+            res.json(result);
+            console.log('Fetched all documents');
+        }).skip(req.page).limit()
+    }
+
+    }
+    else{
+
+        requestM.findOne({_id:req.params.id}, function(err,result){
+            res.json(result)
+            console.log('Fetched Request by ID'+ req.params.id);
+        
+        }   );
+    }
+
 }
 //------------------------------------------------------------------------------------------------------------------
 //Retrieves requests by location------------------------------------------------------------------------------------
@@ -42,7 +70,8 @@ newAnimal = (form)=>{
             tracker:form.tracker,
             stamp:form.stamp,
             rescuers: [],
-            milestones:JSON.parse(form.milestones)
+            milestones:JSON.parse(form.milestones),
+            closed:false
         });
         requestNew.save().then(()=>{
             // console.log(JSON.parse(form.milestones));
