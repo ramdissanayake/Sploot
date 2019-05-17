@@ -14,6 +14,8 @@ import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Login from './components/login'
 import NotFound from './components/errors/404'
+import Register from './routes/register';
+
 export default class App extends React.Component {
   constructor(props){
     super();
@@ -43,6 +45,7 @@ export default class App extends React.Component {
             <Route path ='/login' component={Login}/>
             <Route path ='/adoptions/new' component={newAdoption}/>
             <Route component={NotFound} />
+            <Route path ='/register' component={Register} />
           </Switch>
           <Footer />
         </Router>
