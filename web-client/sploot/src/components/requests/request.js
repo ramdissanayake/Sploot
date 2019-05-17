@@ -29,7 +29,7 @@ export default class Request extends Component{
         let miles = JSON.stringify(this.milestones.stringify())
         
         payload.append('milestones',miles);
-        
+        console.log(payload);
         fetch('../api/requests/new',{
             'method':'POST',
             'body':payload
@@ -105,10 +105,10 @@ export default class Request extends Component{
     }   
 
 
-    //Rescuer Assignments
-
-    assign(){
-        const x = document.getElementById('milestones')
+    //Rescuer Tools
+    assign(rescuable=true){
+        
+        const x = document.getElementById('milestones-ul')
         let milestone= this.milestones.Rescuer()
         fetch('/api/requests/rescue/'+this.props._id,{
             'method':"POST",
@@ -116,8 +116,9 @@ export default class Request extends Component{
         })
         .then((res)=>{
             if(res.status==200){
-                alert("This Rescue Has been Assigned to You ")
-                this.milestones.visualize(milestone,x)
+                window.location.reload();
+                // alert("This Rescue Has been Assigned to You ")
+                // this.milestones.visualize(milestone,x)
             }
             else if(res.status==401){
                 alert("You Must be logged in to Rescue This Animal")
@@ -126,6 +127,94 @@ export default class Request extends Component{
         )
     }
 
+// Mark Animal as Found
+found(){
+    alert("Mark as FOund?")
+    fetch('/api/requests/found/'+this.props._id,{
+        "method":'POST',
+        'body':""
+    }).then((res)=>{
+        if(res.status==200){
+            alert("The Animal Has Been Marked as Found ")
+        }
+        else if(res.status==401){
+            alert("Unauthorized Activity")
+        }
+        else {
+            alert("Something didn't Sploot Well! Try Again Later!")
+        }
+    }
+    )
 
+   }
+// Mark Request as Closed
+closed(){
+    alert("Mark as Closed?")
+    fetch('/api/requests/closed/'+this.props._id,{
+        "method":'POST',
+        'body':""
+    }).then((res)=>{
+        if(res.status==200){
+            alert("The Rescue has been Closed")
+        }
+        else if(res.status==401){
+            alert("Unauthozied Activity")
+        }
+        else{
+            alert("Something didn't Sploot Well! Try Again Later!")
+        }
+    }
+    )
+
+   }
+// Mark Animal as Adoptable
+adoptable(callback){
+    alert("Mark as Closed?")
+    fetch('/api/requests/adoptable/'+this.props._id,{
+        "method":'POST',
+        'body':""
+    }).then((res)=>{
+        if(res.status==200){
+            alert("The Animal has been listed for Adoption")
+            callback();
+        }
+        else if(res.status==401){
+            alert("Unauthorized Activity")
+        }
+        else{
+            alert("Something didn't Sploot Well! Try Again Later!")
+        }
+    }
+    )
+
+   
+
+   }
+
+
+// New Milestone
+    newMile(e){
+        e.preventDefault();
+        const x = document.getElementById('milestones')
+        let data = {
+            title:e.target[0].value,
+            body:e.target[1].value
+        }
+        let milestone = this.milestones.customeMile(data)
+        fetch('/api/requests/rescue/'+this.props._id,{
+            'method':"POST",
+            body:JSON.stringify(milestone)
+        }).then((res)=>{
+            if(res.status==200){
+                alert("Custom Milestone Added")
+                this.milestones.visualize(milestone,x)
+            }
+            else if(res.status==401){
+                alert("You Must be logged in to add custom milestones")
+            }
+        }
+        )
+    }
+    
    
 }

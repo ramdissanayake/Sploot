@@ -13,7 +13,7 @@ export default class newRequest extends Component{
     render(){
         return(
             <div>
-            <Header/>
+            {/* <Header/> */}
            
             <NewRescue />
             </div>

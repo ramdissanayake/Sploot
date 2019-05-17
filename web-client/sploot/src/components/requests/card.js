@@ -10,6 +10,7 @@ class RequestCard extends React.Component {
   }
 
   componentDidMount() {
+    
     fetch(`api/requests/show/` + this.props.id)
       .then(response => (response.json()))
       .then(currRequest => {
@@ -40,30 +41,38 @@ class RequestCard extends React.Component {
 
   cardImage(){
     // hard coded for convenienceproxy to a static serving end point
-    var filename = this.state.stamp + '-' + this.state.image;
-    return "http://localhost:3000/requests/"+filename
+    if(this.state.image!=undefined){
+      var filename = this.state.stamp + '-' + this.state.image;
+      return "http://localhost:3000/requests/"+filename
+    }
+    else{
+      return "/images/errors/noimage.png"
+    }
   }
 
   render() {
 
     return (
       // todo Use card templates to generate responsive cards
-      <div class="  grow col-md-3 col-sm-4 col-xs-12">
-      <div class = "thumbnail h-200" >
+      <div class=" fade-in-bck col-md-4 col-sm-4 col-xs-12 ">
+      <div class = " thumbnail h-200" >
 
       {this.state.image=="0000000"?
       <div class="card-image lds-ring"><small>Sploot is Working</small><div></div><div></div></div>
       :
-      <img  src={this.cardImage()} alt="Sploot!"/>
+      <div className="img-hover-zoom--quick-zoom cardimg">
+        <img  src={this.cardImage()} alt="Sploot!"/>
+      </div>
       }
       
 
 
       <div class = "card-body" >
       <h5 class = "card-title" > {
-        this.state.title
-      } </h5> <p class = "card-text" > {
-        this.state.description
+        this.state.title!=""?this.state.title:"No Title Found"
+      } </h5> 
+      <p class = "card-text" > {
+        this.state.description!=""?this.state.description:"No Description Found"
       }</p> 
       <Link to = {"requests/"+this.state.id}
       class = "btn btn-success" > Rescue </Link> 

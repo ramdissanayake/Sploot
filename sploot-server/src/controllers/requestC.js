@@ -12,7 +12,7 @@ getRequest = (req,res,next) => {
     (requestM.find({}, function(err,result){
         res.json(result);
         console.log('Fetched all documents');
-    }))
+    }).skip(req.page).limit())
     :(requestM.findOne({_id:req.params.id}, function(err,result){
         res.json(result)
         console.log('Fetched Request by ID'+ req.params.id);
@@ -76,6 +76,7 @@ assignrescuer = (email,request,milestone,res)=>{
  requestM.findOne({_id:request},function(err,d){
      if(!err){
          d.rescuers.push(email);
+         d.rescuer = email;
          d.milestones.push(JSON.parse(milestone))
          d.save();
          res.status(200).send();
@@ -88,9 +89,51 @@ assignrescuer = (email,request,milestone,res)=>{
 
 }
 
+markFound = (email,req,res)=>{
+requestM.findOne({_id:req, rescuer:email},function(err,d){
+    if(!err){
+        d.found = true
+        d.save()
+        res.status(200).send()
+    }
+    else{
+        res.status(500).send()
+    }
+})
+}
+markClosed = (email,req,res)=>{
+    requestM.findOne({_id:req,rescuer:email},function(err,d){
+        if(!err){
+            d.closed = true
+            d.save()
+            res.status(200).send()
+        }
+        else{
+            res.status(500).send()
+        }
+    })
+}
+markAdoptable = (email,req,res)=>{
 
-module.exports. getRequest = getRequest;
+    requestM.findOne({_id:req,rescuer:email},function(err,d){
+        if(!err){
+            d.adoptable = true
+            d.closed = true
+            d.save()
+            res.status(200).send()
+        }
+        else{
+            res.status(500).send()
+        }
+    })
+}
+
+
+module.exports.getRequest = getRequest;
 module.exports.byLocation = byLocation;
 module.exports.newAnimal = newAnimal;
 module.exports.serveStatic = serveStatic;
 module.exports.assignrescuer = assignrescuer;
+module.exports.markFound = markFound;
+module.exports.markAdoptable = markAdoptable;
+module.exports.markClosed = markClosed;

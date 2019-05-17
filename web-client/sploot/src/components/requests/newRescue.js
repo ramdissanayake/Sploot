@@ -2,7 +2,7 @@ import React, {
     Component
 } from 'react';
 
-import Stepper from 'react-stepper-horizontal';
+
 import MapSel from '../map/geoSel';
 import {
     reverseGC
@@ -47,6 +47,7 @@ export default class NewRescue extends Component {
     }
 
     componentDidMount(){
+        this.handleStep(null,0)
         this.$ = window.$;
         
     }
@@ -112,8 +113,10 @@ export default class NewRescue extends Component {
         const tabs = ['#tab0','#tab1','#tab2'];
         // alert(tabs[step])
         window.$(tabs[step]).tab('show');
-        window.$(tabs[step-1]).parent().addClass('completed');
-        
+        window.$(tabs[step]).parent().addClass('completed');
+        window.$(tabs[step+1]).parent().removeClass('completed');
+        window.$(tabs[step-1]).parent().removeClass('completed');
+
         if (this.state.step >= 0 && dir === 1 && this.state.step < 2) {
             this.setState(
                 (state) => ({
@@ -146,7 +149,7 @@ export default class NewRescue extends Component {
         e.preventDefault();
         // console.log(e.target)
         const payload = new FormData(e.target);
-
+        console.log(payload)
         payload.append('tracker',this.state.tracker);
         payload.append('stamp',Date.now())
         this.state.pictures.map((pic,index) => (
@@ -158,7 +161,7 @@ export default class NewRescue extends Component {
     render() {
   
         const formLoc =
-            <div id="location" class="panel form-pane panel-default">
+            <div id="location" class="panel scale-up-center form-pane panel-default">
                 <div class="panel-heading">
                 Where did you last see the animal?
                 </div>
@@ -181,7 +184,7 @@ export default class NewRescue extends Component {
                             <i class="fa fa-calendar"></i>
                         </span>
                         {/* Change Date time picker and Styles */}
-                        <input type='text' name="timestamp" class="form-control" placeholder="Date and Time DD-MM-YY hh:mm" value={this.state.timestamp}/>
+                        <input type='date' name="timestamp" class="form-control" placeholder="Date and Time DD-MM-YY hh:mm" value={this.state.timestamp}/>
                         </div>
 
                     </div>
@@ -200,7 +203,7 @@ export default class NewRescue extends Component {
             </div>
 
       const formInfo =
-            <div id="information" class="panel form-pane panel-default">
+            <div id="information" class="panel scale-up-center form-pane panel-default">
             <div class="panel-heading">
                 We need more information about the animal.
             </div>
@@ -250,32 +253,7 @@ export default class NewRescue extends Component {
                 </div>
 
                 <div className="col-md-6">
-                    
-                {/* <label>
-                <input name="track" checked={this.state.track} type="checkbox" class="" id="defaultUnchecked"/>
-                <span>Request Others to Track this Animal</span>
-                </label>
-
-                <label>
-                <input name="medical" type="checkbox" class="" id="defaultUnchecked"/>
-                <span>The Animal is in Need of Medical Attention</span>
-                </label>
-
-                <label>
-                <input name="lost" type="checkbox" class="" id="defaultUnchecked"/>
-                <span>The Animal appears to be a lost Pet</span>
-                </label>
-
-                <label>
-                <input name="trespassable" type="checkbox" class="" id="defaultUnchecked"/>
-                <span>The Animal is on Private Property</span>
-                </label>
-                
-                <label>
-                <input name="agression" type="checkbox" class="" id="defaultUnchecked"/>
-                <span>The Animal appears to be a lost Pet</span>
-                </label>
-                 */}
+    
                     <div>
                     <a onClick={(e)=>this.handleStep(e,-1)} 
                     class="btn btn-primary">Prev</a>
@@ -291,7 +269,7 @@ export default class NewRescue extends Component {
         </div>
         
         const formPics =
-              <div id="pictures" class="panel  form-pane panel-default">
+              <div id="pictures" class="panel  scale-up-center form-pane panel-default">
               <div class="panel-heading">
                   Show us the Animal
               </div>
@@ -336,7 +314,7 @@ export default class NewRescue extends Component {
 
         
         return (
-            <div className="bodywrapper container-fluid ">
+            <div className="bodywrapper container ">
             <div className="row">
                 <div className="col-md-8">
                 
@@ -377,13 +355,13 @@ export default class NewRescue extends Component {
                 </div>
                 <div className="col-md-4" style={{display:'inline-flexbox'}}>
                 <ul class="nav" id="step" >
-                    <li><a class="completed step" data-toggle="tab" id="tab0" href="#pane0">
+                    <li><a class="completed step" id="tab0" href="#pane0">
                     1</a>
                     <span >Step1: Location</span>
                     </li>
-                    <li><a className="step" data-toggle="tab" id="tab1" href="#pane1">2</a>
+                    <li><a className="step"  id="tab1" href="#pane1">2</a>
                     <span >Step2: Photos</span></li>
-                    <li><a className="step" data-toggle="tab" id="tab2" href="#pane2">3</a>
+                    <li><a className="step"  id="tab2" href="#pane2">3</a>
                     <span >Step3: Details</span>
                     </li>
                 </ul>

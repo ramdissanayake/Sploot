@@ -7,10 +7,13 @@ export default class Header extends React.Component{
     }
 
     render(){
+        // return(
+        //     null
+        // )
         if(this.props.easeout){
             return(
     
-                <div class="slide-out-top header container-fluid">
+                <div class="slide-out-top header container">
                   
                  </div>
                 );
@@ -18,7 +21,7 @@ export default class Header extends React.Component{
         else{
             return(
     
-                <div class="fade-in-left header container-fluid">
+                <div class="fade-in-left header container">
                   
                  </div>
                 );

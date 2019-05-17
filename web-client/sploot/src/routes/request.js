@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import RequestView from '../components/requests/requestView';
 import '../custom.css';
-import Header from '../components/headerpg';
+import Header from '../components/header';
 
 export default class RequestR extends Component{
     constructor(props){
@@ -15,6 +15,7 @@ export default class RequestR extends Component{
 
     
     componentDidMount() {
+
         fetch(`/api/requests/show/` + this.props.match.params.stamp)
           .then(response => (response.json()))
           .then(currRequest => {
@@ -40,8 +41,8 @@ export default class RequestR extends Component{
                 
                 return(
                     <div>
-                    <Header easeout={true}/>
-                    <RequestView p={this.state.currRequest}/>
+                    {/* <Header easeout={false}/> */}
+                    <RequestView h={this.props.history} p={this.state.currRequest}/>
                   
 
                     </div>
@@ -51,7 +52,7 @@ export default class RequestR extends Component{
                 return(
                     <div>
 
-                    <Header/>
+               
                     <div style={{height:'502px'}}></div>
                     </div>
                 )

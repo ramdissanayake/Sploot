@@ -10,7 +10,7 @@ export default class Adoption extends React.Component {
         return(
         <div>
             {/* <NavBar/> */}
-            <Search/>
+            {/* <Search/> */}
             <Results/>
         </div>
 

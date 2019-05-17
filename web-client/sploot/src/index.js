@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import 'react-bootstrap';
-import './css/bootsnav.css';
-import './css/animate.css';
-import './css/style.css';
+// import 'react-bootstrap';
+// import './css/bootsnav.css';
+// import './css/animate.css';
+import './custom.css';
+import './animate.css';
+// import './css/style.css';
 
 
 // import 'bootstrap/dist/js/bootstrap';

@@ -1,18 +1,19 @@
 import React from 'react';
-import './custom.css';
-import './animate.css';
+
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 
 import Adoption from './routes/adoption';
 import DogProfile from './routes/dogprofile';
 import HomePage from './routes/homepage';
 import Requests from './routes/requests';
-import Login from './routes/login';
+// import Login from './components/login';
 import newRequest from './routes/requestNew';
 import RequestR from './routes/request';
+import newAdoption from './components/adoptions/adoptNew'
 import NavBar from './components/navbar';
 import Footer from './components/footer';
-
+import Login from './components/login'
+import NotFound from './components/errors/404'
 export default class App extends React.Component {
   constructor(props){
     super();
@@ -29,17 +30,19 @@ export default class App extends React.Component {
     if(!this.state.loader){
 
       return (
-        <div>
+        <div id="container">
         <Router>
+
           <NavBar/> 
           <Switch>
             <Route path ='/' exact component={HomePage} />
             <Route path ='/requests' exact component={Requests} />
             <Route path ='/requests/new' exact component={newRequest} />  {/*Use second level routing*/}
-            <Route path ='/adoptions'  component={Adoption} />
+            <Route path ='/adoptions' exact  component={Adoption} />
             <Route path ='/requests/:stamp' component={RequestR}/>
             <Route path ='/login' component={Login}/>
-            <Route render={() => <h1>Page not found</h1>} />
+            <Route path ='/adoptions/new' component={newAdoption}/>
+            <Route component={NotFound} />
           </Switch>
           <Footer />
         </Router>

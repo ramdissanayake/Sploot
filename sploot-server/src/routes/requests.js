@@ -3,6 +3,7 @@ const requests = express.Router({ mergeParams: true });
 const parser = require('body-parser');
 const multer = require('multer');
 const withAuth = require('../middleware/withauth');
+// const withOwner = require('../middleware/withowner');
 const storage = multer.diskStorage({
     destination: function(req,file,cb){
         cb(null,'./public/requests')
@@ -67,6 +68,29 @@ requests.post('/new', upload.array('picture'),
     
     )
 //------------------------------------------------------------------------------------------------------------------
-// Creates New Milestone
+//Mark Requests as Found--------------------------------------------------------------------------------------------
+requests.post('/found/:id',withAuth,
+(req,res,next)=>{
+    var email = req.email; 
+    console.log('done')
+    Controller.markFound(email,req.params.id,res)
+}
+)
+//Mark Requests as Closed--------------------------------------------------------------------------------------------
+requests.post('/closed/:id',withAuth,
+(req,res,next)=>{
+    var email = req.email; 
+    console.log('done')
+    Controller.markClosed(email,req.params.id,res)
+}
+)
+//Mark Requests as Adoptable--------------------------------------------------------------------------------------------
+requests.post('/adoptable/:id',withAuth,
+(req,res,next)=>{
+    var email = req.email; 
+    console.log('done')
+    Controller.markAdoptable(email,req.params.id,res)
+}
+)
 
 module.exports = requests;

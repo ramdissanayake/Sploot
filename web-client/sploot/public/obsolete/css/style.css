@@ -14,11 +14,11 @@ body {
     position: relative;
     font-size:14px;
     line-height:24px;
-    color:#6f6f6f;
+    /* colo; */
 }
 
 a{
-    color: #6f6f6f;
+    color:white;
 }
 
 a,
@@ -38,7 +38,7 @@ a:hover{
 }
 
 h1, h2, h3, h4, h5, h6{
-    color:#3f3f3f;
+    /* color:#3f3f3f; */
     margin:0 0 15px 0;
     letter-spacing: 1px;
     font-weight: bold;
@@ -329,7 +329,7 @@ nav.navbar-inverse.navbar-full .navbar-collapse .wrap-full-menu{
 
 nav.navbar-inverse.navbar-full .navbar-toggle{
     background-color: #222 !important;
-    color: #6f6f6f;
+    color: #fff;
 }
 
 @media (min-width: 1024px) {
@@ -369,7 +369,7 @@ nav.navbar-inverse.navbar-full .navbar-toggle{
     nav.navbar.navbar-inverse.no-background.dark .attr-nav > ul > li > a,
     nav.navbar.navbar-inverse.no-background.dark ul.nav > li > a,
     nav.navbar.navbar-inverse.no-background.dark ul.nav > li > a{
-        color: #3f3f3f;
+        color: #fff;
     }
 }
 @media (max-width: 992px)  {
@@ -438,7 +438,7 @@ nav.navbar ul.nav > li > a:hover,
 nav.navbar ul.nav > li.active > a:hover,
 nav.navbar ul.nav li.active > a,
 nav.navbar li.dropdown ul.dropdown-menu > li a:hover{
-    color: #f43438;
+    color: #fdda00;
 }
 
 nav.navbar.navbar-transparent ul.nav > li > a:hover,
@@ -447,13 +447,13 @@ nav.navbar ul.nav li.scroll.active > a,
 nav.navbar.navbar-dark ul.nav li.dropdown ul.dropdown-menu  > li > a:hover,
 nav.navbar ul.nav li.dropdown.on > a,
 nav.navbar-dark ul.nav li.dropdown.on > a{
-    color: #f43438 !important;
+    color: #fdda00; !important;
 }
 
 @media(max-width:920px){
     nav.navbar .dropdown .megamenu-content .col-menu ul > li > a:hover,
     nav.navbar.navbar-dark .dropdown .megamenu-content .col-menu .title:hover{
-        color: #f43438 !important;
+        color: #fdda00; !important;
     }
 }
 

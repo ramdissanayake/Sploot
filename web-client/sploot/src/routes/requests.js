@@ -13,7 +13,7 @@ export default class Requests extends React.Component{
         return(
             <div>
          
-            <Header/>
+            {/* <Header/> */}
             <Search/>
             <Results/>   
             </div>
