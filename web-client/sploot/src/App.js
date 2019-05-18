@@ -44,8 +44,8 @@ export default class App extends React.Component {
             <Route path ='/requests/:stamp' component={RequestR}/>
             <Route path ='/login' component={Login}/>
             <Route path ='/adoptions/new' component={newAdoption}/>
+            <Route path ='/register' exact component={Register} />
             <Route component={NotFound} />
-            <Route path ='/register' component={Register} />
           </Switch>
           <Footer />
         </Router>

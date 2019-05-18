@@ -45,11 +45,11 @@ class SignUp extends Component {
         const {name, address, idnumber,  gender, contactno, city, rescuer, veterinarian , volunteer, email, password} = this.state
         return (
            
-           <div className="card container col-md-6">
+           <div className="card container col-md-6" style={{color:'red'}}>
            
                <form onSubmit={this.handleSubmit}>
                <div className="row">  
-                <input type="text" placeholder="Name" name="name" value={name} onChange={this.handleInputChange}/>
+                <input type="text" placeholder="Name" name="name" onChange={name} onChange={this.handleInputChange}/>
                 <input type="text" placeholder="Address" name="address" value={address} onChange={this.handleInputChange}/>
                 
                 <div className="column"> 
@@ -74,9 +74,12 @@ class SignUp extends Component {
                 </div>
 
                 <div>
-                    <input type="checkbox" name="rescuer" value={rescuer} onChange={this.handleCheckboxChange}>Rescuer</input>
-                    <input type="checkbox" name="veterinarian" value={veterinarian} onChange={this.handleCheckboxChange}>Veterinarian</input>
-                    <input type="checkbox" name="volunteer" value={volunteer} onChange={this.handleCheckboxChange}>Volunteer</input>
+                    <input type="checkbox" name="rescuer" value={rescuer} onChange={this.handleCheckboxChange}/>
+                    {/* Rescuer</input> */}
+                    <input type="checkbox" name="veterinarian" value={veterinarian} onChange={this.handleCheckboxChange}/>
+                    {/* Veterinarian</input> */}
+                    <input type="checkbox" name="volunteer" value={volunteer} onChange={this.handleCheckboxChange}/>
+                    {/* Volunteer</input> */}
                     </div>
                 <input type="email"  placeholder="Email" name="email" value={email} onChange={this.handleInputChange}/>    
                 <input type="password"  placeholder="Password" name="password" value={password} onChange={this.handleInputChange}/>
