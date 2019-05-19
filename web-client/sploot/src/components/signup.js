@@ -25,14 +25,14 @@ class SignUp extends Component {
             [event.target.name]: event.target.value
         })
     }
-    handleSelectChange = (event) => {
+    handleRadioChange = (event) => {
         this.setState({
-            gender: event.target.value
+            [event.target.name]: event.target.value
         })
     }
     handleCheckboxChange = (event) => {
         this.setState({
-            checkbox: event.target.value
+            [event.target.name]: event.target.value
         })
     }
 
@@ -42,52 +42,137 @@ class SignUp extends Component {
     }
 
     render(){
-        const {name, address, idnumber,  gender, contactno, city, rescuer, veterinarian , volunteer, email, password} = this.state
+        const {name, address, idnumber,  gender, contactno, city, male,female,rescuer, veterinarian , volunteer, email, password} = this.state
         return (
            
-           <div className="card container col-md-6" style={{color:'red'}}>
-           
-               <form onSubmit={this.handleSubmit}>
-               <div className="row">  
-                <input type="text" placeholder="Name" name="name" onChange={name} onChange={this.handleInputChange}/>
-                <input type="text" placeholder="Address" name="address" value={address} onChange={this.handleInputChange}/>
-                
-                <div className="column"> 
-                <div className="col-md-3"> 
-                <input type="text" placeholder="NIC Number" name="idnumber" value={idnumber} onChange={this.handleInputChange}/>
-                </div>
-                <div className="col-md-3"> 
-                <select id="inputState" className="form-control" name="gender" value={gender} onChange={this.handleSelectChange}>
-                        <option>Female</option>
-                        <option>Male</option>
-                    </select>
-                </div>
-                </div>
-
-                <div className="column"> 
-                <div className="col-md-3"> 
-                <input type="text" placeholder="Contact Number" name="contactno" value={contactno} onChange={this.handleInputChange}/>
-                </div>
-                <div className="col-md-3"> 
-                <input type="text" placeholder="City" name="city" value={city} onChange={this.handleInputChange}/>
-                </div>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="rescuer" value={rescuer} onChange={this.handleCheckboxChange}/>
-                    {/* Rescuer</input> */}
-                    <input type="checkbox" name="veterinarian" value={veterinarian} onChange={this.handleCheckboxChange}/>
-                    {/* Veterinarian</input> */}
-                    <input type="checkbox" name="volunteer" value={volunteer} onChange={this.handleCheckboxChange}/>
-                    {/* Volunteer</input> */}
-                    </div>
-                <input type="email"  placeholder="Email" name="email" value={email} onChange={this.handleInputChange}/>    
-                <input type="password"  placeholder="Password" name="password" value={password} onChange={this.handleInputChange}/>
+            <div className="container bodywrapper contet">
+            <div  className="panel scale-up-center adoption-form panel-default ">
             
-                <button type="submit" >Sign in</button>
+                <div className="panel-heading">
+                <div className="row">
+                <div className="col-md-8 col-sm-12">
+                    Register in Sploot! to help Animals!! 
+                 </div>
+                
                 </div>
-               </form>
-               </div>
+                </div>   
+                <form onSubmit={this.handleSubmit}>
+                <div className="panel-body">
+                 <fieldset>
+    
+
+        {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="name">Name</label>  
+        <div className="col-md-5">
+        <input type="text" placeholder="Sarath" name="name" onChange={name} class="form-control input-md"  onChange={this.handleInputChange}/>
+        </div>
+        </div>
+
+        {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="address">Address</label>
+        <div className="col-md-5">
+        <input type="text" placeholder="No. 1234, street,colombo" name="address" value={address} class="form-control input-md" onChange={this.handleInputChange}/>
+        </div>
+        </div>
+        
+         {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="contactno">Contact Number</label>
+        <div className="col-md-5">
+        <input type="text" placeholder="+94 xxx xxx xxx" name="contactno" class="form-control input-md" value={contactno} onChange={this.handleInputChange}/>
+        </div>
+        </div>
+                
+                
+        {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="idnumber">NIC number</label>  
+        <div className="col-md-5">
+        <input type="text" placeholder="91263xxxxv" name="idnumber" class="form-control input-md" value={idnumber} onChange={this.handleInputChange}/>
+        </div>
+        </div>
+
+        {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="city">City</label>  
+        <div className="col-md-5">
+        <input type="text" placeholder="Colombo" name="city" class="form-control input-md" value={city}  onChange={this.handleInputChange}/>
+        </div>
+        </div>
+       
+        {/* <!-- Multiple Radios --> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="sexgender">Gender</label>
+        <div className="col-md-5">
+        <div className="radio">
+            <label forHTML="gender-male">
+            <input type="radio" name="gender" id="gender-male" value={male} checked="checked" onChange={this.handleRadioChange}/>
+            Male
+            </label>
+            </div>
+        <div className="radio">
+            <label forHTML="gender-female">
+            <input type="radio" name="gender" id="gender-female" value={female} onChange={this.handleRadioChange}/>
+            Female
+            </label>
+            </div>
+        </div>
+        </div>
+
+        {/* <!-- Multiple Checkboxes --> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="role">Special Needs</label>
+        <div className="col-md-4">
+        <div className="checkbox">
+            <label forHTML="role-0">
+            <input type="checkbox" name="role" id="role-0" value={rescuer} onChange={this.handleCheckboxChange}/>
+            Rescuer
+            </label>
+            </div>
+        <div className="checkbox">
+            <label forHTML="role-1">
+            <input type="checkbox" name="role" id="role-1" value={veterinarian} onChange={this.handleCheckboxChange}/>
+            Veterinarian
+            </label>
+            </div>
+        <div className="checkbox">
+            <label forHTML="role-2">
+            <input type="checkbox" name="role" id="role-2" value={volunteer} onChange={this.handleCheckboxChange}/>
+            Volunteer
+            </label>
+            </div>
+        </div>
+        </div>
+
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="email">Email</label>  
+        <div className="col-md-5">
+        <input type="email"  placeholder="sarath@gmail.com" name="email" class="form-control input-md" value={email} onChange={this.handleInputChange}/> 
+        </div>
+        </div>
+
+        {/* <!-- Text input--> */}
+        <div className="form-group">
+        <label className="col-md-4 control-label" forHTML="password">Password</label>  
+        <div className="col-md-5">
+        <input type="password"  placeholder="******" name="password" class="form-control input-md"  value={password} onChange={this.handleInputChange}/>
+        </div>
+        </div>
+
+
+
+
+        <button onClick={this.handleSubmit} 
+                        class="btn btn-success">Done</button>            
+        </fieldset>
+        </div>
+              
+              
+        </form>
+        </div>
+        </div>
         )
 }
 }
