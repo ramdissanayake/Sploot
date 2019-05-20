@@ -12,7 +12,7 @@ import './animate.css';
 // import 'bootstrap/dist/js/bootstrap';
 
 // import 'bootstrap';
-import 'tachyons';
+// import 'tachyons';
 // import 'reactstrap';
 // import '@material-ui/core';
 

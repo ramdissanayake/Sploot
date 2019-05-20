@@ -7,7 +7,7 @@ import MapSel from '../map/geoSel';
 import {
     reverseGC
 } from '../map/geoCoder';
-
+import Autocomplete from '../map/geoAuto';
 
 
 import Uploader from '../../file/uploader';
@@ -35,20 +35,45 @@ export default class NewRescue extends Component {
             loading: false,
             pictures: [], //send
             timestamp: "", //ok
-            picurl:[]
+            picurl:[],
+            mapLocation: [7.8731, 80.7718]
 
         }
         
         this.spinner = "/images/markers/Spinner-1s-200px.gif";
         this.marker = "/images/markers/marker1.png";
         this.addLocation = this.addLocation.bind(this);
+        this.flyto = this.flyto.bind(this);
         this.addImage = this.addImage.bind(this);
         this.request = new Request;
     }
 
     componentDidMount(){
+
         this.handleStep(null,0)
         this.$ = window.$;
+        // window.$('.sug').collapse()
+
+       // if(!(window.$('#location').is(":focus"))){
+
+       //      window.$('.sug').collapse('hide')
+       // }
+      
+       //  // window.$('.sug').collapse('hide')
+
+       //  window.$('#location').focusin(function(){
+       //      window.$('.sug').collapse('show')
+       //  })
+       //  window.$('#location').focusout(function(){
+       //       if((window.$('.sug').is(":focus"))){
+       //          window.$('.sug').collapse('show')
+       //       }
+       //              window.$('.sug').collapse('hide')
+        
+
+           
+       //  })
+         
         
     }
 
@@ -108,6 +133,13 @@ export default class NewRescue extends Component {
 
     }
 
+    flyto(latlng){
+         window.$('.sug').collapse('hide')
+        this.setState({
+            mapLocation:latlng
+        })
+    }
+
     handleStep(e, dir) {
         var step = this.state.step + dir;
         const tabs = ['#tab0','#tab1','#tab2'];
@@ -140,8 +172,18 @@ export default class NewRescue extends Component {
         const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
         this.setState({
             [key]: value,
+            test:value
 
         })
+        if(key=="location" && value!=""){
+
+
+            window.$('.sug').collapse('show')
+  
+        }
+        else{
+            window.$('.sug').collapse('hide')
+        }
         // console.log(this.state);
     }
 
@@ -159,7 +201,9 @@ export default class NewRescue extends Component {
     }
 
     render() {
-  
+        const style ={
+            suggestions: {marginLeft:'45px',position:'fixed',zIndex:99,background:'white',width:'auto',height:'auto'}
+        }
         const formLoc =
             <div id="location" class="panel scale-up-center form-pane panel-default">
                 <div class="panel-heading">
@@ -172,13 +216,17 @@ export default class NewRescue extends Component {
                     <div class="col-md-4">
                         <p>Tell us where you last saw the Animal you want to report to Sploot Rescuers.</p>
                             <div class="input-group">
-                                <span class="input-group-addon"><span>
-                                <img width="20px" src={(!this.state.loading?this.marker:this.spinner)}/>
-                                </span></span>
+                                <span class="input-group-addon">
+                                <img  width="20px" src={(!this.state.loading?this.marker:this.spinner)}/>
+                                </span>
                                 <input id="location" name="location" type="text" class="form-control" placeholder="Location"
                                     value={this.state.location}
                                 />
-                            </div><br></br>
+                            </div>
+                                <div id="#suggestions" className=" sug  col-md-3 col-sm-11 col-xs-11  wow fadeIn" style={style.suggestions}>
+                               
+                                  <Autocomplete flyto={this.flyto} query={this.state.location}/>
+                                </div>
                         <div class='input-group date' id='datetimepicker1'>
                         <span class="input-group-addon">
                             <i class="fa fa-calendar"></i>
@@ -189,7 +237,7 @@ export default class NewRescue extends Component {
 
                     </div>
                     <div class="col-md-8">
-                            <MapSel addLocation={this.addLocation}/>
+                            <MapSel test={this.state.test} location = {this.state.mapLocation} addLocation={this.addLocation}/>
                             <div style={{marginTop:"10px"}}>
                             
                         <a onClick={(e)=>this.handleStep(e,1)} 
@@ -216,7 +264,7 @@ export default class NewRescue extends Component {
                 Title
                 </span></span>
                 <input onChange={this.handleChange} name="title" id="location" type="text" class="form-control" 
-                    placeholder={"ex: Animal near " + this.state.location[1] + " needs help"} 
+                    placeholder={"ex: Abandoned Puppy"} 
                     />
                 </div>
 

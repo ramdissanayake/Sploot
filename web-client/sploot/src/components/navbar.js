@@ -1,5 +1,6 @@
 import React from 'react';
 import '../custom.css'
+import isWebview from 'is-webview'
 
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 import Login from './login'
@@ -14,7 +15,9 @@ export default class NavBar extends React.Component {
   }
 
    render(){
-     
+     if (isWebview(navigator.userAgent)) {
+  return null;
+}else{
      return(
 
       <nav class="navbar navbar-inverse ">
@@ -80,6 +83,7 @@ export default class NavBar extends React.Component {
 
 
      )
+}
    }
  
 }

@@ -1,0 +1,4 @@
+#Sun May 19 13:15:41 IST 2019
+base.0=/home/shehank/Projects/Sploot/mobile-client/sploot/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
