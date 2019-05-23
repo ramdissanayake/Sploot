@@ -5,6 +5,7 @@ INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src
 INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-28:12
 INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-vector-icons] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:2:1-13:12
@@ -77,6 +78,8 @@ application
 ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:8:5-26:19
 MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:8:5-26:19
 MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:8:5-26:19
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:11:5-20
@@ -141,6 +144,8 @@ uses-sdk
 INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -225,6 +230,22 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:5:22-75
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+	android:resource
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+	android:name
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 provider#com.imagepicker.FileProvider
 ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
@@ -235,9 +256,3 @@ ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-cli
 		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
 		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-56
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:58
-	android:resource
-		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-55
-	android:name
-		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67

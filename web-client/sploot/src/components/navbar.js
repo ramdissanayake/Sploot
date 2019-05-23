@@ -16,8 +16,8 @@ export default class NavBar extends React.Component {
 
    render(){
      if (isWebview(navigator.userAgent)) {
-  return null;
-}else{
+      return null;
+    }else{
      return(
 
       <nav class="navbar navbar-inverse ">

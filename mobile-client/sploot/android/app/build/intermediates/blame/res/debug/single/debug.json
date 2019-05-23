@@ -436,6 +436,10 @@
         "source": "/home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
+        "merged": "/home/shehank/Projects/Sploot/mobile-client/sploot/android/app/build/intermediates/res/merged/debug/xml_file_provider_paths.xml.flat",
+        "source": "/home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/packaged_res/debug/xml/file_provider_paths.xml"
+    },
+    {
         "merged": "/home/shehank/Projects/Sploot/mobile-client/sploot/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat",
         "source": "/home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/res/anim/catalyst_slide_down.xml"
     },

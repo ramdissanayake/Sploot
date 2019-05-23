@@ -3,6 +3,7 @@ import { StyleSheet, View,Text} from 'react-native';
 import LiveAlerts from './LiveAlerts/liveAlerts';
 import {MMButton} from './elements/buttons';
 import ImagePicker from 'react-native-image-picker';
+import { Actions } from 'react-native-router-flux';
 
 export default class Home extends Component{
     constructor(props){
@@ -10,9 +11,12 @@ export default class Home extends Component{
         this.state={
             visible:false
         }
+        this.Cameratest = this.Cameratest.bind(this)
         this.test = this.test.bind(this)
     }
-    test(){
+
+// TEST METHODS ================================================
+    Cameratest(){
         const options = {
             storageOptions: {
               skipBackup: true,
@@ -25,6 +29,31 @@ export default class Home extends Component{
           });
     }
 
+    MainMenuRoute(scene){
+        switch(scene){
+            case 'request':
+                Actions.newrequest();
+                break;
+
+            case 'emergency':
+                Actions.emergency();
+                break;
+            case 'lost':
+                Actions.newrequest({lost:true})    
+                break;
+            case 'nearby':
+                Actions.requests({nearby:true})
+                break;
+            case 'adopt':
+                Actions.adoptions()
+                break;
+            case 'donate':
+                Actions.donations()
+            }
+        
+        
+    }
+// TEST METHODS END HERE =======================================
     render(){
         return(
             <View >
@@ -34,37 +63,40 @@ export default class Home extends Component{
                         <MMButton 
                             title = "Request Help"
                             icon="guide-dog"
-                            
-                            callback={this.test}
+                            callback ={this.Cameratest}
+                            callback={()=>this.MainMenuRoute('request')}
                         />
 
                         <MMButton 
                             title = "Emergency"
                             icon="first-aid"
                             iconColor="#8B0000"
-                            callback={this.test}
+                            callback ={this.Cameratest}
+                            callback={()=>this.MainMenuRoute('emergency')}
                         />
                         <MMButton 
                             title = "Lost Animal"
                             icon="paw"
-                            callback={this.test}
+                            callback ={this.Cameratest}
+                            callback={()=>this.MainMenuRoute('lost')}
                         />
          
                         <MMButton 
                             title = "Nearby Animals"
                             icon="marker"
-                            callback={this.test}
+                            callback={()=>this.MainMenuRoute('nrearby')}
                         />
                         <MMButton 
                             title = "Adopt"
                             icon="heart"
                             iconColor="#8B0000"
-                            callback={this.test}
+                            callback={()=>this.MainMenuRoute('adopt')}
                         />
                         <MMButton 
                             title = "Donate"
                             icon="dollar"
-                            callback={this.test}
+                            callback={()=>this.MainMenuRoute('adopt')}
+                            // callback={this.test}
                         /> 
                 </View>
             </View>
