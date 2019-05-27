@@ -1,36 +1,85 @@
 import React,{Component} from 'react';
-import Result from './card'
-import {Row,Col,Container} from 'reactstrap';
+import RequestCard from './card';
+
 
 
 export default class Results extends Component{
-    constructor(props){
-        super(props);
-        this.state = {image:""};
-    }
-    componentDidMount(){
-        // console.log(this.props.location);
- 
-    }
-    populate(){
-        let result=[1,2,3,4,5,6,74,5,6,7,12,43,34,35,35,35,35,5,35,35];
-        console.log(result);
-        return result.map(
-            (i)=>{
+      constructor(props){
+            super(props);
+            this.state = {resultSet:[]}
+          
+      }
 
-                // console.log(this.state.image)
-                return  <div className="dit ma2"><Result id={i} /></div>
-            }
-        )
-    }
-    render(){
+      componentDidMount(){
+            fetch('api/adoptions/show/all')
+            .then(response=>(response.json()))
+            .then(myJSON=>{
+                  console.log(myJSON);
+                  myJSON.forEach(element=>{
+                        this.state.resultSet.push(element._id);
+                        // console.log(element._id);
+                        this.setState((state)=>(
+                              {
+                                    resultSet: state.resultSet 
+                              }
+                        )
+                        );
+                        
+                        
+                  }
+                  )
+             
+            })
+      }
+
+      populate(){
+            console.log(this.state.resultSet)
+            return this.state.resultSet.map(
+                 element=>{
+                       return <RequestCard id={element}/>
+                 }       
+            )
+      }
+
+
+      render(){
           return(
-                        <section class="mw12 mw12-ns center bg-light-grey pa3 ph5-ns">
-                          {this.populate()}
-                        </section>
 
-          )
+            <div className="bodywrapper container">
+             <div className="row">
+                  <div className="col-md-9">
+                  <div class="panel-body content " >
+                        <div class="row">
+                        <div class="panel  form-pane panel-default">
+                               <div class="panel-heading">
+                               <div class="row">
+                               <div class=" col-xs-12 col-md-9">
+                                        <h5 style={{display:'inline'}}>Give them a Forever Home!</h5> 
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-3">
+                                   <small><a  href="#">Read the Sploot! Animal Adoption Policy</a></small>
+                                    </div></div>
+                               </div>
+                               <div class="panel-body">
+                                    {this.populate()}
+                               </div>
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+            </div>
+            </div>
+
+
+
+
+              
+                        
+                     
            
-        
+     
+  
+          )
     }
 }

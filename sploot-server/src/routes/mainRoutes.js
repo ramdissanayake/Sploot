@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 const fileSys = require('fs');
 
-
+const withAuth = require('../middleware/withauth');
 // Routes in routes directory go here.
 fileSys.readdirSync( __dirname ).forEach( function( route ) {
     route = route.split( '.' )[ 0 ] ;

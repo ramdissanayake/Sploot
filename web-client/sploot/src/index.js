@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+// import 'react-bootstrap';
+// import './css/bootsnav.css';
+// import './css/animate.css';
+import './custom.css';
+import './animate.css';
+// import './css/style.css';
 
 
-import 'bootstrap/dist/js/bootstrap';
+// import 'bootstrap/dist/js/bootstrap';
 
-import 'bootstrap';
+// import 'bootstrap';
 import 'tachyons';
-import 'reactstrap';
-import '@material-ui/core';
+// import 'reactstrap';
+// import '@material-ui/core';
 
 
 import * as serviceWorker from './serviceWorker';

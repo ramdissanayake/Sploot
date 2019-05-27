@@ -9,8 +9,8 @@ export default class Adoption extends React.Component {
     render(){
         return(
         <div>
-            <NavBar/>
-            <Search/>
+            {/* <NavBar/> */}
+            {/* <Search/> */}
             <Results/>
         </div>
 

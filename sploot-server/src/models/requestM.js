@@ -5,19 +5,23 @@ const mongoose = require('mongoose');
 // Mongoose model schema for the Rescue Request Collection goes here.
 const rescueRequest = mongoose.model('rescueRequest',
     {
-        id:Number,
         title:String,
         location:String,
-        track:Boolean,
-        volunteer:Number,
-        medical:Boolean,
-        lost:Boolean,
-        tresspassable:Boolean,
-        aggression:Boolean,
+        track:String,
+        volunteer:String,
+        // medical:String,
+        found:Boolean,
+        adoptable:Boolean,
+        closed:Boolean,
+        // tresspassable:String,
+        // aggression:String,
         additional:String,
-        trackingid:Number,
+        tracker:Array,
         // volunteer: Number,
         rescuers: Array,
+        rescuer: String,
+        stamp:String,
+        milestones:Array,
         
     });
 

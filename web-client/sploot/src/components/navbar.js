@@ -1,49 +1,68 @@
 import React from 'react';
 import '../custom.css'
 
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+import Login from './login'
 export default class NavBar extends React.Component {
-   render(){
-     return(
-<nav class="navbar navbar-default white navbar-fixed dark no-background bootsnav">
-    <div class="container">      
-        {/* <!-- Start Header Navigation --> */}
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="/">
-                <img src="images/brand/sploot.png" width="150px" class="" alt=""/>
-            </a>
-        </div>
+  
+  componentDidMount(){
+    window.$('.dropdown-toggle').hover(function(){
+      window.$(this).children('ul').stop().slideToggle(400);
+  });
 
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                <li>
+
+  }
+
+   render(){
+     
+     return(
+
+      <nav class="navbar navbar-inverse ">
+          <div class="container-fluid">
+          <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+      <img width="100px"src="/images/brand/sploot.png"/>
+      </a>
+    </div>
+              <ul className="nav navbar-nav navbar-right" >    
+                                                                                                                                                      
+              <li>
                   <a>
-                    <a class="btn btn-primary reportbtn">Report an Animal</a>
-                    
+                    <Link to="/requests/new"class="btn btn-primary reportbtn">Report an Animal</Link>
                   </a>
                 </li>
-                <li><a href="/">Home</a></li>   
-                <li><a href="/requests">Rescue</a></li>                    
-                <li><a href="/adoptions">Adopt</a></li>  
+                <li style={{color:''}}><Link to="/">Home</Link></li>   
+                <li style={{display:'inline'}}><Link to="/requests">Rescue</Link></li>                    
+                <li style={{display:'inline'}}><Link to="/adoptions">Adopt</Link></li>  
                 {/* Sploot Dropdown Menu */}
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sploot!</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">Forum</a></li>
+                <li style={{display:'inline'}} class="dropdown-toggle" data-toggle="dropdown">
+                <a  id="menu1" class="dropdown-toggle" data-toggle="dropdown" href="#">Sploot!</a>
+                <ul class="dropdown-menu pulse" role="menu" aria-labelledby="menu1">
+                  <li ><Link to="#">
+              Blog
+                  </Link></li>
+                  <li><Link to="#">Shop</Link></li>
+                  <li><Link to="#">Forum</Link></li>
                 </ul>
                 
                 </li>
                 
-                <li><a href="/adoptions">Contact</a></li>   
-            </ul>
-        </div>
-      </div>
-</nav>
+                <li style={{display:'inline'}}><Link to="/adoptions">Contact</Link></li>  
+                <li style={{display:'inline'}}>
+                <a>Register</a>
+                </li>
 
+                <li >
+                  <a>
+              <Login/>
+                    
+                  </a>
+                </li>  
+                
+            </ul>
+
+            </div>
+</nav>
 
 
 

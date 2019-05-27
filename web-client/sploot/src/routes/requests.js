@@ -1,11 +1,8 @@
 import React from 'react';
 import '../custom.css';
-
-import NavBar from '../components/navbar';
 import Search from '../components/requests/search';
 import Results from '../components/requests/results';
-import NewRescue from '../components/requests/newRescue';
-
+import Header from '../components/headerpg';
 
 export default class Requests extends React.Component{
     constructor(props){
@@ -15,11 +12,10 @@ export default class Requests extends React.Component{
     render(){
         return(
             <div>
-            <NavBar/>
-            <Search/><br/>
-            <Results/>
-            <NewRescue/>
-       
+         
+            {/* <Header/> */}
+            <Search/>
+            <Results/>   
             </div>
         )
     }
