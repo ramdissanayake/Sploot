@@ -14,7 +14,12 @@ import NavBar from './components/navbar';
 import Footer from './components/footer';
 import Login from './components/login'
 import NotFound from './components/errors/404'
+<<<<<<< HEAD
 import Register from './routes/register';
+=======
+
+import {default as test} from './components/map/geoSel'
+>>>>>>> f9948b26597404598f7b7bcf82fa56d6037b690d
 
 export default class App extends React.Component {
   constructor(props){
@@ -44,10 +49,14 @@ export default class App extends React.Component {
             <Route path ='/requests/:stamp' component={RequestR}/>
             <Route path ='/login' component={Login}/>
             <Route path ='/adoptions/new' component={newAdoption}/>
+<<<<<<< HEAD
             <Route path ='/register' exact component={Register} />
+=======
+            <Route path ='/test' component={test}/>
+>>>>>>> f9948b26597404598f7b7bcf82fa56d6037b690d
             <Route component={NotFound} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
         </div>
        );

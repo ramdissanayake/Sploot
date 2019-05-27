@@ -5,6 +5,7 @@ import Sticky from 'react-sticky-el';
 // import { format } from 'url';
 // import Milestone from '../milestones/milestones';
 import Login from '../login'
+import {server} from "../../config"
 
 export default class RequestView extends Component{
     constructor(props){
@@ -55,14 +56,42 @@ export default class RequestView extends Component{
             return images; 
         }
         else{
+           
             return null
         }
       }
+
+      enlarge(e){
+            const mainimg = document.getElementById("mainimg");
+
+      
+            window.$('#mainimg').addClass("fade-in-left")
+            mainimg.src= e.target.src
+            setTimeout(function(){
+                window.$('#mainimg').removeClass("fafe-inleft")
+            },700) 
+      }
+
+      profilpicture(){
+        if(this.state.images!=undefined){
+              if(this.LoadImage().length>0){
+           
+                  return server+"/requests/"+this.LoadImage()[0]
+              }
+              else{
+               
+                  return "/images/errors/noimage.png"
+              }
+ 
+        }
+     
+        }
       
       thumbnails(){
+
           if(this.state.images!=undefined){
             return this.LoadImage().map(i=>{
-                return <img className="grow img-thumbnail" width="80px" src={"http://localhost:3000/requests/"+i}/>
+                return <img onClick={this.enlarge.bind(this)}className="grow img-thumbnail" width="80px" src={server+"/requests/"+i}/>
             })
           }
       }
@@ -86,12 +115,16 @@ export default class RequestView extends Component{
                                            
                                         </div>
 
-                                         <div className="panel-body">
+                                         <div className="viewSidebar panel-body">
                                         {/* Main Picture */}
-                                      <img width="300px" className="" src={"http://localhost:3000/requests/"+
-                                        (this.state.images!=undefined?this.LoadImage()[0]:'sd')}/>
+                                        <div class="mainimg"> 
+                                            {this.state.images===undefined?(<div class="card-image lds-ring"><small>Sploot is Working</small><div></div><div></div></div>):
+                                            (<img id="mainimg" className="wow fadeIn"  className="" src={this.profilpicture()}/>)
 
+}
+                                        </div>
 
+                                        <div>       
                                         {/* Thumbnails */}
                                         <div  style={{width:'100%',marginBottom:'10px'}}>
                                             {this.thumbnails()}
@@ -113,6 +146,7 @@ export default class RequestView extends Component{
                                             <small>
                                             {this.request.getAdditional()}
                                             </small>
+                                        </div>   
 
                                             </div>
                     </div>

@@ -19,11 +19,22 @@ const upload = multer({storage:storage});
 const   Controller = require('../controllers/requestC');
 requests.use(parser.json())
 
+// Handles the child routers for the main router /requests by ID ----------------------------------------------------
+requests.post('/search/:query?', 
+(req,res,next)=>{
+    console.log(req.path)
+    // Changes request path if no ID was specified as a Parameter
+    req.path=='/search/'|| req.path=='/search/all'?req.params.id="0":req.params.id=req.params.id;
+    Controller.getRequest(req,res,next);
+  
+});
+
+// ------------------------------------------------------------------------------------------------------------------
 
 // Handles the child routers for the main router /requests by ID ----------------------------------------------------
     requests.get('/show/:id?', 
         (req,res,next)=>{
-            console.log(req.body)
+            console.log(req.path)
             // Changes request path if no ID was specified as a Parameter
             req.path=='/show/'|| req.path=='/show/all'?req.params.id="0":req.params.id=req.params.id;
             Controller.getRequest(req,res,next);
