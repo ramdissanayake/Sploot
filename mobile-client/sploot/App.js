@@ -17,6 +17,7 @@ export default class App extends Component<Props> {
             <Scene key="home" component = {Home} title="Sploot!" initial={true}/>
             <Scene key="newrequest" component = {NewRequest} title="New Request" />
             <Scene key="emergency" component = {Emergency} title="Emergency Request" />
+            <Scene key="adoptions" component = {Emergency} title="Adoptions" />
           </Scene>
          </Router>
     );

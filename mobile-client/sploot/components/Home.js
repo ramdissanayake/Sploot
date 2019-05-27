@@ -12,7 +12,7 @@ export default class Home extends Component{
             visible:false
         }
         this.Cameratest = this.Cameratest.bind(this)
-        this.test = this.test.bind(this)
+        // this.test = this.test.bind(this)
     }
 
 // TEST METHODS ================================================
@@ -54,11 +54,13 @@ export default class Home extends Component{
         
     }
 // TEST METHODS END HERE =======================================
+
+
     render(){
         return(
             <View >
 
-                <LiveAlerts style={{flex:3,flexDirection:'row'}}/>
+            
                 <View style={style.mainmenu}> 
                         <MMButton 
                             title = "Request Help"
@@ -84,7 +86,7 @@ export default class Home extends Component{
                         <MMButton 
                             title = "Nearby Animals"
                             icon="marker"
-                            callback={()=>this.MainMenuRoute('nrearby')}
+                            callback={()=>this.MainMenuRoute('nearby')}
                         />
                         <MMButton 
                             title = "Adopt"
