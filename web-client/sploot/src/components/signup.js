@@ -36,31 +36,43 @@ class SignUp extends Component {
         })
     }
 
-      handleSubmit = (event) =>{
-        // alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`) 
-        event.preventDefault()
+
+
+    
+        handleSubmit(payload,callback){
+            // this.milestones = new Milestones
+            // this.milestones.Reported();
+            // let miles = JSON.stringify(this.milestones.stringify())
+            
+            // payload.append('milestones',miles);
+            
+            fetch('../../api/user',{
+                'method':'POST',
+                'body':payload
+            })
+            // .then(r=>(r.json()))
+            .then(r=>{
+                console.log(r)
+                callback()
+            })
+        
     }
 
     render(){
         const {name, address, idnumber,  gender, contactno, city, male,female,rescuer, veterinarian , volunteer, email, password} = this.state
-        return (
-           
-            <div className="container bodywrapper contet">
-            <div  className="panel scale-up-center adoption-form panel-default ">
+        
+        const userdata = <div  className="panel scale-up-center adoption-form panel-default ">
             
-                <div className="panel-heading">
-                <div className="row">
-                <div className="col-md-8 col-sm-12">
-                    Register in Sploot! to help Animals!! 
-                 </div>
-                
-                </div>
-                </div>   
-                <form onSubmit={this.handleSubmit}>
-                <div className="panel-body">
-                 <fieldset>
-    
-
+        <div className="panel-heading">
+        <div className="row">
+        <div className="col-md-8 col-sm-12">
+            Register in Sploot! to help Animals!! 
+         </div>
+        
+        </div>
+        </div>   
+        <div class="panel-body">
+            <fieldset>
         {/* <!-- Text input--> */}
         <div className="form-group">
         <label className="col-md-4 control-label" forHTML="name">Name</label>  
@@ -146,7 +158,29 @@ class SignUp extends Component {
         </div>
         </div>
 
-        <div className="form-group">
+        <a href="#pane1" 
+                        class="btn btn-success">Next</a>
+
+            </fieldset>
+
+        </div>
+
+        </div>
+
+ const userEmailPassword = <div  class="panel scale-up-center adoption-form panel-default">
+         <div className="panel-heading">
+        <div className="row">
+        <div className="col-md-8 col-sm-12">
+            Register in Sploot! to help Animals!! 
+         </div>
+        
+        </div>
+        </div>   
+ <div class="panel-body">
+
+     <fieldset>
+
+     <div className="form-group">
         <label className="col-md-4 control-label" forHTML="email">Email</label>  
         <div className="col-md-5">
         <input type="email"  placeholder="sarath@gmail.com" name="email" class="form-control input-md" value={email} onChange={this.handleInputChange}/> 
@@ -161,18 +195,53 @@ class SignUp extends Component {
         </div>
         </div>
 
+        <a href="#pane0"
+                    class="btn btn-primary">Prev</a>
+                                             <button 
+                    type="submit" 
+                    class="btn btn-success">Save!</button>
+
+     </fieldset>
+ 
+ </div>
+ </div>
 
 
+var panes = [userdata ,userEmailPassword]
+        return (
+           
+            <div className="bodywrapper container ">
+            <div className="row">        
+            <div className="col-md-8">
+            <div class="panel-body content" >
+            <div class="row">
+           
+                   <div class="col-md-12 col-sm-12">
+                
+                    <form onSubmit={this.handleSubmit} class="form-horizontal">
+                    <div class="tab-content">
+                    <div class=" tab-pane  in active" id="pane0">
+                    {panes[0]}
+                     </div>
+                    <div class="tab-pane " id="pane1">
+                    {panes[1]}
+                    </div>
+                    </div> 
+             
+                    </form>
+                </div>
 
-        <button onClick={this.handleSubmit} 
-                        class="btn btn-success">Done</button>            
-        </fieldset>
-        </div>
-              
-              
-        </form>
-        </div>
-        </div>
+            </div>
+            </div>
+            </div>
+
+                     
+                </div>
+            </div>
+           
+                      
+     
+        
         )
 }
 }
