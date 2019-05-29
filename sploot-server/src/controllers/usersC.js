@@ -9,7 +9,15 @@ const register = (req,res)=>{
 
     userNew = new usersM({
         email:req.email,
-        password: req.password
+        password: req.password,
+
+        name: req.name,
+        address: req.address,
+        contactno: req.contactno,
+        idnumber: req.idnumber,
+        city: req.city,
+        gender: req.gender,
+        role: req.role
     })
 
     // validate email here
