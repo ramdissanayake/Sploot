@@ -21,6 +21,7 @@ users.use(parser.json())
 // Registers New Users
 users.post('/register', upload.array('picture'),
 (req,res,next)=>{
+    console.log(req.body)
     const { email, password } = req.body;
     Controller.register(req.body,res)
 }
