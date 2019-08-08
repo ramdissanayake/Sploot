@@ -15,7 +15,7 @@ export default class newRequest extends Component{
             <div>
             {/* <Header/> */}
            
-            <NewRescue />
+            <NewRescue history={this.props.history}/>
             </div>
         )
     }

@@ -14,8 +14,6 @@ export default class Request extends Component{
     
     }
     
-
-
     test(){
         console.log(this.props)
         alert(this.props.p.title);
@@ -23,9 +21,10 @@ export default class Request extends Component{
 
     
     // calls api endpoint to save request to the database
-    newRequest(payload){
+    newRequest(payload,callback){
         this.milestones = new Milestones
-        this.milestones.Reported();
+        const date = new Date(Date.now()).toLocaleString()
+        this.milestones.Reported(date);
         let miles = JSON.stringify(this.milestones.stringify())
         
         payload.append('milestones',miles);
@@ -35,7 +34,10 @@ export default class Request extends Component{
             'body':payload
         })
         // .then(r=>(r.json()))
-        .then(r=>console.log(r))
+        .then(r=>{
+            console.log(r)
+        })
+        callback()
     }
 
 
@@ -44,6 +46,11 @@ export default class Request extends Component{
 
 
     // getters
+    getTrackerCoords(i){
+        return [this.props.tracker[i].split(",")[0].split("[[")[1],
+        this.props.tracker[i].split(",")[1].split("]")[0]]
+    }
+
     getTitle(){
         return this.props.title
         
@@ -136,6 +143,14 @@ found(){
     }).then((res)=>{
         if(res.status==200){
             alert("The Animal Has Been Marked as Found ")
+            var data = {
+           
+                    title:"Animal Found",
+                    body:'Animal has been Found by the Rescuer',
+                    avatar:'https://i.pravatar.cc/50'
+                
+            }
+            this.milestones.customeMile(data)
         }
         else if(res.status==401){
             alert("Unauthorized Activity")
@@ -197,6 +212,7 @@ adoptable(callback){
         e.preventDefault();
         const x = document.getElementById('milestones')
         let data = {
+            date: Date(Date.now),
             title:e.target[0].value,
             body:e.target[1].value
         }

@@ -123,13 +123,18 @@ export default class Milestone extends React.Component{
                 cmbody.innerHTML = commentNode.payload.title!=undefined?commentNode.payload.title:"";
                 container.firstChild.nextSibling.appendChild(cmbody);
             }
-            
+
+            var cmdate = document.createElement("div");
+            cmdate.className = "milestone-date";
+            cmdate.innerHTML = commentNode.payload.date!=undefined?commentNode.payload.date:"";
+
             var cmtext = document.createElement("div");
+            cmtext.className = "milestone-body";
             cmtext.innerHTML = commentNode.payload.body!=undefined?commentNode.payload.body:"";
 
             
             
-            
+            cmbody.appendChild(cmdate);  
             cmbody.appendChild(cmtext);
 
 
@@ -210,7 +215,7 @@ replyComment(e,node,comments){
             payload:{
                 title:"Animal Reported",
                 date:dt,
-                body:'<h3>dskjhs</h3>',
+                body:'Animal reported to Sploot ',
                 avatar:'https://i.pravatar.cc/50'
             }
         }
@@ -219,14 +224,15 @@ replyComment(e,node,comments){
     }
 
     // Rescuer Assigned Milestone
-    Rescuer(date){
+    Rescuer(){
         // console.log(this.tree);
+        const date = new Date(Date.now()).toLocaleString()
         var data = {
             id:"0002",
             payload:{
 
                 title:"Rescuer Assigned",
-                date:"sss",
+                date:date,
                 body:'',
                 avatar:'https://i.pravatar.cc/50'
             }
@@ -239,11 +245,12 @@ replyComment(e,node,comments){
 
     //Custom Milestone
     customeMile(data){
+        const date = new Date(Date.now()).toLocaleString()
         var data = {
             id:Date.now(),
             payload:{
                 title:data.title,
-                date:Date.now(),
+                date:date,
                 body:data.body,
                 avatar:'https://i.pravatar.cc/50'
             }
