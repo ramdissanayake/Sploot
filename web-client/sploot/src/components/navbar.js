@@ -1,5 +1,6 @@
 import React from 'react';
 import '../custom.css'
+import isWebview from 'is-webview'
 
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 import Login from './login'
@@ -14,22 +15,33 @@ export default class NavBar extends React.Component {
   }
 
    render(){
-     
+     if (isWebview(navigator.userAgent)) {
+      return null;
+    }else{
      return(
 
       <nav class="navbar navbar-inverse ">
           <div class="container-fluid">
           <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 
+        
+          <i class="fa fa-paw"></i >
+          </button>
       <a class="navbar-brand" href="/">
       <img width="100px"src="/images/brand/sploot.png"/>
       </a>
+      <div style={{paddingTop:"80px"}} >
+
+        <Link to="/requests/new" class="btn btn-primary reportbtn">Report an Animal</Link>
+      </div>
     </div>
+    <div  className="collapse navbar-collapse" id="myNavbar">
+
               <ul className="nav navbar-nav navbar-right" >    
                                                                                                                                                       
               <li>
-                  <a>
-                    <Link to="/requests/new"class="btn btn-primary reportbtn">Report an Animal</Link>
-                  </a>
+                  
                 </li>
                 <li style={{color:''}}><Link to="/">Home</Link></li>   
                 <li style={{display:'inline'}}><Link to="/requests">Rescue</Link></li>                    
@@ -60,6 +72,7 @@ export default class NavBar extends React.Component {
                 </li>  
                 
             </ul>
+    </div>
 
             </div>
 </nav>
@@ -70,6 +83,7 @@ export default class NavBar extends React.Component {
 
 
      )
+}
    }
  
 }

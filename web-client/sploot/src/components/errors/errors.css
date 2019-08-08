@@ -15,7 +15,7 @@
         padding-top: 50.64%; 
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .E{
         background-size:80%;
         padding-top: 70.64%; 

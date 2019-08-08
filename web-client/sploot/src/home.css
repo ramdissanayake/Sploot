@@ -25,6 +25,11 @@
     .title>h1{
         font-size:20vw;
     }
+    #homeheaderimg{
+      background-size:80%;
+      padding-top: 60.64%;
+    }
+
 }
 
 .title>p{
