@@ -14,14 +14,15 @@ export const MMButton = (props) =>{
 
         <Icon
         name={props.icon}
-        color={props.iconColor?props.iconColor:'#183366'} size={50} style={style.mmicon} type="foundation" />
+        color={props.iconColor?props.iconColor:'#183366'}
+         size={50} style={style.mmicon} type="foundation" />
 
         <Text style={style.mmTitle}>{props.title}</Text>
 
     </TouchableOpacity>
     )
 }
-
+// 
 
 
 
@@ -30,12 +31,17 @@ const style = StyleSheet.create({
     mmButton: {
         borderRadius:2,
         backgroundColor:'rgba(256, 256, 256, 0.7)',
+        // backgroundColor: '#03227f',
+        opacity: 0.9,
         margin:5,
         padding:5,
         height:120,
         width:100,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderWidth: 1,
+        borderRadius: 20,
+        borderColor: '#03227f'
        
     },
 

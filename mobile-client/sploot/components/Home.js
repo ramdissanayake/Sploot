@@ -1,9 +1,15 @@
 import React,{Component} from 'react';
-import { StyleSheet, View,Text} from 'react-native';
+import { StyleSheet, View,Text, Image,  Dimensions} from 'react-native';
 import LiveAlerts from './LiveAlerts/liveAlerts';
 import {MMButton} from './elements/buttons';
 import ImagePicker from 'react-native-image-picker';
 import { Actions } from 'react-native-router-flux';
+import { colors } from 'react-native-elements';
+// import * as Animatable from 'react-native-animatable';
+
+
+let deviceWidth = Dimensions.get('window').width;
+let deviceHeight = Dimensions.get('window').height;
 
 export default class Home extends Component{
     constructor(props){
@@ -48,7 +54,7 @@ export default class Home extends Component{
                 Actions.adoptions()
                 break;
             case 'donate':
-                Actions.donations()
+                Actions.donation()
             }
         
         
@@ -58,7 +64,16 @@ export default class Home extends Component{
 
     render(){
         return(
-            <View >
+            <View style={style.cover}>
+                <View  style={style.imagecover}>
+                {/* <Text style={style.topic}>Sploot !</Text> */}
+                <Image 
+                  style={style.image1}
+                source={require('./images/sploot.png')} />
+                <Image 
+                  style={style.image2}
+                source={require('./images/home-image.png')} />
+                </View>
 
             
                 <View style={style.mainmenu}> 
@@ -97,7 +112,7 @@ export default class Home extends Component{
                         <MMButton 
                             title = "Donate"
                             icon="dollar"
-                            callback={()=>this.MainMenuRoute('adopt')}
+                            callback={()=>this.MainMenuRoute('donate')}
                             // callback={this.test}
                         /> 
                 </View>
@@ -112,7 +127,48 @@ const style = StyleSheet.create({
         flexDirection: 'row', 
         flexWrap: 'wrap',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        // height: deviceHeight*0.9,
         
-    }
+    },
+    cover:{
+        flex: 1, 
+        // flexDirection: 'row', 
+        // flexWrap: 'wrap',
+        // alignItems: 'center',
+        backgroundColor: '#3b5998',
+        // justifyContent: 'center'
+
+        
+    },
+
+    imagecover:{
+        
+        marginBottom: 10,
+        
+    },
+    image1:{
+        alignSelf: 'flex-start',
+        height: 70,
+        width: 190,
+        
+    },
+
+    image2:{
+        alignSelf: 'flex-end',
+        height: 200,
+        width: 320,
+        
+    },
+
+    topic:{
+        alignSelf: 'flex-start',
+        color: '#FFFF00',
+        fontWeight: 'bold',
+        fontSize: 50,
+        marginLeft: 10,
+        
+    },
+
+
 })

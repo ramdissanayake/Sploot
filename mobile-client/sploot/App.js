@@ -5,11 +5,12 @@ import { Router, Scene } from 'react-native-router-flux';
 import NewRequest from './components/scenes/newrequest';
 import Emergency from './components/scenes/emergency';
 import Home from './components/Home'
+import Adoption from './components/scenes/adoption';
+import Donate from './components/scenes/donate';
 
 
-type Props = {};
 
-export default class App extends Component<Props> {
+export default class App extends Component{
   render() {
     return (
          <Router hideNavBar="true">
@@ -17,7 +18,8 @@ export default class App extends Component<Props> {
             <Scene key="home" component = {Home} title="Sploot!" initial={true}/>
             <Scene key="newrequest" component = {NewRequest} title="New Request" />
             <Scene key="emergency" component = {Emergency} title="Emergency Request" />
-            <Scene key="adoptions" component = {Emergency} title="Adoptions" />
+            <Scene key="adoptions" component = {Adoption} title="Adoptions" />
+            <Scene key="donation" component = {Donate} title="Donation" />
           </Scene>
          </Router>
     );
