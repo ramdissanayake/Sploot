@@ -52,29 +52,6 @@ export default class NewRescue extends Component {
 
         this.handleStep(null,0)
         this.$ = window.$;
-        // window.$('.sug').collapse()
-
-       // if(!(window.$('#location').is(":focus"))){
-
-       //      window.$('.sug').collapse('hide')
-       // }
-      
-       //  // window.$('.sug').collapse('hide')
-
-       //  window.$('#location').focusin(function(){
-       //      window.$('.sug').collapse('show')
-       //  })
-       //  window.$('#location').focusout(function(){
-       //       if((window.$('.sug').is(":focus"))){
-       //          window.$('.sug').collapse('show')
-       //       }
-       //              window.$('.sug').collapse('hide')
-        
-
-           
-       //  })
-         
-        
     }
 
     addImage(image,url) {
@@ -197,8 +174,15 @@ export default class NewRescue extends Component {
         this.state.pictures.map((pic,index) => (
             payload.append('picture',pic)
         ))
-        this.request.newRequest(payload);
+        this.request.newRequest(payload,this.redirect.bind(this));
     }
+  
+
+    redirect(){
+        this.props.history.push('/requests');
+    }
+            
+
 
     render() {
         const style ={
