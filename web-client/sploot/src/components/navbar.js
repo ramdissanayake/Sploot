@@ -1,78 +1,89 @@
 import React from 'react';
-import '../custom.css';
+import '../custom.css'
+import isWebview from 'is-webview'
 
-import { 
-    Container,
-    Row,
-    Col } from 'reactstrap';
-  
-    import {
-      
-      Collapse,
-      Navbar,
-      NavbarToggler,
-      NavbarBrand,
-      Nav,
-      NavItem,
-      NavLink,
-      UncontrolledDropdown,
-      DropdownToggle,
-      DropdownMenu,
-      DropdownItem } from 'reactstrap';  
-
-   
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+import Login from './login'
 export default class NavBar extends React.Component {
-    constructor(props) {
-        super(props);
+  
+  componentDidMount(){
+    window.$('.dropdown-toggle').hover(function(){
+      window.$(this).children('ul').stop().slideToggle(400);
+  });
 
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-         isOpen: false
-        };
-      }
-      toggle() {
-        this.setState({
-          isOpen: !this.state.isOpen
-        });
-      }
-    render(){
-        return(
-            
-            <div>
-                <Row noGutters>
-                <Col >
-                    <ul className="Topbar">
-                        <li>Shop!</li>  
-                        <li>Login</li>
-                     </ul>  
-                </Col>
-            </Row>
-     
-     <Navbar className="Navbar_custom" expand="md" >
-     <NavbarBrand className="Navbar_custom" href="/">SPLOOT!</NavbarBrand>
-     <NavbarToggler onClick={this.toggle} />
-     <Collapse isOpen={this.state.isOpen} navbar>
-       <Nav className="ml-auto" navbar>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/components/">Home</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/">Adoption</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="/components/">Success Stories</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="https://github.com/reactstrap/reactstrap">About</NavLink>
-         </NavItem>
-         <NavItem>
-           <NavLink  className="Navbar_custom" href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
-         </NavItem>
-       </Nav>
-     </Collapse>
-   </Navbar>
+
+  }
+
+   render(){
+     if (isWebview(navigator.userAgent)) {
+      return null;
+    }else{
+     return(
+
+      <nav class="navbar navbar-inverse ">
+          <div class="container-fluid">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 
+        
+          <i class="fa fa-paw"></i >
+          </button>
+      <a class="navbar-brand" href="/">
+      <img width="100px"src="/images/brand/sploot.png"/>
+      </a>
+      <div style={{paddingTop:"80px"}} >
+
+        <Link to="/requests/new" class="btn btn-primary reportbtn">Report an Animal</Link>
+      </div>
+    </div>
+    <div  className="collapse navbar-collapse" id="myNavbar">
+
+              <ul className="nav navbar-nav navbar-right" >    
+                                                                                                                                                      
+              <li>
+                  
+                </li>
+                <li style={{color:''}}><Link to="/">Home</Link></li>   
+                <li style={{display:'inline'}}><Link to="/requests">Rescue</Link></li>                    
+                <li style={{display:'inline'}}><Link to="/adoptions">Adopt</Link></li>  
+                {/* Sploot Dropdown Menu */}
+                <li style={{display:'inline'}} class="dropdown-toggle" data-toggle="dropdown">
+                <a  id="menu1" class="dropdown-toggle" data-toggle="dropdown" href="#">Sploot!</a>
+                <ul class="dropdown-menu pulse" role="menu" aria-labelledby="menu1">
+                  <li ><Link to="#">
+              Blog
+                  </Link></li>
+                  <li><Link to="#">Shop</Link></li>
+                  <li><Link to="#">Forum</Link></li>
+                </ul>
+                
+                </li>
+                
+                <li style={{display:'inline'}}><Link to="/adoptions">Contact</Link></li>  
+                <li style={{display:'inline'}}>
+                <a>Register</a>
+                </li>
+
+                <li >
+                  <a>
+              <Login/>
+                    
+                  </a>
+                </li>  
+                
+            </ul>
+    </div>
+
             </div>
-      
-        );
-    }
+</nav>
+
+
+
+
+
+
+     )
+}
+   }
+ 
 }
