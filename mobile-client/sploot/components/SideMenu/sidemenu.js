@@ -1,120 +1,149 @@
-import React, { Component } from 'react';
-import { StyleSheet, Platform, View, Text, Image, TouchableOpacity, YellowBox, Dimensions } from 'react-native';
+import React, { Component } from "react";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+import { COLOR_PRIMARY, COLOR_GRAY } from "../../config/styles";
+
+import { NavigationActions, withNavigation } from "react-navigation";
 
 
-export class HamburgerIcon extends Component {
+let deviceWidth = Dimensions.get("window").width;
+let deviceHeight = Dimensions.get("window").height;
 
-    toggleDrawer = () => {
-        console.log(this.props.navigationProps);
-        this.props.navigationProps.toggleDrawer();
-      }
-  
-    render() {
-        return (
-  
-        <View style={{ flexDirection: 'row' }}>
-            <TouchableOpacity onPress={this.toggleDrawer.bind(this)} >
-            <Image
-              source={{ uri: 'https://reactnativecode.com/wp-content/uploads/2018/04/hamburger_icon.png' }}
-              style={{ width: 25, height: 25, marginLeft: 5 }}
-           />
-          </TouchableOpacity>
-        </View>
-  
-      );
-   
-    }
+class SideMenuPanel extends Component{
+
+
+  render(){
+    return(
+      <View>
+        <ScrollView style={styles.body}>
+                    <TouchableOpacity style={styles.card}>
+                        <Ionicons name={"edit"} size={30} color={"#192f6a"} style={{ marginLeft: 20 }} />
+                        <View style={styles.cardContent}>
+                            <Text style={styles.name}>Edit Profile</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.card}>
+                        <Ionicons name={"sign-out"} size={30} color={"#192f6a"} style={{ marginLeft: 20 }} />
+                        <View style={styles.cardContent}>
+                            <Text style={styles.name}>Privacy Policy</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.card}>
+                        <Ionicons name={"sign-out"} size={30} color={"#192f6a"} style={{ marginLeft: 20 }} />
+                        <View style={styles.cardContent}>
+                            <Text style={styles.name}>Help Center</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.card} onPress={() => this.logout()}>
+                        <Ionicons name={"sign-out"} size={30} color={"#192f6a"} style={{ marginLeft: 20 }} />
+                        <View style={styles.cardContent}>
+                            <Text style={styles.name}>LogOut</Text>
+                        </View>
+                    </TouchableOpacity>
+
+                </ScrollView>
+      </View>
+    );
   }
 
+}
 
-  export class CustomSideMenu extends Component {
+const style = StyleSheet.create({
+ 
+  container: {
+    width: "100%",        
+    backgroundColor: "#fff",
+    flex:1
+},
 
-    render() {
-  
-      return (
-  
-        <View style={styles.sideMenuContainer}>
-  
-          <Image source={{ uri: 'https://reactnativecode.com/wp-content/uploads/2017/10/Guitar.jpg' }}
-            style={styles.sideMenuProfileIcon} />
-  
-          <View style={{ width: '100%', height: 1, backgroundColor: '#e2e2e2', marginTop: 15}} />
-  
-          <View style={{width: '100%'}}>
-  
-              <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
-  
-               <Text style={styles.menuText} onPress={() => { this.props.navigation.navigate('AboutUS') }} > First Activity </Text>
-  
-              </View>
-  
-              <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
-  
-                <Text style={styles.menuText} onPress={() => { this.props.navigation.navigate('ContactUs') }} > Second Activity </Text>
-  
-              </View>
-  
-  
-         </View>
-  
-         <View style={{ width: '100%', height: 1, backgroundColor: '#e2e2e2', marginTop: 15}} />
-  
-  
-        </View>
-      );
-    }
-  }
-  
-  
+body: {        
+    height: "100%",
+    backgroundColor: "#fff",
+},
+username: {
+    color: "#20B2AA",
+    fontSize: 22,
+    alignSelf: "center",
+    marginLeft: 10
+},
+image: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginTop:-30,
+    marginLeft:30
+},
+box: {        
+    backgroundColor: "white",
+    flexDirection: "row",
+},
+boxContent: {
+    flex: 1,
+    flexDirection: "column",
+    alignItems: "flex-start",
+    marginLeft: 10,
+},
+title: {
+    fontSize: 16,
+    color: "#151515",
+    padding:5
+    
+},
+description: {
+    fontSize: 15,
+    color: "#646464",
+},
+buttons: {
+    flexDirection: "row",
+},
+button: {
+    height: 35,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    width: 50,
+    marginRight: 5,
+    marginTop: 5,
+},
+view: {
+    backgroundColor: "#FF1493",
+},
+profile: {
+    backgroundColor: "#1E90FF",
+},
+message: {
+    backgroundColor: "#228B22",
+},
+card: {
+    shadowColor: "#00000021",
+    shadowOffset: {
+        width: 0,
+        height: 6,
+    },
+    shadowOpacity: 0.37,
+    shadowRadius: 7.49,
+    elevation: 12,
+    backgroundColor: "white",
+    padding: 10,
+    flexDirection: "row",       
+},
+cardContent: {
+    marginLeft: 20,
+    marginTop: 5
+},
+name: {
+    fontSize: 18,
+    flex: 1,
+    alignSelf: "center",
+    color: "#3399ff",        
+},
 
 
 
+})
 
-const styles = StyleSheet.create({
-
-        MainContainer: {
-      
-          flex: 1,
-          paddingTop: (Platform.OS) === 'ios' ? 20 : 0,
-          alignItems: 'center',
-          justifyContent: 'center',
-      
-        },
-      
-        sideMenuContainer: {
-      
-          width: '100%',
-          height: '100%',
-          backgroundColor: '#fff',
-          alignItems: 'center',
-          paddingTop: 20
-        },
-      
-        sideMenuProfileIcon:
-        {
-          resizeMode: 'center',
-          width: 150, 
-          height: 150, 
-          borderRadius: 150/2
-        },
-      
-        sideMenuIcon:
-        {
-          resizeMode: 'center',
-          width: 28, 
-          height: 28, 
-          marginRight: 10,
-          marginLeft: 20
-          
-        },
-      
-        menuText:{
-      
-          fontSize: 15,
-          color: '#222222',
-          
-        }
-      
-      });
-
-
+export default withNavigation(SideMenuPanel);
