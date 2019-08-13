@@ -15,6 +15,7 @@
     "react-native-elements": "^1.1.0",
     "react-native-image-picker": "^0.28.1",
     "react-native-imagepicker": "^2.0.0",
+    "react-native-maps": "^0.25.0",
     "react-native-router-flux": "^4.0.6",
     "react-native-vector-icons": "^6.4.2",
     "react-native-webview": "^5.9.1",

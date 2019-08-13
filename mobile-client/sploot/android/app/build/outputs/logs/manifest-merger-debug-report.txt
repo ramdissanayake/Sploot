@@ -1,15 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
+ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
+INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
+INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
+INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
+MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
+MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-vector-icons] D:\Sploot\mobile-client\sploot\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\010ab1ab89895ca8160241b6b659726a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\bb27490d247c04f090557afc7fb27870\AndroidManifest.xml:17:1-22:12
@@ -23,6 +30,7 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Kavee\.gradl
 MERGED from [com.android.support:customview:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\57cbd7129177cbad5fd258b7798a5ad3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\96273a0c083978f855193409f2dc714d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\be173f5fc804abcce405434b920beaa7\AndroidManifest.xml:17:1-22:12
@@ -52,18 +60,22 @@ INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManife
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
+		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-28:12
+		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
@@ -75,15 +87,29 @@ ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-26:19
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-26:19
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-26:19
+ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
+MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
+MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
 MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:22:5-23:19
@@ -140,10 +166,18 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:25:7-84
 	android:name
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:25:17-81
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:26:13-28:70
+	android:value
+		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:28:13-68
+	android:name
+		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:27:13-58
 uses-sdk
 INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
@@ -154,6 +188,18 @@ MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\cach
 MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\010ab1ab89895ca8160241b6b659726a\AndroidManifest.xml:20:5-44
@@ -180,6 +226,8 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.grad
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\96273a0c083978f855193409f2dc714d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:20:5-44
@@ -220,6 +268,8 @@ MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Kavee\.gradle\caches\tr
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e3c72abacf46bb7fbcec0fe542b1c268\AndroidManifest.xml:5:5-7:41
 INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
 INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
@@ -230,6 +280,10 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-78
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
 ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
@@ -256,3 +310,43 @@ ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modu
 		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 	android:name
 		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-56
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:10:13-66
+	android:name
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:9:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:27:13-51

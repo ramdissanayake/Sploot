@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import { StyleSheet, Dimensions } from "react-native";
-import { COLOR_PRIMARY, COLOR_GRAY } from "../../config/styles";
+//import { COLOR_PRIMARY, COLOR_GRAY } from "../../config/styles";
 
 import { NavigationActions, withNavigation } from "react-navigation";
 

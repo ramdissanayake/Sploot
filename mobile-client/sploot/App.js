@@ -11,38 +11,40 @@ import Donate from './components/scenes/donate';
 import AboutUs from './components/scenes/about';
 import ContactUs from './components/scenes/contact';
 import SideMenuPanel from './components/SideMenu/sidemenu';
+import CurrentLocation from './components/scenes/location';
+console.disableYellowBox = true;
 
 export default class App extends Component{
   render() {
 
-    const AppStack = createStackNavigator(
-      {
-          AboutUs: { screen: AboutUs },
-          ContactUs: { screen: ContactUs },
-          // Profile: { screen: Profile },
-          // Notification: {
-          //     screen: Notification,
-          //     navigationOptions: {
-          //         tabBarLabel: "Notifications",
-          //         tabBarIcon: ({ tintColor,focused  }) => (
-          //             <Noti color={tintColor} />
+  //   const AppStack = createStackNavigator(
+  //     {
+  //         AboutUs: { screen: AboutUs },
+  //         ContactUs: { screen: ContactUs },
+  //         // Profile: { screen: Profile },
+  //         // Notification: {
+  //         //     screen: Notification,
+  //         //     navigationOptions: {
+  //         //         tabBarLabel: "Notifications",
+  //         //         tabBarIcon: ({ tintColor,focused  }) => (
+  //         //             <Noti color={tintColor} />
 
-          //         )
-          //     },
-          // }
-      })
+  //         //         )
+  //         //     },
+  //         // }
+  //     })
 
-    const CustumDrawerComponent = (props) => (
-      <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
-          <SideMenuPanel />
-      </SafeAreaView>
-  )
-      const AppDrawerNavigator = createDrawerNavigator({
-      Dashboard: AppStack
-      }, {
-          contentComponent: CustumDrawerComponent
-      }
-  );
+  //   const CustumDrawerComponent = (props) => (
+  //     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+  //         <SideMenuPanel />
+  //     </SafeAreaView>
+  // )
+  //     const AppDrawerNavigator = createDrawerNavigator({
+  //     Dashboard: AppStack
+  //     }, {
+  //         contentComponent: CustumDrawerComponent
+  //     }
+  // );
 
     return (
 
@@ -53,11 +55,14 @@ export default class App extends Component{
             <Scene key="emergency" component = {Emergency} title="Emergency Request" />
             <Scene key="adoptions" component = {Adoption} title="Adoptions" />
             <Scene key="donation" component = {Donate} title="Donation" />
+            <Scene key="about" component = {AboutUs} title="About Us" />
+            <Scene key="location" component = {CurrentLocation} title="Current Location" />
+            <Scene key="contactus" component = {ContactUs} title="Contact Us" />
+                        {/* <AppDrawerNavigator /> */}
           </Scene>
 
-          <Scene>
-          <AppContainer />
-          </Scene>
+            
+
          </Router>
 
 

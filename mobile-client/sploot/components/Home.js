@@ -55,6 +55,12 @@ export default class Home extends Component{
                 break;
             case 'donate':
                 Actions.donation()
+            // case 'about':
+            //     Actions.about()
+
+
+            
+
             }
         
         
@@ -109,12 +115,21 @@ export default class Home extends Component{
                             iconColor="#8B0000"
                             callback={()=>this.MainMenuRoute('adopt')}
                         />
+                        {/* <MMButton 
+                            title = "About"
+                            icon="dollar"
+                            callback={()=>this.MainMenuRoute('about')}
+                            // callback={this.test}
+                        />  */}
+
+
+
                         <MMButton 
                             title = "Donate"
                             icon="dollar"
                             callback={()=>this.MainMenuRoute('donate')}
                             // callback={this.test}
-                        /> 
+                        />  
                 </View>
             </View>
         )
