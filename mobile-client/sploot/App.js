@@ -12,6 +12,7 @@ import AboutUs from './components/scenes/about';
 import ContactUs from './components/scenes/contact';
 import SideMenuPanel from './components/SideMenu/sidemenu';
 import CurrentLocation from './components/scenes/location';
+import LostAnimal from './components/scenes/lostAnimals';
 console.disableYellowBox = true;
 
 export default class App extends Component{
@@ -58,6 +59,7 @@ export default class App extends Component{
             <Scene key="about" component = {AboutUs} title="About Us" />
             <Scene key="location" component = {CurrentLocation} title="Current Location" />
             <Scene key="contactus" component = {ContactUs} title="Contact Us" />
+            <Scene key="lostrequest" component = {LostAnimal} title="Lost Animals" />
                         {/* <AppDrawerNavigator /> */}
           </Scene>
 

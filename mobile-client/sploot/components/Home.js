@@ -45,7 +45,7 @@ export default class Home extends Component{
                 Actions.emergency();
                 break;
             case 'lost':
-                Actions.newrequest({lost:true})    
+                Actions.lostrequest();    
                 break;
             case 'nearby':
                 Actions.requests({nearby:true})

@@ -1,0 +1,270 @@
+import React, {Component} from 'react';
+// import MapboxGL from '@mapbox/react-native-mapbox-gl'
+import ImagePicker from 'react-native-image-picker';
+import {
+	AppRegistry,
+	Image,
+	PixelRatio,
+	StyleSheet,
+	Text,
+	TouchableOpacity,
+	ScrollView,
+	View,
+	Dimensions,
+	TextInput,
+  } from 'react-native';
+  import { Icon } from 'react-native-elements';
+
+
+let deviceWidth = Dimensions.get("window").width;
+let deviceHeight = Dimensions.get("window").height;
+
+
+export default class LostAnimal extends Component{
+	state = {
+		avatarSource: null,
+	  };
+	
+	  constructor(props) {
+		super(props);
+		this.state = {
+            locationError: true,
+            Location: false,
+            region: null,
+            currentPlace: null,
+            markers: [],
+            latitude: null,
+            longitude: null,
+            latitudeDelta: 0.00922 * 1.5,
+            longitudeDelta: 0.00421 * 1.5,
+            selectedAnimal: "",
+            uploading: false,
+        }
+		this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
+		this.mapRef = null;
+	}
+
+
+
+	componentDidMount = async () => {
+        this.watchID = navigator.geolocation.watchPosition((position) => {
+            // Create the object to update this.state.mapRegion through the onRegionChange function
+            let region = {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                latitudeDelta: 0.00922 * 1.5,
+                longitudeDelta: 0.00421 * 1.5
+            }
+            this.setState({
+                region: region,
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+            })
+            if (this.state.longitude != null && this.state.latitude != null) {
+                this.setState({
+                    locationError: false
+                })
+            }
+            // this.mapView.animateToRegion(region, 1000);
+
+        }, (error) => console.log(error));
+	}
+
+
+	selectPhotoTapped() {
+		const options = {
+		  quality: 1.0,
+		  maxWidth: 500,
+		  maxHeight: 500,
+		  storageOptions: {
+			skipBackup: true,
+		  },
+		};
+	
+		ImagePicker.showImagePicker(options, (response) => {
+		  console.log('Response = ', response);
+	
+		  if (response.didCancel) {
+			console.log('User cancelled photo picker');
+		  } else if (response.error) {
+			console.log('ImagePicker Error: ', response.error);
+		  } else if (response.customButton) {
+			console.log('User tapped custom button: ', response.customButton);
+		  } else {
+			let source = { uri: response.uri };
+	
+			// You can also display the image using data:
+			// let source = { uri: 'data:image/jpeg;base64,' + response.data };
+	
+			this.setState({
+			  avatarSource: source,
+			});
+		  }
+		});
+	}
+
+	submit = () => {
+        // if (this.state.selectedAnimal == "") {
+        //     this.dropdown.alertWithType("error", "Error", "Please Select An Animal");
+        // } else if (this.state.description == "") {
+        //     this.dropdown.alertWithType("error", "Error", "Please Add The Description");
+        // } else {
+        //     this.uploadImage();
+
+        // }
+    }
+
+
+	render(){
+		return(
+			
+			
+			<View style={styles.container}>
+<TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+			  <View
+				style={[
+				   styles.avatarContainer,
+				  { marginBottom: 20 },
+				]}
+			  >
+				{this.state.avatarSource === null ? (
+			
+				<Image
+				style={styles.avatar}
+				source={require('../images/image_upload_avatar.png')}/> 
+				// <Text>"sgdfhgdhs"</Text>
+				
+				) : (
+				  <Image style={styles.avatar} source={this.state.avatarSource} />
+				)}
+			  </View>
+			  </TouchableOpacity>	
+
+			<TextInput
+			style={[styles.textInputStyle]}
+			placeholder={"Title"}
+			/>
+
+            <TextInput
+			style={[styles.textInputStyle]}
+			placeholder={"Last seen Location"}
+			/>
+
+			<TextInput
+			style={[styles.textInputStyle, {height: deviceHeight * 0.15,}  ]}
+			placeholder={"Enter Description Here"}
+			multiline = {true}
+			numberOfLines = {4}
+			/>
+			 
+
+			<TouchableOpacity style={styles.buttonContainer} onPress={() => this.submit()}>
+                    <Text style={styles.buttonText}>Submit</Text>
+            </TouchableOpacity>
+
+			
+	</View>
+	
+		)
+	}
+}
+
+
+const styles = StyleSheet.create({
+	container: {
+	  flex: 1,
+	  justifyContent: 'center',
+	  alignItems: 'center',
+	  backgroundColor: '#3b5998',
+	},
+	avatarContainer: {
+	  borderColor: '#9B9B9B',
+	  borderWidth: 1 / PixelRatio.get(),
+	  justifyContent: 'flex-start',
+	  alignItems: 'center',
+	  backgroundColor: '#6997e0',
+	  borderRadius: 50,
+	  marginTop: 15,
+	},
+
+	buttonContainer: {
+		borderRadius:2,
+        backgroundColor:'rgba(256, 256, 256, 0.7)',
+		opacity: 0.9,
+		marginTop: 10,
+		marginBottom:20,
+		marginLeft:210,
+        padding:5,
+        height:50,
+        width:100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+		borderRadius: 20,
+		borderColor: '#03227f',
+		
+	},
+	
+	buttonText: {
+		color: '#03227f',
+		fontSize: 18,
+	},
+	
+	mapContainer: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        borderWidth: 1,
+        borderStyle: "dashed",
+		width: "100%",
+		marginBottom: 10,
+		// marginTop: 10,
+		height: deviceHeight * 0.47,
+		width: deviceWidth*0.91,
+
+	},
+
+	// image1:{
+    //     alignSelf: 'center',
+    //     height: 70,
+    //     width: 190,
+        
+	// },
+	
+	avatar: {
+
+	  borderRadius: 20,
+	  width: 200,
+	  height: 200,
+	},
+
+	button1:{
+		borderRadius: 10,
+		width: 75,
+		height: 55,
+		backgroundColor: '#3b5998',
+	},
+
+	uploadimage:{
+        alignSelf: 'center',
+        height: 200,
+        width: 320,
+        
+	},
+	
+	textInputStyle: {
+        alignSelf: "center",
+        flexWrap: "wrap",
+        textAlignVertical: "top",
+        textAlign: "left",
+        fontSize: 14,
+        // marginHorizontal: 12,
+        marginBottom: 10,
+        // padding:2,
+		height: deviceHeight * 0.06,
+		width: deviceWidth*0.91,
+		backgroundColor: '#ffffff',
+	},
+	
+
+  });
