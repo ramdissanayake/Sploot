@@ -39,7 +39,7 @@ export default class App extends Component{
   //         <SideMenuPanel />
   //     </SafeAreaView>
   // )
-  //     const AppDrawerNavigator = createDrawerNavigator({
+    //  const AppDrawerNavigator = createDrawerNavigator({
   //     Dashboard: AppStack
   //     }, {
   //         contentComponent: CustumDrawerComponent

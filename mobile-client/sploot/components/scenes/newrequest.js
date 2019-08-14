@@ -8,9 +8,17 @@ import {
 	StyleSheet,
 	Text,
 	TouchableOpacity,
+	ScrollView,
 	View,
+	Dimensions,
+	TextInput,
   } from 'react-native';
   import { Icon } from 'react-native-elements';
+  import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
+
+let deviceWidth = Dimensions.get("window").width;
+let deviceHeight = Dimensions.get("window").height;
+
 
 export default class NewRequest extends Component{
 	state = {
@@ -19,8 +27,47 @@ export default class NewRequest extends Component{
 	
 	  constructor(props) {
 		super(props);
+		this.state = {
+            locationError: true,
+            Location: false,
+            region: null,
+            currentPlace: null,
+            markers: [],
+            latitude: null,
+            longitude: null,
+            latitudeDelta: 0.00922 * 1.5,
+            longitudeDelta: 0.00421 * 1.5,
+            selectedAnimal: "",
+            uploading: false,
+        }
 		this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
+		this.mapRef = null;
+	}
 
+
+
+	componentDidMount = async () => {
+        this.watchID = navigator.geolocation.watchPosition((position) => {
+            // Create the object to update this.state.mapRegion through the onRegionChange function
+            let region = {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                latitudeDelta: 0.00922 * 1.5,
+                longitudeDelta: 0.00421 * 1.5
+            }
+            this.setState({
+                region: region,
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+            })
+            if (this.state.longitude != null && this.state.latitude != null) {
+                this.setState({
+                    locationError: false
+                })
+            }
+            // this.mapView.animateToRegion(region, 1000);
+
+        }, (error) => console.log(error));
 	}
 
 
@@ -56,29 +103,91 @@ export default class NewRequest extends Component{
 		});
 	}
 
+	submit = () => {
+        // if (this.state.selectedAnimal == "") {
+        //     this.dropdown.alertWithType("error", "Error", "Please Select An Animal");
+        // } else if (this.state.description == "") {
+        //     this.dropdown.alertWithType("error", "Error", "Please Add The Description");
+        // } else {
+        //     this.uploadImage();
+
+        // }
+    }
+
 
 	render(){
 		return(
+			<ScrollView>
 			
 			<View style={styles.container}>
-			<TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
+<TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
 			  <View
 				style={[
-				  styles.avatar,
-				  styles.avatarContainer,
+				   styles.avatarContainer,
 				  { marginBottom: 20 },
 				]}
 			  >
 				{this.state.avatarSource === null ? (
-				<Text >Upload a Photo</Text>
+			
+				<Image
+				style={styles.avatar}
+				source={require('../images/image_upload_avatar.png')}/> 
+				// <Text>"sgdfhgdhs"</Text>
+				
 				) : (
 				  <Image style={styles.avatar} source={this.state.avatarSource} />
 				)}
 			  </View>
-			 
-			</TouchableOpacity>
+			  </TouchableOpacity>	
 
+			<TextInput
+			style={[styles.textInputStyle]}
+			placeholder={"Title"}
+			/>
+
+			<TextInput
+			style={[styles.textInputStyle, {height: deviceHeight * 0.15,}  ]}
+			placeholder={"Enter Description Here"}
+			multiline = {true}
+			numberOfLines = {4}
+			/>
+			 
+			 <MapView
+				style={styles.mapContainer}
+				provider={PROVIDER_GOOGLE}
+				initialRegion={this.state.region}
+				showsUserLocation={true}
+				loadingEnabled={true}
+				zoomControlEnabled={true}
+				showsMyLocationButton={true}
+				ref={ref => { this.mapView = ref }}
+				onPress={(e) => this.setState({
+					longitude: e.nativeEvent.coordinate.longitude,
+					latitude: e.nativeEvent.coordinate.latitude,
+					locationError: false
+				})}
+			>
+				{this.state.latitude != null && this.state.latitude != null ? (
+					<Marker draggable
+						coordinate={{
+							latitude: this.state.latitude,
+							longitude: this.state.longitude
+						}}
+						title={"Here is the Animal"}
+
+					/>
+				) : (
+						<View></View>
+					)}
+			</MapView>
+
+			<TouchableOpacity style={styles.buttonContainer} onPress={() => this.submit()}>
+                    <Text style={styles.buttonText}>Submit</Text>
+            </TouchableOpacity>
+
+			
 	</View>
+	</ScrollView>
 		)
 	}
 }
@@ -94,14 +203,62 @@ const styles = StyleSheet.create({
 	avatarContainer: {
 	  borderColor: '#9B9B9B',
 	  borderWidth: 1 / PixelRatio.get(),
-	  justifyContent: 'center',
+	  justifyContent: 'flex-start',
 	  alignItems: 'center',
 	  backgroundColor: '#6997e0',
+	  borderRadius: 50,
+	  marginTop: 15,
 	},
+
+	buttonContainer: {
+		borderRadius:2,
+        backgroundColor:'rgba(256, 256, 256, 0.7)',
+		opacity: 0.9,
+		marginTop: 10,
+		marginBottom:20,
+		marginLeft:210,
+        padding:5,
+        height:50,
+        width:100,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderWidth: 1,
+		borderRadius: 20,
+		borderColor: '#03227f',
+		
+	},
+	
+	buttonText: {
+		color: '#03227f',
+		fontSize: 18,
+	},
+	
+	mapContainer: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        borderWidth: 1,
+        borderStyle: "dashed",
+		width: "100%",
+		marginBottom: 10,
+		// marginTop: 10,
+		height: deviceHeight * 0.47,
+		width: deviceWidth*0.91,
+
+	},
+
+	// image1:{
+    //     alignSelf: 'center',
+    //     height: 70,
+    //     width: 190,
+        
+	// },
+	
 	avatar: {
-	  borderRadius: 10,
-	  width: 300,
-	  height: 400,
+
+	  borderRadius: 20,
+	  width: 100,
+	  height: 100,
 	},
 
 	button1:{
@@ -116,5 +273,21 @@ const styles = StyleSheet.create({
         height: 200,
         width: 320,
         
-    },
+	},
+	
+	textInputStyle: {
+        alignSelf: "center",
+        flexWrap: "wrap",
+        textAlignVertical: "top",
+        textAlign: "left",
+        fontSize: 14,
+        // marginHorizontal: 12,
+        marginBottom: 10,
+        // padding:2,
+		height: deviceHeight * 0.06,
+		width: deviceWidth*0.91,
+		backgroundColor: '#ffffff',
+	},
+	
+
   });
