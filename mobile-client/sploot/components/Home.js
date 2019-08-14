@@ -53,13 +53,13 @@ export default class Home extends Component{
             case 'adopt':
                 Actions.adoptions()
                 break;
-            // case 'donate':
-            //     Actions.donation()
+            case 'donate':
+                Actions.donation()
             // case 'about':
             //     Actions.about()
 
-            case 'location':
-                Actions.location()
+            // case 'location':
+            //     Actions.location()
             
 
             }
@@ -125,19 +125,19 @@ export default class Home extends Component{
 
 
 
-                        {/* <MMButton 
+                        <MMButton 
                             title = "Donate"
                             icon="dollar"
                             callback={()=>this.MainMenuRoute('donate')}
                             // callback={this.test}
-                        />   */}
+                        />  
 
-<MMButton 
+{/* <MMButton 
                             title = "Location"
                             icon="dollar"
                             callback={()=>this.MainMenuRoute('location')}
                             // callback={this.test}
-                        />  
+                        />   */}
 
                 </View>
             </View>
