@@ -10,6 +10,7 @@ import Adoption from './components/scenes/adoption';
 import Donate from './components/scenes/donate';
 import AboutUs from './components/scenes/about';
 import ContactUs from './components/scenes/contact';
+import NearByAnimal from './components/scenes/nearAnimals';
 import SideMenuPanel from './components/SideMenu/sidemenu';
 import CurrentLocation from './components/scenes/location';
 import LostAnimal from './components/scenes/lostAnimals';
@@ -55,6 +56,7 @@ export default class App extends Component{
             <Scene key="newrequest" component = {NewRequest} title="New Request" />
             <Scene key="emergency" component = {Emergency} title="Emergency Request" />
             <Scene key="adoptions" component = {Adoption} title="Adoptions" />
+            <Scene key="requests" component = {NearByAnimal} title="Near By Animals" />
             <Scene key="donation" component = {Donate} title="Donation" />
             <Scene key="about" component = {AboutUs} title="About Us" />
             <Scene key="location" component = {CurrentLocation} title="Current Location" />

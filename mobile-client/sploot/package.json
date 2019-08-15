@@ -18,7 +18,7 @@
     "react-native-maps": "^0.25.0",
     "react-native-router-flux": "^4.0.6",
     "react-native-vector-icons": "^6.4.2",
-    "react-native-webview": "^5.9.1",
+    "react-native-webview": "^5.12.1",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-axios-middleware": "^4.0.0"
