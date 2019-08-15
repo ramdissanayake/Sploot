@@ -6,6 +6,7 @@ import Sticky from 'react-sticky-el';
 // import Milestone from '../milestones/milestones';
 import Login from '../login'
 import {server} from "../../config"
+import MapSel from '../map/geoSel';
 
 export default class RequestView extends Component{
     constructor(props){
@@ -14,13 +15,14 @@ export default class RequestView extends Component{
         this.state={
             rescuable:true,
             container:null,
+            mapLocation: this.request.getTrackerCoords(0)
     
         }
     }
     
     
     componentDidMount(){
-        console.log(this.props)
+        console.log(this.request.getTrackerCoords(0))
         //Set Rescuable--------------------------------------
         if(this.request.getRescuers().length >0){
             this.setState({
@@ -123,29 +125,31 @@ export default class RequestView extends Component{
 
 }
                                         </div>
-
-                                        <div>       
                                         {/* Thumbnails */}
                                         <div  style={{width:'100%',marginBottom:'10px'}}>
                                             {this.thumbnails()}
+                                            <MapSel zoom={16} rescue={true} location = {this.state.mapLocation} />
                                         </div>
 
-                                        {/* Location */}
-                                           <h6>
-                                            <i className="fa fa-map-marker"/> {this.request.getLocation()}
-                                            {/* <a class="btn btn-primary">Update</a> */}
-                                            </h6> 
+                                        <div style={{padding:"10px",marginTop:"0px",backgroundColor:"white"}}>       
+                                            <small>
+                                            {this.request.getAdditional()}
+                                            </small>
 
                                         {/* Contact Person */}
                                             <h6>
                                                 <i className="fa fa-phone"/> {this.request.getContact()}
                                                 {/* <a class="btn btn-primary">Update</a> */}
                                             </h6> 
+                                        {/* Location */}
+                                           <h6>
+                                            <i className="fa fa-map-marker"/> {this.request.getLocation()}
+                                            {/* <a class="btn btn-primary">Update</a> */}
+                                            </h6> 
 
-                                        {/* Additional Details */}
-                                            <small>
-                                            {this.request.getAdditional()}
-                                            </small>
+
+
+                                    
                                         </div>   
 
                                             </div>

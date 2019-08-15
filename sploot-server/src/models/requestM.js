@@ -24,6 +24,7 @@ const requestSchema = mongoose.Schema(
         milestones:{type:Array},
     }
 )
+
 requestSchema.index({title:"text",additional:"text",location:"text"})
 
 const rescueRequest = mongoose.model('rescueRequest',requestSchema);

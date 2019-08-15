@@ -17,7 +17,7 @@ export default class MapSel extends Component {
   }
 
   showmap(myposition,zoom){
-    this.map = L.map('map').setView([myposition[0], myposition[1]], zoom) 
+    this.map = L.map('map', {zoomControl: false}).setView([myposition[0], myposition[1]], zoom) 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2hlaGFua3VsZSIsImEiOiJjanVsbXljYmIwbnl5NDVsOG93ZjN6a3MxIn0.M0lV10tb2YDwe5a6UK4pXA',{ 
 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
@@ -45,11 +45,17 @@ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStree
       if(!this.state.marker){this.marker(e.latlng)};
       this.setLatLng()
     })
+
+    if(this.props.rescue){
+      this.marker(this.props.location)
+      this.setState({mapload:"Sploot is Working..."})
+      // this.marker( [ "6.918512367955772", "80.03972077145701" ])
+    }
   }
 
   flyto(){
     console.log();
-    this.map.flyTo(this.props.location,13)
+    this.map.flyTo(this.props.location,15)
     this.map.once('moveend', function() {
     alert("Now Mark the Last Position of the Animal on the map")
 });
@@ -62,15 +68,16 @@ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStree
   }
 
   componentDidMount() {
-      this.showmap(this.props.location,6)
+      this.showmap(this.props.location,this.props.zoom||6)
       let myposition =[]
-      if(navigator.geolocation){
+      if(navigator.geolocation && !this.props.rescue){
         navigator.geolocation. getCurrentPosition((position)=>{
           myposition.push(position.coords.latitude)
           myposition.push(position.coords.longitude)
           this.setState({mapload:"Sploot is Working..."})
           this.map.flyTo(myposition,13)
           // this.map.setZoom(13);
+
         },(err)=>{
 
           this.setState({mapload:"Sploot is Working..."})
@@ -86,7 +93,7 @@ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStree
   //
   setLatLng=()=>{
     
-    var latlng = this.state.latlng;
+    var latlng = this.state.latlng ;
     var timestamp = this.state.timestamp; 
     if(!this.state.marker){
       
@@ -139,7 +146,7 @@ attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStree
     }).addTo(this.map);
 
     this.marker.on('click', function () {
-      // marker event
+      alert("c")
     })
   }
 

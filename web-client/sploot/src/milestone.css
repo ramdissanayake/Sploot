@@ -89,3 +89,12 @@ margin-top:2px;
 	background-color: rgba(0,0,0,0.45);
 
 }
+
+.milestone-body{
+    color:white;
+}
+
+.milestone-date{
+    color:white;
+    font-size: 10px;
+}

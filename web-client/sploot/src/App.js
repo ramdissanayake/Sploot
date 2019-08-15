@@ -6,11 +6,19 @@ import Adoption from './routes/adoption';
 import DogProfile from './routes/dogprofile';
 import HomePage from './routes/homepage';
 import Requests from './routes/requests';
+import AdminR from './routes/admin';
+//import Adoptions from './routes/adoptions';
+import Users from './routes/users';
+import Sidebar from './components/sidebar';
 // import Login from './components/login';
 import newRequest from './routes/requestNew';
 import RequestR from './routes/request';
+import Usersp from './components/admin/users';
+//import Adp from './components/admin/adoptions';
 import newAdoption from './components/adoptions/adoptNew'
 import NavBar from './components/navbar';
+import Adminp from './components/admin/admin';
+
 import Footer from './components/footer';
 import Login from './components/login'
 import NotFound from './components/errors/404'
@@ -49,9 +57,10 @@ export default class App extends React.Component {
             <Route path ='/requests/:stamp' component={RequestR}/>
             <Route path ='/login' component={Login}/>
             <Route path ='/adoptions/new' component={newAdoption}/>
-
+            <Route path ='/admin' component={AdminR}/>
             <Route path ='/register' exact component={Register} />
-
+            <Route path ='/users' component={Usersp}/>
+            {/* <Route path ='/adop' component={Adp}/> */}
             <Route path ='/test' component={test}/>
 
             <Route component={NotFound} />

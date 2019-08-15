@@ -61,7 +61,9 @@ export default class NavBar extends React.Component {
                 
                 <li style={{display:'inline'}}><Link to="/adoptions">Contact</Link></li>  
                 <li style={{display:'inline'}}>
+                <Link to="/register">
                 <a>Register</a>
+                </Link>
                 </li>
 
                 <li >

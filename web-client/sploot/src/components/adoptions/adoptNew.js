@@ -133,7 +133,7 @@ export default class NewAdoption extends  Component{
     }
     redirect(){
         this.props.history.push('/adoptions');
-    }
+    }   
     render(){
         const basic =  <div  class="panel scale-up-center adoption-form panel-default">
         <div class="panel-heading">
