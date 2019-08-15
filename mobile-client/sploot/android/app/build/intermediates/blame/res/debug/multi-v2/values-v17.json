@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Sploot\\mobile-client\\sploot\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "/home/shehank/Projects/Sploot/mobile-client/sploot/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kavee\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\19d605f225dc4fb3f8584e93f9e9eb5e\\res\\values-v17\\values-v17.xml",
+                    "source": "/home/shehank/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/e82da9ef38f93157f66ed47e22264e13/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,352 +1,356 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-vector-icons] D:\Sploot\mobile-client\sploot\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:17:1-38:12
-MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\010ab1ab89895ca8160241b6b659726a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\bb27490d247c04f090557afc7fb27870\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ffae70f8c41a108c4bd198e4465ce194\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\abd05c85cfcb734322df07d28f20d198\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cd694b77e6d5fb6a02f32c06e719cb63\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\da5143b67cae50d283b62b741bb1c93a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\bc3b4003766d09b4f7b57ebc95de275d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\52d4f7f1414f4ee2b0e1444674821520\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3d37c0aea19f6782a14f58801dfdb2b0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\57cbd7129177cbad5fd258b7798a5ad3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\96273a0c083978f855193409f2dc714d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\be173f5fc804abcce405434b920beaa7\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\461233236fb0ec1a52d1bf923ebe019e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e77a85e7c299fe75efcc2ddadd62261a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9cbebd3cc1bcc7d0643f1a016abc1a6d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\20cd7848304125927573b49d92b133cd\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\97e3babe733f32fd8ed8fc3dd5118136\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7d4fffa3b546690dd56653d3bd900984\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e8ac5729f72a9ae31c018c7870a6927e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\855b9bb897e3f18296f36bc112677236\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e3ffabe57337b23f687e193c2ff6f6aa\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\09a0f8a0ee1680a760f0715c4e01a875\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\04c2c03e50a17d2c152afd9700d043f4\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\b5b638407ba79901462a319430a875ea\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\3f0ca01dc71c167a55244de1adfea311\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\028d70c0ce6e77b969854600574bf4ec\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\edf6b4eb9798cffd1268c8137b75892a\AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e3c72abacf46bb7fbcec0fe542b1c268\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:2:1-8:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:2:1-8:12
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-vector-icons] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/e82da9ef38f93157f66ed47e22264e13/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/21520cce359c109a3c7b5bb64b90e72c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/020ecbf6fc96a4ef7f8fc35e93d9c7ac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/f4b2baf70309ff6ba641e2a9d40672c2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/36f779f0304e4487e951f5fd2ab593de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d89478648514616321eb2e35c2b64213/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/103b81de9c907d97f5a6f5212cb88709/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/abbb043763c4fb392fe4632eb5c77aa5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7a34a6a4bcb6e0d9f41e842506544ab3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8af8e7c4d00632a07c5032f82b2917f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e55fd45474139935d3e5cf76b23036b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0d9db6a5a239e73f94070c4bf7dd45c0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4805ee644488b93f1dbdf7d9013077c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d071b73cfc88e279d0b788a8956982b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6352f5b75ceed99328037fb1392e091c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f9aac1d0939ee9a77918786c94f1be92/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4d00e5117084b6c639b5de1f193660ef/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a29623c2cec9d479b2e86b2de365c00f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ee9e8225bbd108c4775b9880bea4dc30/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33600b4699a3615ffd46feeb2d116a31/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/58a9e9639cfbed4595ebdc620c4106a1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4560d0f3bfa44b87fcf3ec80258c3c04/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d2e5dcc96fe223cfd0c2d93ac4e7b51d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76c96fa590a2448fd1d119243ac2dc72/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bffd39093d90213096843284d0cfebd3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4a7e38e5e74a2d431ea6f68cf9eca82c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b82fbae1d5817685bef3b32f396eb010/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/f0c77466a6c7b0d605476a880e8c738b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/b2863b772a77c94533dbd3b0ed255530/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/cb74413ce80ef3096cc36f841c4da0a9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/16d5f9a19ef9228f34778236407c7347/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/ceb4f1a6242c106631e9db110fd3eaff/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/d5d0cdeafce4ebfe7df793857ff75a4f/AndroidManifest.xml:2:1-9:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:2:3-23
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:2:3-23
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:2:3-23
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:2:3-23
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:3:5-51
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:1-31:12
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:1-32:12
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
-MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:24:5-67
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:5:5-65
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:5:5-65
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:5:22-62
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:5:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:6:5-80
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
-MERGED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:8:5-29:19
-MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:30:5-36:19
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:30:5-36:19
-MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\edf6b4eb9798cffd1268c8137b75892a\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\edf6b4eb9798cffd1268c8137b75892a\AndroidManifest.xml:11:5-20
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:9:5-30:19
+MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:9:5-30:19
+MERGED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:9:5-30:19
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/21520cce359c109a3c7b5bb64b90e72c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/21520cce359c109a3c7b5bb64b90e72c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f9aac1d0939ee9a77918786c94f1be92/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f9aac1d0939ee9a77918786c94f1be92/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/ceb4f1a6242c106631e9db110fd3eaff/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/ceb4f1a6242c106631e9db110fd3eaff/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:10:7-39
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:10:7-39
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:11:7-39
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:11:7-39
 	tools:ignore
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:7:75-114
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:12:7-52
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:12:7-52
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:13:7-52
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:13:7-52
 	tools:targetApi
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:7:54-74
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:11:7-41
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:11:7-41
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:12:7-41
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:12:7-41
 	android:allowBackup
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:13:7-34
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:13:7-34
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:14:7-34
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:14:7-34
 	android:theme
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:14:7-38
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:14:7-38
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:15:7-38
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:15:7-38
 	android:usesCleartextTraffic
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:7:18-53
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:9:7-38
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:9:7-38
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:10:7-38
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:10:7-38
 activity#com.sploot.MainActivity
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:15:7-24:18
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:16:7-25:18
 	android:label
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:18:9-41
 	android:windowSoftInputMode
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:19:9-51
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:20:9-51
 	android:configChanges
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:18:9-79
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:19:9-79
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:16:9-37
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:17:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:20:9-23:25
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:21:9-24:25
 action#android.intent.action.MAIN
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:21:13-65
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:22:13-65
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:21:21-62
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:22:21-62
 category#android.intent.category.LAUNCHER
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:22:13-73
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:23:13-73
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:22:23-70
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:23:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:25:7-84
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:26:7-84
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:25:17-81
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:26:17-81
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:26:13-28:70
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:27:13-29:70
 	android:value
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:28:13-68
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:29:13-68
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml:27:13-58
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml:28:13-58
 uses-sdk
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] D:\Sploot\mobile-client\sploot\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] D:\Sploot\mobile-client\sploot\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.59.8] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\react-native-0.59.8.aar\f92cbe86af3c0eeedfcdb0d6de9b10e1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\19d605f225dc4fb3f8584e93f9e9eb5e\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:5:5-43
-MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\5a3c5b8e75c97f27fc1de4a39a6b366d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\774e24267c451a623455da8c8ff85b5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\010ab1ab89895ca8160241b6b659726a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\010ab1ab89895ca8160241b6b659726a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\bb27490d247c04f090557afc7fb27870\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\bb27490d247c04f090557afc7fb27870\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ffae70f8c41a108c4bd198e4465ce194\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\ffae70f8c41a108c4bd198e4465ce194\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\abd05c85cfcb734322df07d28f20d198\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\abd05c85cfcb734322df07d28f20d198\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cd694b77e6d5fb6a02f32c06e719cb63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cd694b77e6d5fb6a02f32c06e719cb63\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\da5143b67cae50d283b62b741bb1c93a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\da5143b67cae50d283b62b741bb1c93a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\bc3b4003766d09b4f7b57ebc95de275d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\bc3b4003766d09b4f7b57ebc95de275d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\52d4f7f1414f4ee2b0e1444674821520\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\52d4f7f1414f4ee2b0e1444674821520\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3d37c0aea19f6782a14f58801dfdb2b0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\3d37c0aea19f6782a14f58801dfdb2b0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\57cbd7129177cbad5fd258b7798a5ad3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\57cbd7129177cbad5fd258b7798a5ad3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\96273a0c083978f855193409f2dc714d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\96273a0c083978f855193409f2dc714d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\25f92d7bb74e41a1af7aae69bf6330b3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2f1f504a2fb8b45adf841af53c52f625\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1be669218f6c08b2c50692231639c68d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\be173f5fc804abcce405434b920beaa7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\be173f5fc804abcce405434b920beaa7\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\461233236fb0ec1a52d1bf923ebe019e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\461233236fb0ec1a52d1bf923ebe019e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e77a85e7c299fe75efcc2ddadd62261a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\e77a85e7c299fe75efcc2ddadd62261a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9cbebd3cc1bcc7d0643f1a016abc1a6d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\9cbebd3cc1bcc7d0643f1a016abc1a6d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\20cd7848304125927573b49d92b133cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\20cd7848304125927573b49d92b133cd\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\97e3babe733f32fd8ed8fc3dd5118136\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\97e3babe733f32fd8ed8fc3dd5118136\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7d4fffa3b546690dd56653d3bd900984\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\7d4fffa3b546690dd56653d3bd900984\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e8ac5729f72a9ae31c018c7870a6927e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\e8ac5729f72a9ae31c018c7870a6927e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\855b9bb897e3f18296f36bc112677236\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\855b9bb897e3f18296f36bc112677236\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e3ffabe57337b23f687e193c2ff6f6aa\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\e3ffabe57337b23f687e193c2ff6f6aa\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\09a0f8a0ee1680a760f0715c4e01a875\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\09a0f8a0ee1680a760f0715c4e01a875\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\04c2c03e50a17d2c152afd9700d043f4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\04c2c03e50a17d2c152afd9700d043f4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\b5b638407ba79901462a319430a875ea\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\b5b638407ba79901462a319430a875ea\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\3f0ca01dc71c167a55244de1adfea311\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\3f0ca01dc71c167a55244de1adfea311\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\028d70c0ce6e77b969854600574bf4ec\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\028d70c0ce6e77b969854600574bf4ec\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\edf6b4eb9798cffd1268c8137b75892a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\edf6b4eb9798cffd1268c8137b75892a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e3c72abacf46bb7fbcec0fe542b1c268\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e3c72abacf46bb7fbcec0fe542b1c268\AndroidManifest.xml:5:5-7:41
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
-INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.8] /home/shehank/.gradle/caches/transforms-1/files-1.1/react-native-0.59.8.aar/e49decf7dc8861c03d36b9c624bf87b6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/e82da9ef38f93157f66ed47e22264e13/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/e82da9ef38f93157f66ed47e22264e13/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/21520cce359c109a3c7b5bb64b90e72c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/21520cce359c109a3c7b5bb64b90e72c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/020ecbf6fc96a4ef7f8fc35e93d9c7ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/020ecbf6fc96a4ef7f8fc35e93d9c7ac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/f4b2baf70309ff6ba641e2a9d40672c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/f4b2baf70309ff6ba641e2a9d40672c2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/36f779f0304e4487e951f5fd2ab593de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/36f779f0304e4487e951f5fd2ab593de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d89478648514616321eb2e35c2b64213/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d89478648514616321eb2e35c2b64213/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/103b81de9c907d97f5a6f5212cb88709/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/103b81de9c907d97f5a6f5212cb88709/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/abbb043763c4fb392fe4632eb5c77aa5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/abbb043763c4fb392fe4632eb5c77aa5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7a34a6a4bcb6e0d9f41e842506544ab3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7a34a6a4bcb6e0d9f41e842506544ab3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8af8e7c4d00632a07c5032f82b2917f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8af8e7c4d00632a07c5032f82b2917f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e55fd45474139935d3e5cf76b23036b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e55fd45474139935d3e5cf76b23036b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0d9db6a5a239e73f94070c4bf7dd45c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/0d9db6a5a239e73f94070c4bf7dd45c0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4805ee644488b93f1dbdf7d9013077c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/4805ee644488b93f1dbdf7d9013077c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d071b73cfc88e279d0b788a8956982b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/d071b73cfc88e279d0b788a8956982b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6352f5b75ceed99328037fb1392e091c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6352f5b75ceed99328037fb1392e091c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/5772371aaddf70a9393759188a580c86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f9aac1d0939ee9a77918786c94f1be92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f9aac1d0939ee9a77918786c94f1be92/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4d00e5117084b6c639b5de1f193660ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4d00e5117084b6c639b5de1f193660ef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a29623c2cec9d479b2e86b2de365c00f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/a29623c2cec9d479b2e86b2de365c00f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ee9e8225bbd108c4775b9880bea4dc30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ee9e8225bbd108c4775b9880bea4dc30/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33600b4699a3615ffd46feeb2d116a31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33600b4699a3615ffd46feeb2d116a31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/58a9e9639cfbed4595ebdc620c4106a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/58a9e9639cfbed4595ebdc620c4106a1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4560d0f3bfa44b87fcf3ec80258c3c04/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4560d0f3bfa44b87fcf3ec80258c3c04/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d2e5dcc96fe223cfd0c2d93ac4e7b51d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/d2e5dcc96fe223cfd0c2d93ac4e7b51d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76c96fa590a2448fd1d119243ac2dc72/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/76c96fa590a2448fd1d119243ac2dc72/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bffd39093d90213096843284d0cfebd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/shehank/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/bffd39093d90213096843284d0cfebd3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4a7e38e5e74a2d431ea6f68cf9eca82c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/4a7e38e5e74a2d431ea6f68cf9eca82c/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b82fbae1d5817685bef3b32f396eb010/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/b82fbae1d5817685bef3b32f396eb010/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/f0c77466a6c7b0d605476a880e8c738b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/f0c77466a6c7b0d605476a880e8c738b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/b2863b772a77c94533dbd3b0ed255530/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/b2863b772a77c94533dbd3b0ed255530/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/cb74413ce80ef3096cc36f841c4da0a9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/cb74413ce80ef3096cc36f841c4da0a9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/16d5f9a19ef9228f34778236407c7347/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/16d5f9a19ef9228f34778236407c7347/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/ceb4f1a6242c106631e9db110fd3eaff/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/ceb4f1a6242c106631e9db110fd3eaff/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/d5d0cdeafce4ebfe7df793857ff75a4f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/d5d0cdeafce4ebfe7df793857ff75a4f/AndroidManifest.xml:5:5-7:41
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:5:5-77
+ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from D:\Sploot\mobile-client\sploot\android\app\src\debug\AndroidManifest.xml:5:22-75
+		ADDED from /home/shehank/Projects/Sploot/mobile-client/sploot/android/app/src/debug/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-81
+ADDED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from [:react-native-maps] D:\Sploot\mobile-client\sploot\node_modules\react-native-maps\lib\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-78
+		ADDED from [:react-native-maps] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
 	android:exported
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
+ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
 	android:resource
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
 	android:name
-		ADDED from [:react-native-webview] D:\Sploot\mobile-client\sploot\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-webview] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] D:\Sploot\mobile-client\sploot\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] /home/shehank/Projects/Sploot/mobile-client/sploot/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-56
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:28:9-32
 uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:33:9-35:40
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:35:13-37
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\1130ef63a2175779f7a108c92d3e6e84\AndroidManifest.xml:34:13-50
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.1.0.aar/c72e0274347a313e441205122a52ccf2/AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-base-16.1.0.aar\20f9c8444991dfccc05105b0900e151a\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-base-16.1.0.aar/5d7a78c0e8cd658da918a3c52384a8f0/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:8:9-10:69
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\3843989978ea720dae523573a1787783\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.2.0.aar/82599bdb66a7b749bb0580069536ba29/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:10:13-66
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:10:13-66
 	android:name
-		ADDED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\3f60db30e96039edd6cabedabd194e23\AndroidManifest.xml:9:13-58
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/shehank/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/17ff4f1b4f825cdda01fb5a3eda31779/AndroidManifest.xml:9:13-58
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\8da0e2ad5be4a62ff04e18a0b7f465b0\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/48feeeaca59e748fbdf2b189ee0a411e/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Kavee\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\cf4451135ac98112b19ed99e7984de7d\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:support-v4:26.1.0] /home/shehank/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/5e9d5ad22098c0dd37f05b67c473875c/AndroidManifest.xml:27:13-51
