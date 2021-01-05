@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@mapbox/react-native-mapbox-gl": "https://github.com/nitaliano/react-native-mapbox-gl/tarball/master",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "native-base": "^2.12.1",
     "react": "16.8.3",
     "react-native": "0.59.8",
