@@ -13,7 +13,7 @@
     "leaflet": "^1.4.0",
     "mapbox-gl": "^0.53.1",
     "mdbreact": "^4.13.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
